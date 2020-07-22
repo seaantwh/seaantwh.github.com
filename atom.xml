@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>怪默</title>
+  
+  <subtitle>山雨</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://seaantwh.github.io/"/>
+  <updated>2020-07-21T13:39:01.105Z</updated>
+  <id>http://seaantwh.github.io/</id>
+  
+  <author>
+    <name>怪默</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>html总结1</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-1/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-1/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:39:01.105Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;基础&quot;&gt;&lt;a href=&quot;#基础&quot; class=&quot;headerlink&quot; title=&quot;基础&quot;&gt;&lt;/a&gt;基础&lt;/h2&gt;&lt;h3 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html总结2</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-2/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-2/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:39:32.928Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;属性&quot;&gt;&lt;a href=&quot;#属性&quot; class=&quot;headerlink&quot; title=&quot;属性&quot;&gt;&lt;/a&gt;属性&lt;/h2&gt;&lt;p&gt;HTML
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html总结3</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-3/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-3/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:39:42.274Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;图像-lt-img-gt&quot;&gt;&lt;a href=&quot;#图像-lt-img-gt&quot; class=&quot;headerlink&quot; title=&quot;图像&amp;lt;img&amp;gt;&quot;&gt;&lt;/a&gt;图像&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html总结4</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-4/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-4/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:39:50.642Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;表格和列表&quot;&gt;&lt;a href=&quot;#表格和列表&quot; class=&quot;headerlink&quot; title=&quot;表格和列表&quot;&gt;&lt;/a&gt;表格和列表&lt;/h2&gt;&lt;h3 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html总结5</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-5/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-5/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:40:00.506Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;表单&quot;&gt;&lt;a href=&quot;#表单&quot; class=&quot;headerlink&quot; title=&quot;表单&quot;&gt;&lt;/a&gt;表单&lt;/h2&gt;&lt;p&gt;HTML 表单用于搜集不同类型的用户输入。&lt;/p&gt;
+&lt;h3 id=&quot;lt-form-gt-lt-form-gt&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html总结6</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-6/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-6/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:40:08.857Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h3 id=&quot;布局&quot;&gt;&lt;a href=&quot;#布局&quot; class=&quot;headerlink&quot; title=&quot;布局&quot;&gt;&lt;/a&gt;布局&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;header   定义文档或文档页眉&lt;/li&gt;
+&lt;li&gt;nav   定义导航链接的容器&lt;/li&gt;
+&lt;li&gt;section 
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>仿bing</title>
+    <link href="http://seaantwh.github.io/2020/07/17/fang-bing/"/>
+    <id>http://seaantwh.github.io/2020/07/17/fang-bing/</id>
+    <published>2020-07-17T07:40:00.000Z</published>
+    <updated>2020-07-21T18:44:02.536Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;link  rel=&amp;quot;icon&amp;quot; href=&amp;quot;logo.png&amp;quot;
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>书单</title>
+    <link href="http://seaantwh.github.io/2020/07/11/shu-dan/"/>
+    <id>http://seaantwh.github.io/2020/07/11/shu-dan/</id>
+    <published>2020-07-11T08:25:00.000Z</published>
+    <updated>2020-07-22T09:47:25.196Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;云边有个小卖部&quot;&gt;&lt;a href=&quot;#云边有个小卖部&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="书单" scheme="http://seaantwh.github.io/categories/%E4%B9%A6%E5%8D%95/"/>
+    
+    
+      <category term="书单" scheme="http://seaantwh.github.io/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>个人信息收集表</title>
+    <link href="http://seaantwh.github.io/2020/07/11/ge-ren-xin-xi-shou-ji-biao/"/>
+    <id>http://seaantwh.github.io/2020/07/11/ge-ren-xin-xi-shou-ji-biao/</id>
+    <published>2020-07-11T01:25:00.000Z</published>
+    <updated>2020-07-21T18:44:21.751Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;​```
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;link
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
+    
+  </entry>
+  
+</feed>
