@@ -1923,3 +1923,19 @@ footer .copy-right {
     /* bg color = bg color under block */
     background: white;
 }
+
+
+/* 滚动条 */
+::-webkit-scrollbar-thumb {
+    background-color: #87CEEB;/*滚条里能向上向下移动小方块的颜色*/
+    background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.4) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.4) 50%,rgba(255,255,255,.4) 75%,transparent 75%,transparent);
+    border-radius: 3em;
+}
+::-webkit-scrollbar-track {
+    background-color: #ffcacaff;/*滚动条的轨道颜色*/
+    border-radius: 3em;
+}
+::-webkit-scrollbar {
+    width: 8px;
+    height: 15px;
+}
