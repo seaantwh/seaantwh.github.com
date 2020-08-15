@@ -43,11 +43,11 @@
   </entry>
   
   <entry>
-    <title>html总结4</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-4/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-4/</id>
+    <title>html总结3</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-3/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-3/</id>
     <published>2020-07-21T00:25:00.000Z</published>
-    <updated>2020-07-21T13:39:50.642Z</updated>
+    <updated>2020-07-21T13:39:42.274Z</updated>
     
     <summary type="html">
     
@@ -55,7 +55,7 @@
       
         
         
-          &lt;h2 id=&quot;表格和列表&quot;&gt;&lt;a href=&quot;#表格和列表&quot; class=&quot;headerlink&quot; title=&quot;表格和列表&quot;&gt;&lt;/a&gt;表格和列表&lt;/h2&gt;&lt;h3 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot;
+          &lt;h2 id=&quot;图像-lt-img-gt&quot;&gt;&lt;a href=&quot;#图像-lt-img-gt&quot; class=&quot;headerlink&quot; title=&quot;图像&amp;lt;img&amp;gt;&quot;&gt;&lt;/a&gt;图像&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/h2&gt;&lt;h3
         
       
     
@@ -95,11 +95,11 @@
   </entry>
   
   <entry>
-    <title>html总结5</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-5/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-5/</id>
+    <title>html总结4</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-4/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-4/</id>
     <published>2020-07-21T00:25:00.000Z</published>
-    <updated>2020-07-21T13:40:00.506Z</updated>
+    <updated>2020-07-21T13:39:50.642Z</updated>
     
     <summary type="html">
     
@@ -107,34 +107,7 @@
       
         
         
-          &lt;h2 id=&quot;表单&quot;&gt;&lt;a href=&quot;#表单&quot; class=&quot;headerlink&quot; title=&quot;表单&quot;&gt;&lt;/a&gt;表单&lt;/h2&gt;&lt;p&gt;HTML 表单用于搜集不同类型的用户输入。&lt;/p&gt;
-&lt;h3 id=&quot;lt-form-gt-lt-form-gt&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
-    
-    
-      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>html总结3</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-3/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-3/</id>
-    <published>2020-07-21T00:25:00.000Z</published>
-    <updated>2020-07-21T13:39:42.274Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;图像-lt-img-gt&quot;&gt;&lt;a href=&quot;#图像-lt-img-gt&quot; class=&quot;headerlink&quot; title=&quot;图像&amp;lt;img&amp;gt;&quot;&gt;&lt;/a&gt;图像&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/h2&gt;&lt;h3
+          &lt;h2 id=&quot;表格和列表&quot;&gt;&lt;a href=&quot;#表格和列表&quot; class=&quot;headerlink&quot; title=&quot;表格和列表&quot;&gt;&lt;/a&gt;表格和列表&lt;/h2&gt;&lt;h3 id=&quot;列表&quot;&gt;&lt;a href=&quot;#列表&quot; class=&quot;headerlink&quot;
         
       
     
@@ -164,6 +137,33 @@
 &lt;li&gt;header   定义文档或文档页眉&lt;/li&gt;
 &lt;li&gt;nav   定义导航链接的容器&lt;/li&gt;
 &lt;li&gt;section 
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html总结5</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-5/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-5/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:40:00.506Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;表单&quot;&gt;&lt;a href=&quot;#表单&quot; class=&quot;headerlink&quot; title=&quot;表单&quot;&gt;&lt;/a&gt;表单&lt;/h2&gt;&lt;p&gt;HTML 表单用于搜集不同类型的用户输入。&lt;/p&gt;
+&lt;h3 id=&quot;lt-form-gt-lt-form-gt&quot;&gt;&lt;a
         
       
     
@@ -208,11 +208,11 @@
   </entry>
   
   <entry>
-    <title>书单</title>
+    <title>2020书单</title>
     <link href="http://seaantwh.github.io/2020/07/11/shu-dan/"/>
     <id>http://seaantwh.github.io/2020/07/11/shu-dan/</id>
     <published>2020-07-11T08:25:00.000Z</published>
-    <updated>2020-08-01T04:34:22.296Z</updated>
+    <updated>2020-08-15T14:42:44.761Z</updated>
     
     <summary type="html">
     
