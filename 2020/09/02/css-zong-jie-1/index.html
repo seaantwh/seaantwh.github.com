@@ -447,14 +447,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    287
+                    647
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    2 分
                 </div>
                 
                 
@@ -496,11 +496,18 @@
 <h4 id="通配选择器"><a href="#通配选择器" class="headerlink" title="通配选择器"></a>通配选择器</h4><ul>
 <li>1，CSS中以 * 定义</li>
 <li>2，选择文档中所有的HTML元素</li>
+<li>3，<pre><code>  * {
+         margin: 0px;
+      }</code></pre></li>
 </ul>
-<h4 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h4><ul>
-<li>1，选择指定的HTML元素</li>
+<h4 id="标签选择器"><a href="#标签选择器" class="headerlink" title="标签选择器"></a>标签选择器</h4><ul>
+<li>1，选择指定的HTML标签</li>
 <li>2，<pre><code> p{
     color: green;
+ }
+ 标签与类捆绑定义选择器
+ p.classname1{
+     color: gray;
  }</code></pre></li>
 </ul>
 <h4 id="群组选择器"><a href="#群组选择器" class="headerlink" title="群组选择器"></a>群组选择器</h4><ul>
@@ -509,26 +516,75 @@
          color: green;
           }</code></pre></li>
 </ul>
-<h4 id="派生选择器"><a href="#派生选择器" class="headerlink" title="派生选择器"></a>派生选择器</h4><h6 id="根据元素在文档的位置确定CSS样式"><a href="#根据元素在文档的位置确定CSS样式" class="headerlink" title="根据元素在文档的位置确定CSS样式　"></a>根据元素在文档的位置确定CSS样式　</h6><ul>
+<h4 id="相邻选择器"><a href="#相邻选择器" class="headerlink" title="相邻选择器"></a>相邻选择器</h4><ul>
 <li><p>1，要改变的元素样式在某两个元素(1和2)之间</p>
 </li>
-<li><pre><code>h1 + p {
-             font-size: 2000%;
-            }
-  语法：(1元素+2元素）</code></pre></li>
-<li><p>2，要改变的元素样式(1)在某个元素(2)内部 #######</p>
+<li><p>2，</p>
+<pre><code> h1 + p {
+              font-size: 2000%;
+             }
+   语法：(1元素+2元素）</code></pre></li>
+</ul>
+<h4 id="包含选择器"><a href="#包含选择器" class="headerlink" title="包含选择器"></a>包含选择器</h4><ul>
+<li><p>1，要改变的元素样式(1)在某个元素(2)内部</p>
 </li>
-<li><pre><code> li em {
-        color: rebeccapurple;
-     }
-   语法：（2元素  1元素）</code></pre><h6 id="根据状态确定元素样式"><a href="#根据状态确定元素样式" class="headerlink" title="根据状态确定元素样式"></a>根据状态确定元素样式</h6></li>
-<li><pre><code> a:link {
+<li><p>2，  </p>
+<pre><code>   li em {
+          color: rebeccapurple;
+       }
+     语法：（2元素  1元素）</code></pre></li>
+</ul>
+<h4 id="子选择器"><a href="#子选择器" class="headerlink" title="子选择器"></a>子选择器</h4><p>-1，父元素所包含的子元素的样式<br>-2，</p>
+<pre><code>    div &gt; span{  /*  div元素所包含的span子元素的样式 */
+                     font-size: 24px;
+         }</code></pre><h4 id="多层选择器"><a href="#多层选择器" class="headerlink" title="多层选择器"></a>多层选择器</h4><p>-1，利用选择器嵌套来实现对HTML结构纵深元素的控制<br>-2，</p>
+<pre><code>    &lt;body&gt;
+           &lt;div id=&quot;wrap&quot;&gt;
+                   &lt;div id=&quot;header&quot;&gt;
+                             &lt;h2&gt;&lt;span&gt;我是头部&lt;/span&gt;&lt;/h2&gt;
+     &lt;h2&gt;我是第二个头&lt;/h2&gt;
+                 &lt;/div&gt;
+          &lt;div id=&quot;menu&gt;
+               &lt;ul&gt;
+          &lt;li  id=&quot;home&quot;&gt;首页&lt;/li&gt;
+        &lt;li&gt;我的文章&lt;/li&gt;
+        &lt;li id=&quot;aboutMe&gt;关于我&lt;/li&gt;
+       &lt;/ul&gt;&lt;/div&gt;
+&lt;/div&gt;
+ &lt;/body&gt;
+CSS
+&lt;style&gt;
+    #wrap #hearder h2 span{
+                font-size:100px;}
+     #wrap #menu &lt;ul&gt; #aboutMe {
+                    color: red;}
+     &lt;/style&gt;</code></pre><h4 id="元素选择器"><a href="#元素选择器" class="headerlink" title="元素选择器"></a>元素选择器</h4><ul>
+<li><p>1，匹配属性名选择器</p>
+<pre><code>     &lt;div class=&quot;class1&gt;问君能有几多愁&lt;/div&gt;
+     &lt;div class=&quot;class2&quot;&gt;恰似一江春水向东流&lt;/div&gt;
+      CSS
+      div[class]{/* 该选择器能够匹配div元素中设置了class属性的对象定义样式，无论class属性值时什么 */
+  font-size: 24px;}</code></pre></li>
+<li><p>2，匹配属性值选择器</p>
+<pre><code>    &lt;img src=&quot;pic1.png&quot; alt=&quot;cat&quot;/&gt;
+    &lt;img src=&quot;pic2.png&quot; alt=&quot;dog&quot;/&gt;
+     CSS
+     img[alt=&quot;dog&quot;]{
+  border: solid 2px;}</code></pre></li>
+</ul>
+<h4 id="伪选择器-伪元素选择器"><a href="#伪选择器-伪元素选择器" class="headerlink" title="伪选择器/伪元素选择器"></a>伪选择器/伪元素选择器</h4><ul>
+<li><pre><code> a:link {  /* 正常链接下的样式粉红色， */
           color: pink;
            }
- a:visited {
+ a:visited { /* 已访问的链接样式为绿色 */
           color: green;
              }
-  上面的CSS样式：未访问的链接为粉红色，已访问的链接为绿色</code></pre></li>
+  a:hover{ /* 鼠标经过时的样式为绿色 */
+           color：blue;
+  }
+  a:active{ /* 超链接被激活时的样式为红色 */
+            color: red;
+              }</code></pre></li>
 </ul>
 
             </div>
@@ -644,12 +700,12 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/html/" target="_blank">
-                        <span class="chip bg-color">html</span>
-                    </a>
-                    
                     <a href="/tags/css/" target="_blank">
                         <span class="chip bg-color">css</span>
+                    </a>
+                    
+                    <a href="/tags/html/" target="_blank">
+                        <span class="chip bg-color">html</span>
                     </a>
                     
                 </div>
@@ -663,19 +719,19 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/21/html-zong-jie-2/">
+                <a href="/2020/07/21/html-zong-jie-1/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="html总结2">
+                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="html总结1">
                         
-                        <span class="card-title">html总结2</span>
+                        <span class="card-title">html总结1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            html总结--属性,，链接
+                            html总结--基础,,元信息
                         
                     </div>
                     <div class="publish-info">
@@ -816,7 +872,7 @@
             
             
             &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
-            <span class="white-color">13.4k</span>
+            <span class="white-color">13.8k</span>
             
 
             <br>
