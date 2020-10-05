@@ -4,18 +4,18 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="html总结6, 怪默">
+    <meta name="keywords" content="个人博客首页, 怪默">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="布局
-header   定义文档或文档页眉
-nav   定义导航链接的容器
-section  定义文档的节
-article  定义独立的自包含文章
-aside  定义内容之外的内容(如侧栏)
-footer  定义文档或节的页脚
-detail">
+    <meta name="description" content="HTML
+​```
+
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+&amp;lt;meta name=&amp;quot;怪默">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +23,7 @@ detail">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>html总结6 | 怪默</title>
+    <title>个人博客首页 | 怪默</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -292,13 +292,13 @@ detail">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/1.png')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        html总结6
+                        个人博客首页
                     </div>
                 </div>
             </div>
@@ -413,6 +413,10 @@ detail">
                             <span class="chip bg-color">html</span>
                         </a>
                         
+                        <a href="/tags/css/" target="_blank">
+                            <span class="chip bg-color">css</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
@@ -433,7 +437,7 @@ detail">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-21
+                    2020-09-11
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -447,14 +451,14 @@ detail">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    392
+                    2.7k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    14 分
                 </div>
                 
                 
@@ -470,56 +474,322 @@ detail">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><ul>
-<li>header   定义文档或文档页眉</li>
-<li>nav   定义导航链接的容器</li>
-<li>section  定义文档的节</li>
-<li>article  定义独立的自包含文章</li>
-<li>aside  定义内容之外的内容(如侧栏)</li>
-<li>footer  定义文档或节的页脚</li>
-<li>details  定义细节</li>
-<li>summary  定义details元素的细节</li>
-</ul>
-<h3 id="响应式设计-以可变的尺寸传递网页"><a href="#响应式设计-以可变的尺寸传递网页" class="headerlink" title="响应式设计(以可变的尺寸传递网页)"></a>响应式设计(以可变的尺寸传递网页)</h3><ul>
-<li>自己设计</li>
-<li>使用现成的CSS框架</li>
-</ul>
-<h3 id="块"><a href="#块" class="headerlink" title="块"></a>块</h3><p>块级元素在浏览器显示时，通常会以新行来开始（和结束）。<br>例子：<code>&lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;</code></p>
-<p>内联元素在显示时通常不会以新行开始。<br>例子：<code>&lt;b&gt;, &lt;td&gt;, &lt;a&gt;, &lt;img&gt;</code></p>
-<ul>
-<li><p>div元素</p>
-<ul>
-<li><code>&lt;div&gt;</code> 可定义文档中的分区或节</li>
-<li><code>&lt;div&gt;</code> 标签可以把文档分割为独立的、不同的部分。</li>
-</ul>
-</li>
-<li><p>span元素</p>
-<ul>
-<li><code>&lt;span&gt;</code>标签被用来组合文档中的行内元素。</li>
-</ul>
-</li>
-</ul>
-<h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><ul>
-<li><p>绝对路径</p>
-<ul>
-<li>绝对文件路径是指向一个因特网文件的完整 URL：</li>
-<li>例：<code>&lt;img src=&quot;https://seaantwh/source/images/picture.jpg&quot; alt=&quot;star&quot;&gt;</code></li>
-</ul>
-</li>
-<li><p>相对路径</p>
-<ul>
-<li><p>相对路径指向了相对于当前页面的文件。</p>
-</li>
-<li><p>实例</p>
-<p>​          <code>&lt;img src=&quot;picture.jpg&quot;&gt;picture.jpg 位于与当前网页相同的文件夹</code></p>
-<p>​         <code>&lt;img src=&quot;images/picture.jpg&quot;&gt;picture.jpg位于当前文件夹的images文件夹中</code></p>
-<p>​        <code>&lt;img src=&quot;/images/picture.jpg&quot;&gt;picture.jpg当前站点根目录的images文件夹中</code></p>
-<p>​        <code>&lt;img src=&quot;../picture.jpg&quot;&gt;    picture.jpg 位于当前文件夹的上一级文件夹中</code></p>
-</li>
-</ul>
-</li>
-</ul>
+                <p>HTML</p>
+<pre><code>​```
 
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta name=&quot;怪默啊&quot;&gt; 
+&lt;title&gt;blog home&lt;/title&gt;
+&lt;style&gt;
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #bg-pho{
+            background-image: url(&quot;home-bg-2-dark.jpg&quot;);
+            position:fixed; 
+            top: 0;left: 0;
+            width:100%;height:100%;
+            z-index:-10;    
+            background-size: cover;
+        }
+        h1{
+            padding-top: 25px;
+            padding-left: 104px;
+            font-size: 30px;
+            color: aliceblue;
+            }
+        h2{
+            padding-top: 10px;
+            padding-left: 180px;
+            font-size: 15px;
+            color:aliceblue;
+        }
+        .allBox{
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 60px;
+            width: 1110px;
+        }
+        .navi{
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 27px;
+            font-size: 13px;
+            background: #101F26;
+            height: 60px;
+        }
+        .td1{
+            display: block;
+            padding-right: 50px;
+            margin-top: 20px;
+            margin-left: 30px;
+            float: left;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        ul a{
+            color:black;
+        }
+        Ol a{
+            color:black;
+        }/* 这里为什么不可以用相邻选择器*/
+        .artical a{
+            color: dimgrey;
+        }
+        a:hover{
+            color:red;
+        }
+        .content{
+            display: flex;
+        }
+        .text{
+            width:70%;
+            background: white;
+        }
+        .artical{
+            height: 18.8%;
+            width: 100%;
+            background:hsla(0,0%,90%,1.00);
+            margin: 10px;
+            border-radius: 15px;
+        }
+        .titleStyle{
+            display: flex;
+            padding-top: 10px;
+            padding-left: 20px;
+        }
+        .aheadTitle{
+            width: 4.5px;
+            height: 30px;
+            background-color:dimgrey;
+        }
+        hr{
+            margin-left: 20px;
+        }
+        .textTitle{
+            margin-left: 40px;
+        }
+        .textBody{    
+            font-size: 15px;
+            margin-top: 10px;
+            margin-left: 50px;
+            margin-right: 30px;
+        }
+        .textFooter{
+            font-size: 12px;
+            float: right;
+            margin-right: 30px;
+            margin-top: 20px; /*这里为什么不可以用margin-bottom*/
+        }
+        .sideBox{
+            float: left;
+            width:30%;
+            background-color: azure;
+        }
+        .readingList{
+            margin: 40px;
+            padding: 40px;
+            width: 100%;
+            padding-right: 50px;
+        }
+        .recommendList{
+            margin: 40px;
+            padding: 40px;
+            width: 100%;
+            padding-right: 50px;
+        }
+        .data{
+            margin: 40px;
+            padding: 40px;
+            width: 100%;
+            padding-right: 50px;
+        }
+        .listText{
+            margin-top: 5px;
+            margin-left: 40px;
+        }
+        .datamore{
+            margin-right: 170px;
+            float:right;
+        }
+        .footer{
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            height: 50px;
+            font-size:13px;
+            background:  #101F26;
+        }
+        .footerText{
+            color: aliceblue;
+            text-align: center;
+            padding-top: 15px;
+        }
+        .whiteReserve{
+            height: 40px;
+            width: auto;
+            margin-bottom: 10px;
+        }
+        .link-to-top-pho{
+            width: 50px;
+            height: 50px;
+        }
+        .backTop{
+            position: fixed;
+            bottom: 30px;
+            right: 10px;
+        }
+        html{
+          overflow-x: hidden;
+        }
+        ::-webkit-scrollbar{
+                width:5px;
+        }                     
+        ::-webkit-scrollbar-track{
+            background-color: azure;
+        }                    
+        ::-webkit-scrollbar-thumb{
+            background-color: gray;
+            border-radius: 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div class=&quot;banner&quot; id=&quot;link-to-top&quot;&gt;
+            &lt;h1 id=&quot;title1&quot;&gt;&lt;a href=&quot;#&quot;&gt;北方的国&lt;/a&gt;&lt;/h1&gt;
+            &lt;h2&gt;身体和灵魂总要有一个在路上&lt;/h2&gt;
+        &lt;/div&gt;
+    &lt;div class=&quot;allBox&quot;&gt;
+    &lt;div class=&quot;navi&quot; &gt;
+        &lt;table&gt;
+            &lt;tr&gt;
+                 &lt;td class=&quot;td1&quot;&gt;&lt;a href=&quot;#&quot;&gt;首页&lt;/a&gt;&lt;/td&gt;
+                  &lt;td class=&quot;td1&quot;&gt;&lt;a href=&quot;#&quot;&gt;标签&lt;/a&gt;&lt;/td&gt;
+                 &lt;td class=&quot;td1&quot;&gt;&lt;a href=&quot;#&quot;&gt;分类&lt;/a&gt;&lt;/td&gt;
+                 &lt;td class=&quot;td1&quot;&gt;&lt;a href=&quot;#&quot;&gt;关于我&lt;/a&gt;&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/table&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;mainly&quot;&gt;
+        &lt;div class=&quot;content&quot;&gt;
+            &lt;div class=&quot;text&quot;&gt;
+                &lt;div class=&quot;artical&quot;&gt;
+                    &lt;div class=&quot;titleStyle&quot;&gt;
+                    &lt;div class=&quot;aheadTitle&quot;&gt;&lt;/div&gt;
+                    &lt;h3 class=&quot;textTitle&quot;&gt;&lt;a href=&quot;#&quot;&gt;容器折叠与清除浮动&lt;/a&gt;&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;hr&gt;
+                    &lt;p class=&quot;textBody&quot;&gt;摘要：过去，浮动的行为经常受到浏览器bug的干扰，特别是在IE6和IE7中。幸亏这些浏览器已经淡出市场，我们不必再担心那些bug了。现在我们可以保证各种浏览器对浮动的处理是一致的。但是浮动仍有一些行为会让你措手不及。这些并不是bug，而是因为浮动严格遵循了标准。让我们看看浮动如何工作，以及怎么调整浮动的行为来实现理想的布局。&lt;a href=&quot;#&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/a&gt;&lt;/p&gt;
+                    &lt;div class=&quot;textFooter&quot;&gt;
+                        &lt;span&gt;2020-09-21&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;&amp;copy; 怪默&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+                        &lt;span&gt;阅读(9565)&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;收藏(753)&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;artical&quot;&gt;
+                    &lt;div class=&quot;titleStyle&quot;&gt;
+                    &lt;div class=&quot;aheadTitle&quot;&gt;&lt;/div&gt;
+                    &lt;h3 class=&quot;textTitle&quot;&gt;&lt;a href=&quot;#&quot;&gt;出乎意料的浮动陷阱&lt;/a&gt;&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;hr&gt;
+                    &lt;p class=&quot;textBody&quot;&gt;摘要：现在页面里的白色容器已经能够包含浮动的媒体元素了，但是出现了另一个问题：四个媒体盒子没有如与预期那样均匀地占据两行。虽然前两个盒子(&quot;Strength&quot;和&quot;Cadence&quot;符合预期，但是第三个盒子(&quot;Change it up&quot;)出现再了右边，也就是第二个盒子的下方，导致第一个盒子下面出现了一片非常大的空白。这是因为浏览器会将浮动元素&lt;a href=&quot;#&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/a&gt;&lt;/p&gt;
+                    &lt;div class=&quot;textFooter&quot;&gt;
+                        &lt;span&gt;2020-09-23&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;&amp;copy; 怪默&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+                        &lt;span&gt;阅读(8346)&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;收藏(634)&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;artical&quot;&gt;
+                    &lt;div class=&quot;titleStyle&quot;&gt;
+                    &lt;div class=&quot;aheadTitle&quot;&gt;&lt;/div&gt;
+                    &lt;h3 class=&quot;textTitle&quot;&gt;&lt;a href=&quot;#&quot;&gt;网格系统&lt;/a&gt;&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;hr&gt;
+                    &lt;p class=&quot;textBody&quot;&gt;摘要：现在整个页面的布局已经创建好了，但是还存在一些不足。最重要的问题是，无法轻松地复用样式表中的内容。现在媒体对象的宽度是50%，因此一行有两个元素。如果想要复用前面的设计，但需要一行放三个元素，那又该怎么办呢？一种比较普遍的做法是借助网格系统提高代码的可复性。网格系统提供了一系列的类名，可添加到标记中，&lt;a href=&quot;#&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/a&gt;&lt;/p&gt;
+                    &lt;div class=&quot;textFooter&quot;&gt;
+                        &lt;span&gt;2020-09-24&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;&amp;copy; 怪默&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+                        &lt;span&gt;阅读(6357)&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;收藏(345)&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;artical&quot;&gt;
+                    &lt;div class=&quot;titleStyle&quot;&gt;
+                    &lt;div class=&quot;aheadTitle&quot;&gt;&lt;/div&gt;
+                    &lt;h3 class=&quot;textTitle&quot;&gt;&lt;a href=&quot;#&quot;&gt;流式布局&lt;/a&gt;&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;hr&gt;
+                    &lt;p class=&quot;textBody&quot;&gt;摘要：响应式设计的第三个也是最后一个原则是流式布局(fluid layout)。流式布局，有时候被称作液体布局(liquid layout)，指的是使用的容器随视口宽度而变化。它跟固定布局相反，固定布局的列都是用px或者em单位定义。固定容器(比如，设定了width: 800px的元素)在小屏上回超出视口范围，导致需要水平滚动条，而流式布局&lt;a href=&quot;#&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/a&gt;&lt;/p&gt;
+                    &lt;div class=&quot;textFooter&quot;&gt;
+                        &lt;span&gt;2020-09-26&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;&amp;copy; 怪默&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+                        &lt;span&gt;阅读(5348)&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;收藏(283)&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;artical&quot;&gt;
+                    &lt;div class=&quot;titleStyle&quot;&gt;
+                    &lt;div class=&quot;aheadTitle&quot;&gt;&lt;/div&gt;
+                    &lt;h3 class=&quot;textTitle&quot;&gt;&lt;a href=&quot;#&quot;&gt;显示和隐式网格&lt;/a&gt;&lt;/h3&gt;
+                    &lt;/div&gt;
+                    &lt;hr&gt;
+                    &lt;p class=&quot;textBody&quot;&gt;摘要：在某些场景下，你可能不清楚把元素放在网格的哪个位置上。当处理大量的网格元素时，挨个指定元素的位置未免不太方便。当元素是从数据库获取时，元素的个数可能时未知的。在这些情况下，以一种宽松的方式定义网格可能更合理，剩下的交给布局算法来放置网格元素。这事需要用到隐式网格(implicit grid)。使用gid-template- * 属性定义网格轨道时，&lt;a href=&quot;#&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/a&gt;&lt;/p&gt;
+                    &lt;div class=&quot;textFooter&quot;&gt;
+                        &lt;span&gt;2020-09-29&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;&amp;copy; 怪默&amp;nbsp;&amp;nbsp;&lt;/span&gt;
+                        &lt;span&gt;阅读(3546)&amp;nbsp;&amp;nbsp;&lt;/span&gt;&lt;span&gt;收藏(234)&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;sideBox&quot;&gt;
+                 &lt;div class=&quot;readingList&quot;&gt;
+                    &lt;h4&gt;&lt;b&gt;阅读排行榜&lt;/b&gt;&lt;/h4&gt;
+                        &lt;ol&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;容器折叠与清除浮动&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;出乎意料的&quot;浮动陷阱&quot;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;媒体对象和BFC&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;网格系统&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;流式布局&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;响应式图片&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;CSS方法论&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;非动画属性&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ol&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;recommendList&quot;&gt;
+                    &lt;h4&gt;&lt;b&gt;推荐排行榜&lt;/b&gt;&lt;/h4&gt;
+                        &lt;ul&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;容器折叠与清除浮动&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;显示与隐式网格&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;出乎意料的&quot;浮动陷阱&quot;&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;CSS方法论&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;data&quot;&gt;
+                    &lt;h4&gt;&lt;b&gt;日期索引&lt;/b&gt;&lt;/h4&gt;
+                        &lt;ul&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;2020.09.29&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;2020.09.26&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;2020.09.24&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;2020.09.23&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;2020.09.21&lt;/a&gt;&lt;/li&gt;
+                            &lt;li class=&quot;listText&quot;&gt;&lt;a href=&quot;#&quot;&gt;2020.09.17&lt;/a&gt;&lt;/li&gt;
+                            &lt;p class=&quot;datamore&quot;&gt;&lt;a href=&quot;#&quot;&gt;&lt;sub&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/sub&gt;&lt;/a&gt;&lt;/p&gt;
+                        &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;footer&quot;&gt;
+                   &lt;p class=&quot;footerText&quot;&gt;Copyright &amp;copy; 2020 &lt;a href=&quot;#&quot;&gt;怪默&lt;/a&gt; 版权所有&lt;/p&gt;
+            &lt;/div&gt;    
+    &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;bg-pho&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;whiteReserve&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;backTop&quot;&gt;&lt;a href=&quot;#link-to-top&quot;&gt;&lt;img class=&quot;link-to-top-pho&quot; src=&quot;link-to-top.png&quot; alt=&quot;#&quot;&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+​```</code></pre>
             </div>
             <hr />
 
@@ -553,9 +823,9 @@ detail">
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《html总结6》
+                    《个人博客首页》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/07/21/html-zong-jie-6/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/09/11/ge-ren-bo-ke-shou-ye-2.0/" property="cc:attributionName"
                rel="cc:attributionURL">
                 怪默
             </a> 采用
@@ -599,24 +869,24 @@ detail">
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/07/21/html-zong-jie-5/">
+                <a href="/2020/09/11/ge-ren-bo-ke-shou-ye/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/8.jpg" class="responsive-img" alt="html总结5">
+                        <img src="/medias/featureimages/1.png" class="responsive-img" alt="个人博客首页">
                         
-                        <span class="card-title">html总结5</span>
+                        <span class="card-title">个人博客首页</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            html总结
+                            第三次练习
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-21
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-09-11
                         </span>
                         <span class="publish-author">
                             
@@ -637,6 +907,10 @@ detail">
                         <span class="chip bg-color">html</span>
                     </a>
                     
+                    <a href="/tags/css/" target="_blank">
+                        <span class="chip bg-color">css</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -648,31 +922,31 @@ detail">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/20/ge-sorewoai-tohu-budake/">
+                <a href="/2020/09/04/fang-bing-2/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/5.png" class="responsive-img" alt="歌—それを愛と呼ぶだけ">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="仿bing(2)">
                         
-                        <span class="card-title">歌—それを愛と呼ぶだけ</span>
+                        <span class="card-title">仿bing(2)</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            歌单啊
+                            第二次练习
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-20
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-09-04
                             </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/歌单/" class="post-category" target="_blank">
-                                    歌单
+                            <a href="/categories/web/" class="post-category" target="_blank">
+                                    web
                                 </a>
                             
                             
@@ -682,8 +956,12 @@ detail">
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/歌单/" target="_blank">
-                        <span class="chip bg-color">歌单</span>
+                    <a href="/tags/html/" target="_blank">
+                        <span class="chip bg-color">html</span>
+                    </a>
+                    
+                    <a href="/tags/css/" target="_blank">
+                        <span class="chip bg-color">css</span>
                     </a>
                     
                 </div>
