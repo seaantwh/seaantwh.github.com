@@ -18,8 +18,8 @@
   
   <entry>
     <title>我的练习导航页</title>
-    <link href="http://seaantwh.github.io/2020/10/15/web-lian-xi/wo-de-lian-xi-jian-dan-ye/"/>
-    <id>http://seaantwh.github.io/2020/10/15/web-lian-xi/wo-de-lian-xi-jian-dan-ye/</id>
+    <link href="http://seaantwh.github.io/2020/10/15/wo-de-lian-xi-jian-dan-ye/"/>
+    <id>http://seaantwh.github.io/2020/10/15/wo-de-lian-xi-jian-dan-ye/</id>
     <published>2020-10-15T14:45:00.000Z</published>
     <updated>2020-10-15T14:44:47.916Z</updated>
     
@@ -51,8 +51,8 @@
   
   <entry>
     <title>个人博客首页2.0</title>
-    <link href="http://seaantwh.github.io/2020/10/04/web-lian-xi/ge-ren-bo-ke-shou-ye-2.0/"/>
-    <id>http://seaantwh.github.io/2020/10/04/web-lian-xi/ge-ren-bo-ke-shou-ye-2.0/</id>
+    <link href="http://seaantwh.github.io/2020/10/04/ge-ren-bo-ke-shou-ye-2.0/"/>
+    <id>http://seaantwh.github.io/2020/10/04/ge-ren-bo-ke-shou-ye-2.0/</id>
     <published>2020-10-04T15:25:00.000Z</published>
     <updated>2020-10-05T12:58:19.022Z</updated>
     
@@ -85,8 +85,8 @@
   
   <entry>
     <title>个人博客首页</title>
-    <link href="http://seaantwh.github.io/2020/09/11/web-lian-xi/ge-ren-bo-ke-shou-ye/"/>
-    <id>http://seaantwh.github.io/2020/09/11/web-lian-xi/ge-ren-bo-ke-shou-ye/</id>
+    <link href="http://seaantwh.github.io/2020/09/11/ge-ren-bo-ke-shou-ye/"/>
+    <id>http://seaantwh.github.io/2020/09/11/ge-ren-bo-ke-shou-ye/</id>
     <published>2020-09-11T00:45:00.000Z</published>
     <updated>2020-09-16T00:46:27.867Z</updated>
     
@@ -119,8 +119,8 @@
   
   <entry>
     <title>仿bing(2)</title>
-    <link href="http://seaantwh.github.io/2020/09/04/web-lian-xi/fang-bing-2/"/>
-    <id>http://seaantwh.github.io/2020/09/04/web-lian-xi/fang-bing-2/</id>
+    <link href="http://seaantwh.github.io/2020/09/04/fang-bing-2/"/>
+    <id>http://seaantwh.github.io/2020/09/04/fang-bing-2/</id>
     <published>2020-09-04T08:07:00.000Z</published>
     <updated>2020-09-04T08:07:32.671Z</updated>
     
@@ -176,62 +176,9 @@
   </entry>
   
   <entry>
-    <title>html总结3</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-3/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-3/</id>
-    <published>2020-07-21T00:25:00.000Z</published>
-    <updated>2020-07-21T13:39:42.274Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;图像-lt-img-gt&quot;&gt;&lt;a href=&quot;#图像-lt-img-gt&quot; class=&quot;headerlink&quot; title=&quot;图像&amp;lt;img&amp;gt;&quot;&gt;&lt;/a&gt;图像&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
-    
-    
-      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>html总结5</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-5/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-5/</id>
-    <published>2020-07-21T00:25:00.000Z</published>
-    <updated>2020-07-21T13:40:00.506Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;表单&quot;&gt;&lt;a href=&quot;#表单&quot; class=&quot;headerlink&quot; title=&quot;表单&quot;&gt;&lt;/a&gt;表单&lt;/h2&gt;&lt;p&gt;HTML 表单用于搜集不同类型的用户输入。&lt;/p&gt;
-&lt;h3 id=&quot;lt-form-gt-lt-form-gt&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
-    
-    
-      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
     <title>html总结1</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-1/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-1/</id>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-1/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-1/</id>
     <published>2020-07-21T00:25:00.000Z</published>
     <updated>2020-07-21T13:39:01.105Z</updated>
     
@@ -255,11 +202,11 @@
   </entry>
   
   <entry>
-    <title>html总结2</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-2/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-2/</id>
+    <title>html总结3</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-3/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-3/</id>
     <published>2020-07-21T00:25:00.000Z</published>
-    <updated>2020-07-21T13:39:32.928Z</updated>
+    <updated>2020-07-21T13:39:42.274Z</updated>
     
     <summary type="html">
     
@@ -267,7 +214,7 @@
       
         
         
-          &lt;h2 id=&quot;属性&quot;&gt;&lt;a href=&quot;#属性&quot; class=&quot;headerlink&quot; title=&quot;属性&quot;&gt;&lt;/a&gt;属性&lt;/h2&gt;&lt;p&gt;HTML
+          &lt;h2 id=&quot;图像-lt-img-gt&quot;&gt;&lt;a href=&quot;#图像-lt-img-gt&quot; class=&quot;headerlink&quot; title=&quot;图像&amp;lt;img&amp;gt;&quot;&gt;&lt;/a&gt;图像&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/h2&gt;&lt;h3
         
       
     
@@ -282,8 +229,8 @@
   
   <entry>
     <title>html总结4</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-4/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-4/</id>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-4/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-4/</id>
     <published>2020-07-21T00:25:00.000Z</published>
     <updated>2020-07-21T13:39:50.642Z</updated>
     
@@ -307,9 +254,35 @@
   </entry>
   
   <entry>
+    <title>html总结2</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-2/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-2/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:39:32.928Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;属性&quot;&gt;&lt;a href=&quot;#属性&quot; class=&quot;headerlink&quot; title=&quot;属性&quot;&gt;&lt;/a&gt;属性&lt;/h2&gt;&lt;p&gt;HTML
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
     <title>html总结6</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-6/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie/html-zong-jie-6/</id>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-6/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-6/</id>
     <published>2020-07-21T00:25:00.000Z</published>
     <updated>2020-07-21T13:40:08.857Z</updated>
     
@@ -336,9 +309,36 @@
   </entry>
   
   <entry>
+    <title>html总结5</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-5/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-5/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:40:00.506Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;表单&quot;&gt;&lt;a href=&quot;#表单&quot; class=&quot;headerlink&quot; title=&quot;表单&quot;&gt;&lt;/a&gt;表单&lt;/h2&gt;&lt;p&gt;HTML 表单用于搜集不同类型的用户输入。&lt;/p&gt;
+&lt;h3 id=&quot;lt-form-gt-lt-form-gt&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
     <title>歌—それを愛と呼ぶだけ</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge/ge-sorewoai-tohu-budake/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge/ge-sorewoai-tohu-budake/</id>
+    <link href="http://seaantwh.github.io/2020/07/20/ge-sorewoai-tohu-budake/"/>
+    <id>http://seaantwh.github.io/2020/07/20/ge-sorewoai-tohu-budake/</id>
     <published>2020-07-20T12:00:00.000Z</published>
     <updated>2020-08-20T12:04:12.358Z</updated>
     
@@ -363,8 +363,8 @@
   
   <entry>
     <title>歌—Happy Birthday</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge/ge-happy-birthday/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge/ge-happy-birthday/</id>
+    <link href="http://seaantwh.github.io/2020/07/20/ge-happy-birthday/"/>
+    <id>http://seaantwh.github.io/2020/07/20/ge-happy-birthday/</id>
     <published>2020-07-20T11:31:00.000Z</published>
     <updated>2020-08-20T12:26:59.885Z</updated>
     
@@ -388,35 +388,9 @@
   </entry>
   
   <entry>
-    <title>歌—ささえる人の歌</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge/ge-sasaeruren-noge/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge/ge-sasaeruren-noge/</id>
-    <published>2020-07-20T11:31:00.000Z</published>
-    <updated>2020-08-20T12:08:43.039Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;歌手：back
-        
-      
-    
-    </summary>
-    
-      <category term="歌单" scheme="http://seaantwh.github.io/categories/%E6%AD%8C%E5%8D%95/"/>
-    
-    
-      <category term="歌单" scheme="http://seaantwh.github.io/tags/%E6%AD%8C%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>歌—ONE&#39;s hope</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge/ge-one-s-hope/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge/ge-one-s-hope/</id>
+    <link href="http://seaantwh.github.io/2020/07/20/ge-one-s-hope/"/>
+    <id>http://seaantwh.github.io/2020/07/20/ge-one-s-hope/</id>
     <published>2020-07-20T11:31:00.000Z</published>
     <updated>2020-08-20T12:03:06.902Z</updated>
     
@@ -440,9 +414,35 @@
   </entry>
   
   <entry>
+    <title>歌—ささえる人の歌</title>
+    <link href="http://seaantwh.github.io/2020/07/20/ge-sasaeruren-noge/"/>
+    <id>http://seaantwh.github.io/2020/07/20/ge-sasaeruren-noge/</id>
+    <published>2020-07-20T11:31:00.000Z</published>
+    <updated>2020-08-20T12:08:43.039Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;歌手：back
+        
+      
+    
+    </summary>
+    
+      <category term="歌单" scheme="http://seaantwh.github.io/categories/%E6%AD%8C%E5%8D%95/"/>
+    
+    
+      <category term="歌单" scheme="http://seaantwh.github.io/tags/%E6%AD%8C%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>歌—ぼくら（城镇青年ED)</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge/ge-bokura-cheng-zhen-qing-nian-ed/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge/ge-bokura-cheng-zhen-qing-nian-ed/</id>
+    <link href="http://seaantwh.github.io/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/"/>
+    <id>http://seaantwh.github.io/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/</id>
     <published>2020-07-20T11:31:00.000Z</published>
     <updated>2020-08-20T12:19:21.582Z</updated>
     
@@ -467,8 +467,8 @@
   
   <entry>
     <title>歌—サイ</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge/ge-sai/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge/ge-sai/</id>
+    <link href="http://seaantwh.github.io/2020/07/20/ge-sai/"/>
+    <id>http://seaantwh.github.io/2020/07/20/ge-sai/</id>
     <published>2020-07-20T11:31:00.000Z</published>
     <updated>2020-08-20T12:23:28.192Z</updated>
     
@@ -493,8 +493,8 @@
   
   <entry>
     <title>歌—猫</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge/ge-mao/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge/ge-mao/</id>
+    <link href="http://seaantwh.github.io/2020/07/20/ge-mao/"/>
+    <id>http://seaantwh.github.io/2020/07/20/ge-mao/</id>
     <published>2020-07-20T11:31:00.000Z</published>
     <updated>2020-08-20T12:13:51.782Z</updated>
     
@@ -519,8 +519,8 @@
   
   <entry>
     <title>仿bing</title>
-    <link href="http://seaantwh.github.io/2020/07/17/web-lian-xi/fang-bing/"/>
-    <id>http://seaantwh.github.io/2020/07/17/web-lian-xi/fang-bing/</id>
+    <link href="http://seaantwh.github.io/2020/07/17/fang-bing/"/>
+    <id>http://seaantwh.github.io/2020/07/17/fang-bing/</id>
     <published>2020-07-17T07:40:00.000Z</published>
     <updated>2020-09-04T08:13:51.091Z</updated>
     
@@ -550,8 +550,8 @@
   
   <entry>
     <title>2020书单</title>
-    <link href="http://seaantwh.github.io/2020/07/11/shu-dan/2020-shu-dan/"/>
-    <id>http://seaantwh.github.io/2020/07/11/shu-dan/2020-shu-dan/</id>
+    <link href="http://seaantwh.github.io/2020/07/11/2020-shu-dan/"/>
+    <id>http://seaantwh.github.io/2020/07/11/2020-shu-dan/</id>
     <published>2020-07-11T08:25:00.000Z</published>
     <updated>2020-09-02T14:06:22.540Z</updated>
     
