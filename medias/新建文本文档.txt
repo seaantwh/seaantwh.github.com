@@ -1,0 +1,2 @@
+logo.png   https://ftp.bmp.ovh/imgs/2020/10/a0291e8065046ee8.png
+favicon.png  https://ftp.bmp.ovh/imgs/2020/10/483dbbb1bf1022f1.png
