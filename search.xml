@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>登录页</title>
+      <link href="/2020/10/19/deng-lu-ye/"/>
+      <url>/2020/10/19/deng-lu-ye/</url>
+      
+        <content type="html"><![CDATA[<pre><code>​```&lt;!doctype html&gt;&lt;html&gt;&lt;head&gt;    &lt;meta charset=&quot;utf-8&quot;&gt;    &lt;title&gt;login&lt;/title&gt;    &lt;style&gt;        * {            padding: 0;            margin: 0;        }        #bg-pho {            background-image: url(&quot;wallhaven-6k2ogx.jpg&quot;);            position: absolute;            top: 0;            left: 0;            width: 100%;            height: 100%;            z-index: -10;            background-size: cover;        }        .box {            position: absolute;            top: 25%;            left: 33%;            height: 17em;            width: 27em;            background-color: hsla(17, 34%, 31%, 0.8);            box-shadow: 10px 10px 15px#141216;            border-radius: 2em;        }        .loginText {            text-align: center;            margin-top: 1em;            margin-bottom: 0.1em;            font-size: 1.5em;            font-weight: 600;            font-family: Baskerville, &quot;Palatino Linotype&quot;, Palatino, &quot;Century Schoolbook L&quot;, &quot;Times New Roman&quot;, &quot;serif&quot;;        }        .inputBox,        .submitBox {            float: left;            outline: none;            /*清除input被点中后出现外边框*/            height: 2.3em;            width: 15em;            text-align: center;            border: 0.2em solid #53868B;            border-radius: 1em;            margin-left: 8.5em;            margin-top: 1.5em;        }        .submitBox:hover {            background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);        }    &lt;/style&gt;&lt;/head&gt;&lt;body&gt;    &lt;div class=&quot;box&quot;&gt;        &lt;form action=&quot;#&quot;&gt;            &lt;p class=&quot;loginText&quot;&gt;Welcome&lt;/p&gt;            &lt;input class=&quot;inputBox&quot; type=&quot;text&quot; name=&quot;userName&quot; placeholder=&quot;Username&quot;&gt;            &lt;input class=&quot;inputBox&quot; type=&quot;password&quot; name=&quot;userPassword&quot; placeholder=&quot;Password&quot;&gt;            &lt;input class=&quot;submitBox&quot; type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;login&quot;&gt;        &lt;/form&gt;    &lt;/div&gt;    &lt;div id=&quot;bg-pho&quot;&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;</code></pre><p>​```</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> web </category>
+          
+          <category> 练习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> css </tag>
+            
+            <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的练习导航页</title>
       <link href="/2020/10/15/wo-de-lian-xi-jian-dan-ye/"/>
       <url>/2020/10/15/wo-de-lian-xi-jian-dan-ye/</url>
@@ -14,6 +43,8 @@
       <categories>
           
           <category> web </category>
+          
+          <category> 练习 </category>
           
       </categories>
       
@@ -42,6 +73,8 @@
           
           <category> web </category>
           
+          <category> 练习 </category>
+          
       </categories>
       
       
@@ -69,6 +102,8 @@
           
           <category> web </category>
           
+          <category> 练习 </category>
+          
       </categories>
       
       
@@ -95,6 +130,8 @@
       <categories>
           
           <category> web </category>
+          
+          <category> 练习 </category>
           
       </categories>
       
@@ -162,11 +199,11 @@
     
     
     <entry>
-      <title>html总结3</title>
-      <link href="/2020/07/21/html-zong-jie-3/"/>
-      <url>/2020/07/21/html-zong-jie-3/</url>
+      <title>html总结2</title>
+      <link href="/2020/07/21/html-zong-jie-2/"/>
+      <url>/2020/07/21/html-zong-jie-2/</url>
       
-        <content type="html"><![CDATA[<h2 id="图像-lt-img-gt"><a href="#图像-lt-img-gt" class="headerlink" title="图像&lt;img&gt;"></a>图像<code>&lt;img&gt;</code></h2><h3 id="基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt"><a href="#基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt" class="headerlink" title="基本语法 &lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;"></a>基本语法 <code>&lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;</code></h3><ul><li>url可以是相对路径或绝对路径</li><li>text内容用作浏览器无法加载图像时对图像的描述</li></ul><h3 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h3><ul><li><p><code>&lt;body  background=&quot;url&quot;&gt;&lt;/body&gt;</code></p></li><li><p>使用CSS样式</p><ul><li><p>background-image:url(“图片地址”)</p></li><li><p>background-repeat:</p><ul><li>repeat-x   在x轴方向重复</li><li>repeat-y   在y轴方向重复</li><li>norepeat   没有重复</li></ul></li><li><p>background-size:</p><ul><li>400px   500px     像素</li><li>50% 80%   百分比</li></ul></li><li><p>background-position:</p></li></ul></li></ul><h3 id="align属性-排列图像"><a href="#align属性-排列图像" class="headerlink" title="align属性(排列图像)"></a>align属性(排列图像)</h3><ul><li><code>&lt;img src=&quot;&quot; align=&quot;bottom&quot;/&gt;   底部(默认)</code></li><li><code>&lt;img  src=&quot;&quot; align=&quot;middle&quot;/&gt;   中间</code></li><li><code>&lt;img src=&quot;&quot;  align=&quot;top&quot;/&gt;   顶部</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;left&quot;/&gt;   向左浮动</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;right&quot;/&gt;  向右浮动</code></li></ul><h3 id="图像大小"><a href="#图像大小" class="headerlink" title="图像大小"></a>图像大小</h3><ul><li><code>&lt;img src=&quot;&quot;  width=&quot;43&quot;  height=&quot;43&quot;/&gt;</code></li><li>直接数字指定的是像素，也可以指定百分比</li></ul><h3 id="创建图像映射"><a href="#创建图像映射" class="headerlink" title="创建图像映射"></a>创建图像映射</h3><p>创建带有可供点击区域的图像地图。<br>其中的每个区域都是一个超级链接。</p><ul><li><code>&lt;img src=&quot;&quot; border=&quot;0&quot; usemap=&quot;#maxmap&quot; alt=&quot;maxmap&quot; /&gt;注1</code></li></ul><pre><code>&lt;map name=&quot;planetmap&quot; id=&quot;planetmap&quot;&gt;       &lt;area shape=&quot;circle&quot; coords=&quot;180,139,14&quot; href =&quot;url1.jpg&quot; alt=&quot;map1&quot; /&gt;  注2        &lt;area shape=&quot;circle&quot; coords=&quot;129,161,10&quot; href =&quot;url2.jpg&quot; alt=&quot;map2&quot; /&gt;        &lt;area shape=&quot;rect&quot; coords=&quot;0,0,110,260&quot; href =&quot;url3.jpg&quot; alt=&quot;map3&quot; /&gt;&lt;/map&gt;</code></pre><pre><code>- 注解1    - 加载图像地图，`usemap`属性引用了`map`元素中的`name`或`id`属性(取决与浏览器)，所以应该在`map`元素中同时添加`name`或`id`属性。- 注解2    - &quot;shape&quot;属性——形状，可以是圆，三角形，矩形，多边形；    - &quot;coords&quot;属性——坐标，        - 以图像左上角为原点, 圆  coords=&quot;x,y,r&quot;                              矩形  coords=&quot;x1,y1,x2,y2&quot; 两组对角的坐标                             多边形  coords=&quot;x1,y1,x2,y2,x3,y3,&quot;&#39;&#39;&#39;,&quot;              - 多边形会自动封闭，因此在列表的结尾不需要重复第一个坐标来闭合整个区域。        - 如果某个 area 标签中的坐标和其他区域发生了重叠，会优先采用最先出现的 area 标签。        - 浏览器会忽略超过图像边界范围之外的坐标。</code></pre><h2 id="媒体"><a href="#媒体" class="headerlink" title="媒体"></a>媒体</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><ul><li><p>embed标签</p><p><code>&lt;object&gt;</code> 元素定义了在 HTML 文档中嵌入的对象，如Java 小程序, PDF 阅读器, Flash 播放器),图像,网页等.</p><ul><li><code>&lt;embed type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;</code></li></ul></li><li><p>object标签</p><p><code>&lt;object&gt;</code>标签用于包含对象，比如图像、音频、视频、Java applets、ActiveX、PDF 以及 Flash。<br>不要对图像使用 <code>&lt;object&gt;</code> 标签，请使用 <imf>标签代替。</imf></p><ul><li><p><code>&lt;object  type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;100&quot; heigth=&quot;100&quot;&gt;text&lt;/object&gt;</code></p><p>无法播放时会加载text文本</p></li></ul></li><li><p>audio标签</p><ul><li><p>基本语法   <code>&lt;audio src=&quot;&quot;  controls=&quot;controls&quot;&gt;text&lt;/audio&gt;</code></p></li><li><p>加载多个源</p><p>从第一个源开始，直到找到第一个能播放的，且只能播放一个</p><p>-<code>&lt;audio  controls&gt;&lt;source  src=&quot;url1.mp3&quot;/&gt;&lt;source  src=&quot;url1.ogg&quot;/&gt;&lt;embed  src=&quot;url.mp3/&gt; text&lt;/audio&gt;</code></p></li></ul></li></ul><ul><li><p>属性</p><ul><li>autoplay  音频在就绪后马上播放。</li><li>controls     向用户显示音频控件(比如播放/暂停按钮)</li><li>loop  每当音频结束时重新开始播放。</li><li>muted   音频输出为静音</li></ul></li></ul><ul><li>js插件</li><li>audio+embed+object</li></ul><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><ul><li><p>embed标签</p></li><li><p>object标签</p></li><li><p>video标签</p><ul><li>类似与audio</li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>HTML 元素可以设置属性<br>属性可以在元素中添加附加信息<br>属性一般描述于开始标签<br>属性总是以名称/值对的形式出现，比如：<code>name=&quot;value&quot;</code>。</p><h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><ul><li><p>规定元素的类名</p><p>class 属性大多数时候用于指向样式表中的类（class）。<br>不过，也可以利用它通过 JavaScript 来改变带有指定 class 的 HTML 元素。<br>类名不能以数字开头！</p></li><li><p>class 属性不能在以下 HTML 元素中使用：base, head, html, meta, param, script, style 以及 title。</p><p>元素赋予多个 class，例如：<code>&lt;span class=&quot;left_menu important&quot;&gt;</code>。<br>在css中以<code>.classname</code>来引用全部，也可以具体引用，如 <code>p.classname  h1.classname</code>。<br>classname不能以数字开头，只能以字母或下划线开头。区分大小写·。</p></li></ul><h3 id="id"><a href="#id" class="headerlink" title="id"></a>id</h3><ul><li><p>规定元素唯一的id(类似与身份证号)</p><p>命名：<br>必须以字母 A-Z 或 a-z 开头<br>其后的字符：<code>字母(A-Za-z)、数字(0-9)、连字符(&quot;-&quot;)、下划线(&quot;_&quot;)、冒号(&quot;:&quot;) 以及点号(&quot;.&quot;)</code><br>区分大小写。</p></li><li><p>通过 <code>#.idname</code> 在CSS中引用</p><p>id 属性可用作链接锚（link anchor），通过 JavaScript（HTML DOM）或通过 CSS 为带有指定 id 的元素改变或添加样式</p></li></ul><pre><code>- 语法：`&lt;a name=&quot;label&quot;&gt;锚(显示在页面上的文本)&lt;/a&gt;`  name 属性规定锚（anchor）的名称。  锚也可以是图片等。  当使用锚时，我们可以创建直接跳至该锚(比如页面中某个小节)的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了。  可以使用 id 属性来替代 name 属性，命名锚同样有效。- 实例：创建一个锚`&lt; a name=&quot;anwser&quot;&gt;这是答案&lt;a&gt;`    - 同一个文档中创建指向该锚的链接：`&lt;a href=&quot;#this&quot;&gt;隐藏在本文的答案&lt;/a&gt;`    - 其它文档中创建指向该锚的链接：`&lt;a href=&quot;https://www.seaantwh.top/#this&gt; 前往其它文档寻找答案&lt;a&gt;`</code></pre><h3 id="title"><a href="#title" class="headerlink" title="title"></a>title</h3><ul><li><p>规定元素的额外信息（可在工具提示中显示）</p><p>这些额外信息通常会在鼠标移到元素上时显示一段工具提示文本（tooltip text）。</p></li></ul><h3 id="style"><a href="#style" class="headerlink" title="style"></a>style</h3><pre><code>- 规定元素行内样式   style 属性将覆盖任何全局的样式设定，例如在 &lt;style&gt; 标签或在外部样式表中规定的样式。  `&lt;element style=&quot;style_definitions&quot;&gt;`，多个CSS属性和值用分号隔开。</code></pre><h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><h2 id="链接-lt-a-gt-lt-a-gt"><a href="#链接-lt-a-gt-lt-a-gt" class="headerlink" title="链接 &lt;a&gt;&lt;/a&gt;"></a>链接 <code>&lt;a&gt;&lt;/a&gt;</code></h2><h3 id="创建链接"><a href="#创建链接" class="headerlink" title="创建链接"></a>创建链接</h3><ul><li><p>href属性</p><ul><li><p>语法：<code>&lt;a href=&quot;url&quot;&gt;Link text&lt;/a&gt;</code></p><p>url 可以为相对路径或绝对路径</p></li><li><p>Link text 可以为文本，图片，其它HTML元素等</p></li></ul></li><li><p>name属性</p><h3 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h3></li></ul><p>规定在何处打开链接文档。<br>如果在一个<code>&lt;a&gt;</code>标签内包含一个 target 属性，浏览器将会载入和显示用这个标签的 href 属性命名的、名称与这个目标吻合的框架或者窗口中的文档。如果这个指定名称或 id 的框架或者窗口不存在，浏览器将打开一个新的窗口，给这个窗口一个指定的标记，然后将新的文档载入那个窗口。从此以后，超链接文档就可以指向这个新的窗口。</p><ul><li><p>打开新窗口</p><ul><li><p><code>&lt;a href=&quot;url&quot;  target=&quot;目标名&quot;&gt;内容&lt;a&gt;</code></p><p>若没有以此目标为名的窗口将打开新窗口，并将这个窗口标记为这个名字。</p></li></ul></li><li><p>在框架中打开窗口</p><p>在一个 <code>&lt;frameset&gt;</code> 显示中将超链接内容定向到一个或者多个框架中。<br>将这个内容列表放入一个带有两个框架的文档的其中一个框架中<br>并用相邻的框架来显示选定的文档</p><ul><li><p>在一个 <code>&lt;frameset&gt;</code>显示中将超链接内容定向到一个或者多个框架中。</p></li><li><pre><code>&lt;h3&gt;Table of Contents&lt;/h3&gt;&lt;ul&gt;      &lt;li&gt;&lt;a href=&quot;pref.html&quot; target=&quot;view_frame&quot;&gt;Preface&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap1.html&quot; target=&quot;view_frame&quot;&gt;Chapter 1&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap2.html&quot; target=&quot;view_frame&quot;&gt;Chapter 2&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap3.html&quot; target=&quot;view_frame&quot;&gt;Chapter 3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre></li><li><p>将这个内容列表放入一个带有两个框架的文档的其中一个框架中，并用相邻的框架来显示选定的文档</p></li></ul></li></ul><pre><code>    &lt;frameset cols=&quot;20%  80%&quot;&gt;      &lt;frame src=&quot;toc.html&quot;&gt;      &lt;frame src=&quot;pref.html&quot; name=&quot;view_frame&quot;&gt;    &lt;/frameset&gt;</code></pre><ul><li><p>保留的目标名</p><p>这些 target 的所有 4 个值都以下划线开始。任何其他用一个下划线作为开头的窗口或者目标都会被浏览器忽略，因此，不要将下划线作为文档中定义的任何框架 name 或 id 的第一个字符。</p><ul><li><p><code>_blank</code></p><ul><li>浏览器总在一个新打开、未命名的窗口中载入目标文档。</li></ul></li><li><p><code>_self</code></p><ul><li>对没有指定目标的为默认</li><li>在原来框架或窗口打开文档</li></ul></li><li><p><code>_parent</code></p><ul><li>这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。</li><li>如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效。</li></ul></li><li><p><code>_top</code></p><ul><li>这个目标使得文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口。</li></ul></li><li><p>当网页没有框架时，<code>target=&quot;_self&quot;</code>和<code>target=&quot;_parent&quot;</code>以及<code>target=&quot;_top&quot;</code>三种方式的显示方式几乎相同。</p></li></ul></li></ul><h3 id="创建电子邮件"><a href="#创建电子邮件" class="headerlink" title="创建电子邮件"></a>创建电子邮件</h3><p>如果用户的计算机上没有安装电子邮件客户端，则无法发送电子邮件。</p><ul><li><p>基本语法</p><ul><li><code>&lt;a href=&quot;mailto:电子邮件地址”&gt;Link text&lt;/a&gt;</code></li></ul></li><li><p>使用参数</p><ul><li>to    收信人，多个用 ；隔开</li><li>cc   抄送，多个用 ；隔开</li><li>bcc 暗抄送，多个用 ；隔开</li><li>subject   主题</li><li>body  内容<br>```</li></ul></li></ul>]]></content>
       
       
       <categories>
@@ -212,11 +249,11 @@
     
     
     <entry>
-      <title>html总结2</title>
-      <link href="/2020/07/21/html-zong-jie-2/"/>
-      <url>/2020/07/21/html-zong-jie-2/</url>
+      <title>html总结3</title>
+      <link href="/2020/07/21/html-zong-jie-3/"/>
+      <url>/2020/07/21/html-zong-jie-3/</url>
       
-        <content type="html"><![CDATA[<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>HTML 元素可以设置属性<br>属性可以在元素中添加附加信息<br>属性一般描述于开始标签<br>属性总是以名称/值对的形式出现，比如：<code>name=&quot;value&quot;</code>。</p><h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><ul><li><p>规定元素的类名</p><p>class 属性大多数时候用于指向样式表中的类（class）。<br>不过，也可以利用它通过 JavaScript 来改变带有指定 class 的 HTML 元素。<br>类名不能以数字开头！</p></li><li><p>class 属性不能在以下 HTML 元素中使用：base, head, html, meta, param, script, style 以及 title。</p><p>元素赋予多个 class，例如：<code>&lt;span class=&quot;left_menu important&quot;&gt;</code>。<br>在css中以<code>.classname</code>来引用全部，也可以具体引用，如 <code>p.classname  h1.classname</code>。<br>classname不能以数字开头，只能以字母或下划线开头。区分大小写·。</p></li></ul><h3 id="id"><a href="#id" class="headerlink" title="id"></a>id</h3><ul><li><p>规定元素唯一的id(类似与身份证号)</p><p>命名：<br>必须以字母 A-Z 或 a-z 开头<br>其后的字符：<code>字母(A-Za-z)、数字(0-9)、连字符(&quot;-&quot;)、下划线(&quot;_&quot;)、冒号(&quot;:&quot;) 以及点号(&quot;.&quot;)</code><br>区分大小写。</p></li><li><p>通过 <code>#.idname</code> 在CSS中引用</p><p>id 属性可用作链接锚（link anchor），通过 JavaScript（HTML DOM）或通过 CSS 为带有指定 id 的元素改变或添加样式</p></li></ul><pre><code>- 语法：`&lt;a name=&quot;label&quot;&gt;锚(显示在页面上的文本)&lt;/a&gt;`  name 属性规定锚（anchor）的名称。  锚也可以是图片等。  当使用锚时，我们可以创建直接跳至该锚(比如页面中某个小节)的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了。  可以使用 id 属性来替代 name 属性，命名锚同样有效。- 实例：创建一个锚`&lt; a name=&quot;anwser&quot;&gt;这是答案&lt;a&gt;`    - 同一个文档中创建指向该锚的链接：`&lt;a href=&quot;#this&quot;&gt;隐藏在本文的答案&lt;/a&gt;`    - 其它文档中创建指向该锚的链接：`&lt;a href=&quot;https://www.seaantwh.top/#this&gt; 前往其它文档寻找答案&lt;a&gt;`</code></pre><h3 id="title"><a href="#title" class="headerlink" title="title"></a>title</h3><ul><li><p>规定元素的额外信息（可在工具提示中显示）</p><p>这些额外信息通常会在鼠标移到元素上时显示一段工具提示文本（tooltip text）。</p></li></ul><h3 id="style"><a href="#style" class="headerlink" title="style"></a>style</h3><pre><code>- 规定元素行内样式   style 属性将覆盖任何全局的样式设定，例如在 &lt;style&gt; 标签或在外部样式表中规定的样式。  `&lt;element style=&quot;style_definitions&quot;&gt;`，多个CSS属性和值用分号隔开。</code></pre><h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><h2 id="链接-lt-a-gt-lt-a-gt"><a href="#链接-lt-a-gt-lt-a-gt" class="headerlink" title="链接 &lt;a&gt;&lt;/a&gt;"></a>链接 <code>&lt;a&gt;&lt;/a&gt;</code></h2><h3 id="创建链接"><a href="#创建链接" class="headerlink" title="创建链接"></a>创建链接</h3><ul><li><p>href属性</p><ul><li><p>语法：<code>&lt;a href=&quot;url&quot;&gt;Link text&lt;/a&gt;</code></p><p>url 可以为相对路径或绝对路径</p></li><li><p>Link text 可以为文本，图片，其它HTML元素等</p></li></ul></li><li><p>name属性</p><h3 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h3></li></ul><p>规定在何处打开链接文档。<br>如果在一个<code>&lt;a&gt;</code>标签内包含一个 target 属性，浏览器将会载入和显示用这个标签的 href 属性命名的、名称与这个目标吻合的框架或者窗口中的文档。如果这个指定名称或 id 的框架或者窗口不存在，浏览器将打开一个新的窗口，给这个窗口一个指定的标记，然后将新的文档载入那个窗口。从此以后，超链接文档就可以指向这个新的窗口。</p><ul><li><p>打开新窗口</p><ul><li><p><code>&lt;a href=&quot;url&quot;  target=&quot;目标名&quot;&gt;内容&lt;a&gt;</code></p><p>若没有以此目标为名的窗口将打开新窗口，并将这个窗口标记为这个名字。</p></li></ul></li><li><p>在框架中打开窗口</p><p>在一个 <code>&lt;frameset&gt;</code> 显示中将超链接内容定向到一个或者多个框架中。<br>将这个内容列表放入一个带有两个框架的文档的其中一个框架中<br>并用相邻的框架来显示选定的文档</p><ul><li><p>在一个 <code>&lt;frameset&gt;</code>显示中将超链接内容定向到一个或者多个框架中。</p></li><li><pre><code>&lt;h3&gt;Table of Contents&lt;/h3&gt;&lt;ul&gt;      &lt;li&gt;&lt;a href=&quot;pref.html&quot; target=&quot;view_frame&quot;&gt;Preface&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap1.html&quot; target=&quot;view_frame&quot;&gt;Chapter 1&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap2.html&quot; target=&quot;view_frame&quot;&gt;Chapter 2&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap3.html&quot; target=&quot;view_frame&quot;&gt;Chapter 3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre></li><li><p>将这个内容列表放入一个带有两个框架的文档的其中一个框架中，并用相邻的框架来显示选定的文档</p></li></ul></li></ul><pre><code>    &lt;frameset cols=&quot;20%  80%&quot;&gt;      &lt;frame src=&quot;toc.html&quot;&gt;      &lt;frame src=&quot;pref.html&quot; name=&quot;view_frame&quot;&gt;    &lt;/frameset&gt;</code></pre><ul><li><p>保留的目标名</p><p>这些 target 的所有 4 个值都以下划线开始。任何其他用一个下划线作为开头的窗口或者目标都会被浏览器忽略，因此，不要将下划线作为文档中定义的任何框架 name 或 id 的第一个字符。</p><ul><li><p><code>_blank</code></p><ul><li>浏览器总在一个新打开、未命名的窗口中载入目标文档。</li></ul></li><li><p><code>_self</code></p><ul><li>对没有指定目标的为默认</li><li>在原来框架或窗口打开文档</li></ul></li><li><p><code>_parent</code></p><ul><li>这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。</li><li>如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效。</li></ul></li><li><p><code>_top</code></p><ul><li>这个目标使得文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口。</li></ul></li><li><p>当网页没有框架时，<code>target=&quot;_self&quot;</code>和<code>target=&quot;_parent&quot;</code>以及<code>target=&quot;_top&quot;</code>三种方式的显示方式几乎相同。</p></li></ul></li></ul><h3 id="创建电子邮件"><a href="#创建电子邮件" class="headerlink" title="创建电子邮件"></a>创建电子邮件</h3><p>如果用户的计算机上没有安装电子邮件客户端，则无法发送电子邮件。</p><ul><li><p>基本语法</p><ul><li><code>&lt;a href=&quot;mailto:电子邮件地址”&gt;Link text&lt;/a&gt;</code></li></ul></li><li><p>使用参数</p><ul><li>to    收信人，多个用 ；隔开</li><li>cc   抄送，多个用 ；隔开</li><li>bcc 暗抄送，多个用 ；隔开</li><li>subject   主题</li><li>body  内容<br>```</li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="图像-lt-img-gt"><a href="#图像-lt-img-gt" class="headerlink" title="图像&lt;img&gt;"></a>图像<code>&lt;img&gt;</code></h2><h3 id="基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt"><a href="#基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt" class="headerlink" title="基本语法 &lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;"></a>基本语法 <code>&lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;</code></h3><ul><li>url可以是相对路径或绝对路径</li><li>text内容用作浏览器无法加载图像时对图像的描述</li></ul><h3 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h3><ul><li><p><code>&lt;body  background=&quot;url&quot;&gt;&lt;/body&gt;</code></p></li><li><p>使用CSS样式</p><ul><li><p>background-image:url(“图片地址”)</p></li><li><p>background-repeat:</p><ul><li>repeat-x   在x轴方向重复</li><li>repeat-y   在y轴方向重复</li><li>norepeat   没有重复</li></ul></li><li><p>background-size:</p><ul><li>400px   500px     像素</li><li>50% 80%   百分比</li></ul></li><li><p>background-position:</p></li></ul></li></ul><h3 id="align属性-排列图像"><a href="#align属性-排列图像" class="headerlink" title="align属性(排列图像)"></a>align属性(排列图像)</h3><ul><li><code>&lt;img src=&quot;&quot; align=&quot;bottom&quot;/&gt;   底部(默认)</code></li><li><code>&lt;img  src=&quot;&quot; align=&quot;middle&quot;/&gt;   中间</code></li><li><code>&lt;img src=&quot;&quot;  align=&quot;top&quot;/&gt;   顶部</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;left&quot;/&gt;   向左浮动</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;right&quot;/&gt;  向右浮动</code></li></ul><h3 id="图像大小"><a href="#图像大小" class="headerlink" title="图像大小"></a>图像大小</h3><ul><li><code>&lt;img src=&quot;&quot;  width=&quot;43&quot;  height=&quot;43&quot;/&gt;</code></li><li>直接数字指定的是像素，也可以指定百分比</li></ul><h3 id="创建图像映射"><a href="#创建图像映射" class="headerlink" title="创建图像映射"></a>创建图像映射</h3><p>创建带有可供点击区域的图像地图。<br>其中的每个区域都是一个超级链接。</p><ul><li><code>&lt;img src=&quot;&quot; border=&quot;0&quot; usemap=&quot;#maxmap&quot; alt=&quot;maxmap&quot; /&gt;注1</code></li></ul><pre><code>&lt;map name=&quot;planetmap&quot; id=&quot;planetmap&quot;&gt;       &lt;area shape=&quot;circle&quot; coords=&quot;180,139,14&quot; href =&quot;url1.jpg&quot; alt=&quot;map1&quot; /&gt;  注2        &lt;area shape=&quot;circle&quot; coords=&quot;129,161,10&quot; href =&quot;url2.jpg&quot; alt=&quot;map2&quot; /&gt;        &lt;area shape=&quot;rect&quot; coords=&quot;0,0,110,260&quot; href =&quot;url3.jpg&quot; alt=&quot;map3&quot; /&gt;&lt;/map&gt;</code></pre><pre><code>- 注解1    - 加载图像地图，`usemap`属性引用了`map`元素中的`name`或`id`属性(取决与浏览器)，所以应该在`map`元素中同时添加`name`或`id`属性。- 注解2    - &quot;shape&quot;属性——形状，可以是圆，三角形，矩形，多边形；    - &quot;coords&quot;属性——坐标，        - 以图像左上角为原点, 圆  coords=&quot;x,y,r&quot;                              矩形  coords=&quot;x1,y1,x2,y2&quot; 两组对角的坐标                             多边形  coords=&quot;x1,y1,x2,y2,x3,y3,&quot;&#39;&#39;&#39;,&quot;              - 多边形会自动封闭，因此在列表的结尾不需要重复第一个坐标来闭合整个区域。        - 如果某个 area 标签中的坐标和其他区域发生了重叠，会优先采用最先出现的 area 标签。        - 浏览器会忽略超过图像边界范围之外的坐标。</code></pre><h2 id="媒体"><a href="#媒体" class="headerlink" title="媒体"></a>媒体</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><ul><li><p>embed标签</p><p><code>&lt;object&gt;</code> 元素定义了在 HTML 文档中嵌入的对象，如Java 小程序, PDF 阅读器, Flash 播放器),图像,网页等.</p><ul><li><code>&lt;embed type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;</code></li></ul></li><li><p>object标签</p><p><code>&lt;object&gt;</code>标签用于包含对象，比如图像、音频、视频、Java applets、ActiveX、PDF 以及 Flash。<br>不要对图像使用 <code>&lt;object&gt;</code> 标签，请使用 <imf>标签代替。</imf></p><ul><li><p><code>&lt;object  type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;100&quot; heigth=&quot;100&quot;&gt;text&lt;/object&gt;</code></p><p>无法播放时会加载text文本</p></li></ul></li><li><p>audio标签</p><ul><li><p>基本语法   <code>&lt;audio src=&quot;&quot;  controls=&quot;controls&quot;&gt;text&lt;/audio&gt;</code></p></li><li><p>加载多个源</p><p>从第一个源开始，直到找到第一个能播放的，且只能播放一个</p><p>-<code>&lt;audio  controls&gt;&lt;source  src=&quot;url1.mp3&quot;/&gt;&lt;source  src=&quot;url1.ogg&quot;/&gt;&lt;embed  src=&quot;url.mp3/&gt; text&lt;/audio&gt;</code></p></li></ul></li></ul><ul><li><p>属性</p><ul><li>autoplay  音频在就绪后马上播放。</li><li>controls     向用户显示音频控件(比如播放/暂停按钮)</li><li>loop  每当音频结束时重新开始播放。</li><li>muted   音频输出为静音</li></ul></li></ul><ul><li>js插件</li><li>audio+embed+object</li></ul><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><ul><li><p>embed标签</p></li><li><p>object标签</p></li><li><p>video标签</p><ul><li>类似与audio</li></ul></li></ul>]]></content>
       
       
       <categories>
@@ -312,31 +349,6 @@
     
     
     <entry>
-      <title>歌—Happy Birthday</title>
-      <link href="/2020/07/20/ge-happy-birthday/"/>
-      <url>/2020/07/20/ge-happy-birthday/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：back number<br><strong><em>いつの間にやら日付は変わって</em></strong><br>不知不觉日期就变化了<br><strong><em>なんで年って取るんだろう</em></strong><br>岁数为什么要增长呢<br><strong><em>もう背は伸びないくせに</em></strong><br>明明不会再长高了<br><strong><em>着信の音で飛び起きたけど損したな</em></strong><br>亏我听到消息提示音 一下就坐了起来<br><strong><em>君かと思ったのに</em></strong><br>还以为是你呢</p><p><strong><em>何かの手違いで</em></strong><br>会不会在什么阴差阳错下<br><strong><em>好きになってくれないかな</em></strong><br>你喜欢上我呢<br><strong><em>どうにも君のいない場所は</em></strong><br>总觉得你不在的地方<br><strong><em>空気が薄くてさ</em></strong><br>连空气都来得稀薄啊</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>愛が何かは知らないけれど</em></strong><br>虽然不知道爱是什么<br><strong><em>好きと言う名前の痛みになら詳しいかも</em></strong><br>但也许对名为喜欢的疼痛却一清二楚<br><strong><em>君にも教えてあげたいけれど結局</em></strong><br>尽管也想教给你这种感受 但最终<br><strong><em>教わるのは俺だろう</em></strong><br>受教的还是我吧</p><p><strong><em>このまま今日が終わり明日が来れば</em></strong><br>像这样今天过去明天到来<br><strong><em>いつになっても縮まらないこの距離を</em></strong><br>无论何时始终无法缩短的距离<br><strong><em>駆け引きにも綱引きにもならないやり取りを</em></strong><br>谈不上恋爱战略或是此消彼长的你来我往<br><strong><em>もっと単純な名前で呼んであげられるよ</em></strong><br>想用更加单纯的名字呼唤你<br><strong><em>何ひとつ終われないけど</em></strong><br>尽管最后什么都解决不了</p><p><strong><em>つまらない言葉の繰り返しで</em></strong><br>重复着一些无聊的话语<br><strong><em>つじつまもきっと合ってない物語の続きに</em></strong><br>来推进前后完全矛盾的故事后续<br><strong><em>ひとりよがりの毎日に</em></strong><br>在自命清高的每一天<br><strong><em>ハッピーバースデー</em></strong><br>仅仅希望你能对我说<br><strong><em>君に言って欲しいだけ</em></strong><br>生日快乐</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>歌—ONE&#39;s hope</title>
       <link href="/2020/07/20/ge-one-s-hope/"/>
       <url>/2020/07/20/ge-one-s-hope/</url>
@@ -362,11 +374,36 @@
     
     
     <entry>
-      <title>歌—ささえる人の歌</title>
-      <link href="/2020/07/20/ge-sasaeruren-noge/"/>
-      <url>/2020/07/20/ge-sasaeruren-noge/</url>
+      <title>歌—Happy Birthday</title>
+      <link href="/2020/07/20/ge-happy-birthday/"/>
+      <url>/2020/07/20/ge-happy-birthday/</url>
       
-        <content type="html"><![CDATA[<p>歌手：back number<br><strong><em>元気で毎日暮らしてますか</em></strong><br>有健康地过好每天吗<br><strong><em>朝は起きられているのでしょうか</em></strong><br>早上能不赖床了吗<br><strong><em>野菜もきちんと食べていますか</em></strong><br>蔬菜也有好好吃了吗<br><strong><em>つらい想いはしてませんか</em></strong><br>没有受到委屈吧<br><strong><em>頑張ってって言いながら</em></strong><br>我口头说着“加油啊”<br><strong><em>あまり無理しないでねって</em></strong><br>心里头却正想着<br><strong><em>思っています</em></strong><br>“不要太勉强了啊”<br><strong><em>心配になる事も寂しくなる事も</em></strong><br>虽然时常会有<br><strong><em>あるけど</em></strong><br>担心和寂寞<br><strong><em>元気でいてくれたら</em></strong><br>但只要你身体健康<br><strong><em>愛する人がどこにいても</em></strong><br>爱你的人无论在何处<br><strong><em>心から笑えますように</em></strong><br>都会从心中微笑<br><strong><em>少しくらい嫌な事があっても</em></strong><br>就算是有点讨厌的事情<br><strong><em>今日を笑って終えてくれたなら</em></strong><br>今天笑着把它完成的话<br><strong><em>ただそれだけで</em></strong><br>仅仅就这样<br><strong><em>それだけでいい</em></strong><br>便就足够了<br><strong><em>こっちは心配いらないから</em></strong><br>不需要担心这边<br><strong><em>たまに疲れたら帰っておいで</em></strong><br>偶尔累了便回来一趟吧<br><strong><em>あなたの好きなものを作って</em></strong><br>因为我做了你喜欢的东西<br><strong><em>待っているから</em></strong><br>等着你<br><strong><em>人生は一度だから</em></strong><br>人生只有一次<br><strong><em>自分が思うように</em></strong><br>好好为自己着想<br><strong><em>生きるのもいい</em></strong><br>为自己生存也好<br><strong><em>本当は出世なんて</em></strong><br>其实“出人头地”什么的<br><strong><em>してもしなくてもいいんだよ</em></strong><br>没有成功也不要紧啊<br><strong><em>間違えたっていい</em></strong><br>弄错了也无妨<br><strong><em>そのままでいい</em></strong><br>就那样足够了<br><strong><em>愛する人がどこにいても</em></strong><br>爱你的人无论在哪<br><strong><em>心から笑えますように</em></strong><br>都会在心中替你高兴<br><strong><em>少しくらい嫌な事があっても</em></strong><br>就算是有点讨厌的事情<br><strong><em>今日を笑って終えてくれたなら</em></strong><br>今天把它笑着完成的话<br><strong><em>ただそれだけで</em></strong><br>便足够了<br><strong><em>それだけでいい</em></strong><br>只要那样就足够了<br><strong><em>こっちは心配いらないから</em></strong><br>这边不需要担心<br><strong><em>たまに疲れたら帰っておいで</em></strong><br>偶尔感到疲倦的话便回来吧<br><strong><em>あなたの好きなものを作って</em></strong><br>因为做了你喜欢的东西<br><strong><em>待っているから</em></strong><br>等着你呢<br><strong><em>待っているから</em></strong><br>等着你呢</p>]]></content>
+        <content type="html"><![CDATA[<p>歌手：back number<br><strong><em>いつの間にやら日付は変わって</em></strong><br>不知不觉日期就变化了<br><strong><em>なんで年って取るんだろう</em></strong><br>岁数为什么要增长呢<br><strong><em>もう背は伸びないくせに</em></strong><br>明明不会再长高了<br><strong><em>着信の音で飛び起きたけど損したな</em></strong><br>亏我听到消息提示音 一下就坐了起来<br><strong><em>君かと思ったのに</em></strong><br>还以为是你呢</p><p><strong><em>何かの手違いで</em></strong><br>会不会在什么阴差阳错下<br><strong><em>好きになってくれないかな</em></strong><br>你喜欢上我呢<br><strong><em>どうにも君のいない場所は</em></strong><br>总觉得你不在的地方<br><strong><em>空気が薄くてさ</em></strong><br>连空气都来得稀薄啊</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>愛が何かは知らないけれど</em></strong><br>虽然不知道爱是什么<br><strong><em>好きと言う名前の痛みになら詳しいかも</em></strong><br>但也许对名为喜欢的疼痛却一清二楚<br><strong><em>君にも教えてあげたいけれど結局</em></strong><br>尽管也想教给你这种感受 但最终<br><strong><em>教わるのは俺だろう</em></strong><br>受教的还是我吧</p><p><strong><em>このまま今日が終わり明日が来れば</em></strong><br>像这样今天过去明天到来<br><strong><em>いつになっても縮まらないこの距離を</em></strong><br>无论何时始终无法缩短的距离<br><strong><em>駆け引きにも綱引きにもならないやり取りを</em></strong><br>谈不上恋爱战略或是此消彼长的你来我往<br><strong><em>もっと単純な名前で呼んであげられるよ</em></strong><br>想用更加单纯的名字呼唤你<br><strong><em>何ひとつ終われないけど</em></strong><br>尽管最后什么都解决不了</p><p><strong><em>つまらない言葉の繰り返しで</em></strong><br>重复着一些无聊的话语<br><strong><em>つじつまもきっと合ってない物語の続きに</em></strong><br>来推进前后完全矛盾的故事后续<br><strong><em>ひとりよがりの毎日に</em></strong><br>在自命清高的每一天<br><strong><em>ハッピーバースデー</em></strong><br>仅仅希望你能对我说<br><strong><em>君に言って欲しいだけ</em></strong><br>生日快乐</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 歌单 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 歌单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>歌—サイ</title>
+      <link href="/2020/07/20/ge-sai/"/>
+      <url>/2020/07/20/ge-sai/</url>
+      
+        <content type="html"><![CDATA[<p>歌手：DECO<em>27 / ef<br>**</em>僕は それが 見えるように<strong>*<br>我还是能看见<br>*</strong>白く吐いた息のキャンパスに<strong>*<br>吐出的白色气息在校园中<br>*</strong>肌色重ねた***<br>肤色重叠</p><p><strong><em>君に それを見てほしくて</em></strong><br>想要你看见它<br><strong><em>赤と黄色 僕のパレットに</em></strong><br>红色和黄色的我的调色板<br><strong><em>君色作った</em></strong><br>做了你的颜色</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その姿は分からないの</em></strong><br>不明白那个身姿<br><strong><em>無くさないで 探さないで</em></strong><br>不用再寻找了<br><strong><em>僕が探して君に見せるから</em></strong><br>因为我会找来给你看的</p><p><strong><em>「そうなんだ」って言ってやった</em></strong><br>说了“是那样的”<br><strong><em>僕は君の言葉に沿って</em></strong><br>我沿着你的话<br><strong><em>そんな感じで逃げてきたの</em></strong><br>以这样的感觉逃避了<br><strong><em>「なんなんだ」って言ってやった</em></strong><br>说了“怎么回事”<br><strong><em>僕は気付いてないフリした</em></strong><br>我假装察觉不到了<br><strong><em>「そんなんやだ」って君は笑ってたけど・・・</em></strong><br>“这样啊。”你笑着，不过・・・</p><p><strong><em>アタシ それが知りたくって</em></strong><br>我想知道<br><strong><em>白く吐いた息は please tell me.</em></strong><br>请告诉我白色的吐出的气息<br><strong><em>なんでさ、逃げるの？</em></strong><br>为什么会逃跑呢？</p><p><strong><em>キミは「描きたい絵がある」と</em></strong><br>你说 有想要描绘的画<br><strong><em>でもそれには色が足りないと</em></strong><br>不过这颜色不够<br><strong><em>筆を回していた</em></strong><br>笔转动了</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その涙の色はまさに</em></strong><br>那泪水的颜色正是<br><strong><em>ずっとずっと探していた</em></strong><br>一直寻找着的<br><strong><em>僕が恋した 君が見せた</em></strong><br>我爱上了你所见到的<br><strong><em>君が見せたから</em></strong><br>你所见到的</p><p><strong><em>「相談が・・・」って言ってやった</em></strong><br>“相谈···」说做的<br><strong><em>愛の罠に誘いこむように</em></strong><br>和爱的陷阱一样<br><strong><em>「なんなんだ」って思った君は</em></strong><br>“什么啊”这样想的你<br><strong><em>僕の袖をギュッと掴んだ</em></strong><br>紧紧地抓住我的袖子</p><p><strong><em>ねえ君に見せたいもの</em></strong><br>想让你看见的东西<br><strong><em>そう君に恋した色</em></strong><br>是与你相恋的颜色</p><p><strong><em>「そうなんだ」って泣き出した</em></strong><br>“是这样啊”哭出来了<br><strong><em>君の涙筆でなぞって</em></strong><br>用你的眼泪描绘出来<br><strong><em>僕の描いた君の絵に</em></strong><br>我所描绘的你的画<br><strong><em>足してみたんだ</em></strong><br>试着贴补了<br><strong><em>「遭難だ」って 笑ったんだ</em></strong><br>“遇难。”这样的笑了。<br><strong><em>僕らが迷い込んだ このキャンバスは</em></strong><br>我们所迷惑的这画布<br><strong><em>色で満たされてた 白い吐息の世界</em></strong><br>色彩填满了白色的吐息的世界</p>]]></content>
       
       
       <categories>
@@ -412,11 +449,11 @@
     
     
     <entry>
-      <title>歌—サイ</title>
-      <link href="/2020/07/20/ge-sai/"/>
-      <url>/2020/07/20/ge-sai/</url>
+      <title>歌—ささえる人の歌</title>
+      <link href="/2020/07/20/ge-sasaeruren-noge/"/>
+      <url>/2020/07/20/ge-sasaeruren-noge/</url>
       
-        <content type="html"><![CDATA[<p>歌手：DECO<em>27 / ef<br>**</em>僕は それが 見えるように<strong>*<br>我还是能看见<br>*</strong>白く吐いた息のキャンパスに<strong>*<br>吐出的白色气息在校园中<br>*</strong>肌色重ねた***<br>肤色重叠</p><p><strong><em>君に それを見てほしくて</em></strong><br>想要你看见它<br><strong><em>赤と黄色 僕のパレットに</em></strong><br>红色和黄色的我的调色板<br><strong><em>君色作った</em></strong><br>做了你的颜色</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その姿は分からないの</em></strong><br>不明白那个身姿<br><strong><em>無くさないで 探さないで</em></strong><br>不用再寻找了<br><strong><em>僕が探して君に見せるから</em></strong><br>因为我会找来给你看的</p><p><strong><em>「そうなんだ」って言ってやった</em></strong><br>说了“是那样的”<br><strong><em>僕は君の言葉に沿って</em></strong><br>我沿着你的话<br><strong><em>そんな感じで逃げてきたの</em></strong><br>以这样的感觉逃避了<br><strong><em>「なんなんだ」って言ってやった</em></strong><br>说了“怎么回事”<br><strong><em>僕は気付いてないフリした</em></strong><br>我假装察觉不到了<br><strong><em>「そんなんやだ」って君は笑ってたけど・・・</em></strong><br>“这样啊。”你笑着，不过・・・</p><p><strong><em>アタシ それが知りたくって</em></strong><br>我想知道<br><strong><em>白く吐いた息は please tell me.</em></strong><br>请告诉我白色的吐出的气息<br><strong><em>なんでさ、逃げるの？</em></strong><br>为什么会逃跑呢？</p><p><strong><em>キミは「描きたい絵がある」と</em></strong><br>你说 有想要描绘的画<br><strong><em>でもそれには色が足りないと</em></strong><br>不过这颜色不够<br><strong><em>筆を回していた</em></strong><br>笔转动了</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その涙の色はまさに</em></strong><br>那泪水的颜色正是<br><strong><em>ずっとずっと探していた</em></strong><br>一直寻找着的<br><strong><em>僕が恋した 君が見せた</em></strong><br>我爱上了你所见到的<br><strong><em>君が見せたから</em></strong><br>你所见到的</p><p><strong><em>「相談が・・・」って言ってやった</em></strong><br>“相谈···」说做的<br><strong><em>愛の罠に誘いこむように</em></strong><br>和爱的陷阱一样<br><strong><em>「なんなんだ」って思った君は</em></strong><br>“什么啊”这样想的你<br><strong><em>僕の袖をギュッと掴んだ</em></strong><br>紧紧地抓住我的袖子</p><p><strong><em>ねえ君に見せたいもの</em></strong><br>想让你看见的东西<br><strong><em>そう君に恋した色</em></strong><br>是与你相恋的颜色</p><p><strong><em>「そうなんだ」って泣き出した</em></strong><br>“是这样啊”哭出来了<br><strong><em>君の涙筆でなぞって</em></strong><br>用你的眼泪描绘出来<br><strong><em>僕の描いた君の絵に</em></strong><br>我所描绘的你的画<br><strong><em>足してみたんだ</em></strong><br>试着贴补了<br><strong><em>「遭難だ」って 笑ったんだ</em></strong><br>“遇难。”这样的笑了。<br><strong><em>僕らが迷い込んだ このキャンバスは</em></strong><br>我们所迷惑的这画布<br><strong><em>色で満たされてた 白い吐息の世界</em></strong><br>色彩填满了白色的吐息的世界</p>]]></content>
+        <content type="html"><![CDATA[<p>歌手：back number<br><strong><em>元気で毎日暮らしてますか</em></strong><br>有健康地过好每天吗<br><strong><em>朝は起きられているのでしょうか</em></strong><br>早上能不赖床了吗<br><strong><em>野菜もきちんと食べていますか</em></strong><br>蔬菜也有好好吃了吗<br><strong><em>つらい想いはしてませんか</em></strong><br>没有受到委屈吧<br><strong><em>頑張ってって言いながら</em></strong><br>我口头说着“加油啊”<br><strong><em>あまり無理しないでねって</em></strong><br>心里头却正想着<br><strong><em>思っています</em></strong><br>“不要太勉强了啊”<br><strong><em>心配になる事も寂しくなる事も</em></strong><br>虽然时常会有<br><strong><em>あるけど</em></strong><br>担心和寂寞<br><strong><em>元気でいてくれたら</em></strong><br>但只要你身体健康<br><strong><em>愛する人がどこにいても</em></strong><br>爱你的人无论在何处<br><strong><em>心から笑えますように</em></strong><br>都会从心中微笑<br><strong><em>少しくらい嫌な事があっても</em></strong><br>就算是有点讨厌的事情<br><strong><em>今日を笑って終えてくれたなら</em></strong><br>今天笑着把它完成的话<br><strong><em>ただそれだけで</em></strong><br>仅仅就这样<br><strong><em>それだけでいい</em></strong><br>便就足够了<br><strong><em>こっちは心配いらないから</em></strong><br>不需要担心这边<br><strong><em>たまに疲れたら帰っておいで</em></strong><br>偶尔累了便回来一趟吧<br><strong><em>あなたの好きなものを作って</em></strong><br>因为我做了你喜欢的东西<br><strong><em>待っているから</em></strong><br>等着你<br><strong><em>人生は一度だから</em></strong><br>人生只有一次<br><strong><em>自分が思うように</em></strong><br>好好为自己着想<br><strong><em>生きるのもいい</em></strong><br>为自己生存也好<br><strong><em>本当は出世なんて</em></strong><br>其实“出人头地”什么的<br><strong><em>してもしなくてもいいんだよ</em></strong><br>没有成功也不要紧啊<br><strong><em>間違えたっていい</em></strong><br>弄错了也无妨<br><strong><em>そのままでいい</em></strong><br>就那样足够了<br><strong><em>愛する人がどこにいても</em></strong><br>爱你的人无论在哪<br><strong><em>心から笑えますように</em></strong><br>都会在心中替你高兴<br><strong><em>少しくらい嫌な事があっても</em></strong><br>就算是有点讨厌的事情<br><strong><em>今日を笑って終えてくれたなら</em></strong><br>今天把它笑着完成的话<br><strong><em>ただそれだけで</em></strong><br>便足够了<br><strong><em>それだけでいい</em></strong><br>只要那样就足够了<br><strong><em>こっちは心配いらないから</em></strong><br>这边不需要担心<br><strong><em>たまに疲れたら帰っておいで</em></strong><br>偶尔感到疲倦的话便回来吧<br><strong><em>あなたの好きなものを作って</em></strong><br>因为做了你喜欢的东西<br><strong><em>待っているから</em></strong><br>等着你呢<br><strong><em>待っているから</em></strong><br>等着你呢</p>]]></content>
       
       
       <categories>
@@ -473,6 +510,8 @@
           
           <category> web </category>
           
+          <category> 练习 </category>
+          
       </categories>
       
       
@@ -524,6 +563,8 @@
       <categories>
           
           <category> web </category>
+          
+          <category> 练习 </category>
           
       </categories>
       

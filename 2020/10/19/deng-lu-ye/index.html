@@ -4,14 +4,18 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="html总结2, 怪默">
+    <meta name="keywords" content="登录页, 怪默">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="属性HTML 元素可以设置属性属性可以在元素中添加附加信息属性一般描述于开始标签属性总是以名称/值对的形式出现，比如：name=&amp;quot;value&amp;quot;。
-class
-规定元素的类名
-class 属性大多数时候用于指向样式表中的类">
+    <meta name="description" content="​```
+
+&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;
+
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;login">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -19,7 +23,7 @@ class 属性大多数时候用于指向样式表中的类">
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>html总结2 | 怪默</title>
+    <title>登录页 | 怪默</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -312,7 +316,7 @@ class 属性大多数时候用于指向样式表中的类">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        html总结2
+                        登录页
                     </div>
                 </div>
             </div>
@@ -423,6 +427,10 @@ class 属性大多数时候用于指向样式表中的类">
                     
                     <div class="article-tag">
                         
+                        <a href="/tags/css/" target="_blank">
+                            <span class="chip bg-color">css</span>
+                        </a>
+                        
                         <a href="/tags/html/" target="_blank">
                             <span class="chip bg-color">html</span>
                         </a>
@@ -439,6 +447,10 @@ class 属性大多数时候用于指向样式表中的类">
                             web
                         </a>
                         
+                        <a href="/categories/web/练习/" class="post-category" target="_blank">
+                            练习
+                        </a>
+                        
                     </div>
                     
                 </div>
@@ -447,7 +459,7 @@ class 属性大多数时候用于指向样式表中的类">
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-07-21
+                    2020-10-19
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -461,14 +473,14 @@ class 属性大多数时候用于指向样式表中的类">
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.6k
+                    295
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    6 分
+                    1 分
                 </div>
                 
                 
@@ -484,131 +496,86 @@ class 属性大多数时候用于指向样式表中的类">
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>HTML 元素可以设置属性<br>属性可以在元素中添加附加信息<br>属性一般描述于开始标签<br>属性总是以名称/值对的形式出现，比如：<code>name=&quot;value&quot;</code>。</p>
-<h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><ul>
-<li><p>规定元素的类名</p>
-<p>class 属性大多数时候用于指向样式表中的类（class）。<br>不过，也可以利用它通过 JavaScript 来改变带有指定 class 的 HTML 元素。<br>类名不能以数字开头！</p>
-</li>
-<li><p>class 属性不能在以下 HTML 元素中使用：base, head, html, meta, param, script, style 以及 title。</p>
-<p>元素赋予多个 class，例如：<code>&lt;span class=&quot;left_menu important&quot;&gt;</code>。<br>在css中以<code>.classname</code>来引用全部，也可以具体引用，如 <code>p.classname  h1.classname</code>。<br>classname不能以数字开头，只能以字母或下划线开头。区分大小写·。</p>
-</li>
-</ul>
-<h3 id="id"><a href="#id" class="headerlink" title="id"></a>id</h3><ul>
-<li><p>规定元素唯一的id(类似与身份证号)</p>
-<p>命名：<br>必须以字母 A-Z 或 a-z 开头<br>其后的字符：<code>字母(A-Za-z)、数字(0-9)、连字符(&quot;-&quot;)、下划线(&quot;_&quot;)、冒号(&quot;:&quot;) 以及点号(&quot;.&quot;)</code><br>区分大小写。</p>
-</li>
-<li><p>通过 <code>#.idname</code> 在CSS中引用</p>
-<p>id 属性可用作链接锚（link anchor），通过 JavaScript（HTML DOM）或通过 CSS 为带有指定 id 的元素改变或添加样式</p>
-</li>
-</ul>
-<pre><code>- 语法：`&lt;a name=&quot;label&quot;&gt;锚(显示在页面上的文本)&lt;/a&gt;`
+                <pre><code>​```
 
-  name 属性规定锚（anchor）的名称。
-  锚也可以是图片等。
-  当使用锚时，我们可以创建直接跳至该锚(比如页面中某个小节)的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了。
-  可以使用 id 属性来替代 name 属性，命名锚同样有效。
+&lt;!doctype html&gt;
+&lt;html&gt;
 
-- 实例：创建一个锚`&lt; a name=&quot;anwser&quot;&gt;这是答案&lt;a&gt;`
+&lt;head&gt;
+    &lt;meta charset=&quot;utf-8&quot;&gt;
+    &lt;title&gt;login&lt;/title&gt;
+    &lt;style&gt;
+        * {
+            padding: 0;
+            margin: 0;
+        }
 
-    - 同一个文档中创建指向该锚的链接：`&lt;a href=&quot;#this&quot;&gt;隐藏在本文的答案&lt;/a&gt;`
-    - 其它文档中创建指向该锚的链接：`&lt;a href=&quot;https://www.seaantwh.top/#this&gt; 前往其它文档寻找答案&lt;a&gt;`</code></pre><h3 id="title"><a href="#title" class="headerlink" title="title"></a>title</h3><ul>
-<li><p>规定元素的额外信息（可在工具提示中显示）</p>
-<p>这些额外信息通常会在鼠标移到元素上时显示一段工具提示文本（tooltip text）。</p>
-</li>
-</ul>
-<h3 id="style"><a href="#style" class="headerlink" title="style"></a>style</h3><pre><code>- 规定元素行内样式
+        #bg-pho {
+            background-image: url(&quot;wallhaven-6k2ogx.jpg&quot;);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -10;
+            background-size: cover;
+        }
 
-   style 属性将覆盖任何全局的样式设定，例如在 &lt;style&gt; 标签或在外部样式表中规定的样式。
-  `&lt;element style=&quot;style_definitions&quot;&gt;`，多个CSS属性和值用分号隔开。</code></pre><h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><h2 id="链接-lt-a-gt-lt-a-gt"><a href="#链接-lt-a-gt-lt-a-gt" class="headerlink" title="链接 &lt;a&gt;&lt;/a&gt;"></a>链接 <code>&lt;a&gt;&lt;/a&gt;</code></h2><h3 id="创建链接"><a href="#创建链接" class="headerlink" title="创建链接"></a>创建链接</h3><ul>
-<li><p>href属性</p>
-<ul>
-<li><p>语法：<code>&lt;a href=&quot;url&quot;&gt;Link text&lt;/a&gt;</code></p>
-<p>url 可以为相对路径或绝对路径</p>
-</li>
-<li><p>Link text 可以为文本，图片，其它HTML元素等</p>
-</li>
-</ul>
-</li>
-<li><p>name属性</p>
-<h3 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h3></li>
-</ul>
-<p>规定在何处打开链接文档。<br>如果在一个<code>&lt;a&gt;</code>标签内包含一个 target 属性，浏览器将会载入和显示用这个标签的 href 属性命名的、名称与这个目标吻合的框架或者窗口中的文档。如果这个指定名称或 id 的框架或者窗口不存在，浏览器将打开一个新的窗口，给这个窗口一个指定的标记，然后将新的文档载入那个窗口。从此以后，超链接文档就可以指向这个新的窗口。</p>
-<ul>
-<li><p>打开新窗口</p>
-<ul>
-<li><p><code>&lt;a href=&quot;url&quot;  target=&quot;目标名&quot;&gt;内容&lt;a&gt;</code></p>
-<p>若没有以此目标为名的窗口将打开新窗口，并将这个窗口标记为这个名字。</p>
-</li>
-</ul>
-</li>
-<li><p>在框架中打开窗口</p>
-<p>在一个 <code>&lt;frameset&gt;</code> 显示中将超链接内容定向到一个或者多个框架中。<br>将这个内容列表放入一个带有两个框架的文档的其中一个框架中<br>并用相邻的框架来显示选定的文档</p>
-<ul>
-<li><p>在一个 <code>&lt;frameset&gt;</code>显示中将超链接内容定向到一个或者多个框架中。</p>
-</li>
-<li><pre><code>&lt;h3&gt;Table of Contents&lt;/h3&gt;
-&lt;ul&gt;  
-    &lt;li&gt;&lt;a href=&quot;pref.html&quot; target=&quot;view_frame&quot;&gt;Preface&lt;/a&gt;&lt;/li&gt;  
-    &lt;li&gt;&lt;a href=&quot;chap1.html&quot; target=&quot;view_frame&quot;&gt;Chapter 1&lt;/a&gt;&lt;/li&gt;  
-    &lt;li&gt;&lt;a href=&quot;chap2.html&quot; target=&quot;view_frame&quot;&gt;Chapter 2&lt;/a&gt;&lt;/li&gt;  
-    &lt;li&gt;&lt;a href=&quot;chap3.html&quot; target=&quot;view_frame&quot;&gt;Chapter 3&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</code></pre></li>
-<li><p>将这个内容列表放入一个带有两个框架的文档的其中一个框架中，并用相邻的框架来显示选定的文档</p>
-</li>
-</ul>
-</li>
-</ul>
-<pre><code>    &lt;frameset cols=&quot;20%  80%&quot;&gt;
-      &lt;frame src=&quot;toc.html&quot;&gt;
-      &lt;frame src=&quot;pref.html&quot; name=&quot;view_frame&quot;&gt;
-    &lt;/frameset&gt;</code></pre><ul>
-<li><p>保留的目标名</p>
-<p>这些 target 的所有 4 个值都以下划线开始。任何其他用一个下划线作为开头的窗口或者目标都会被浏览器忽略，因此，不要将下划线作为文档中定义的任何框架 name 或 id 的第一个字符。</p>
-<ul>
-<li><p><code>_blank</code></p>
-<ul>
-<li>浏览器总在一个新打开、未命名的窗口中载入目标文档。</li>
-</ul>
-</li>
-<li><p><code>_self</code></p>
-<ul>
-<li>对没有指定目标的为默认</li>
-<li>在原来框架或窗口打开文档</li>
-</ul>
-</li>
-<li><p><code>_parent</code></p>
-<ul>
-<li>这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。</li>
-<li>如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效。</li>
-</ul>
-</li>
-<li><p><code>_top</code></p>
-<ul>
-<li>这个目标使得文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口。</li>
-</ul>
-</li>
-<li><p>当网页没有框架时，<code>target=&quot;_self&quot;</code>和<code>target=&quot;_parent&quot;</code>以及<code>target=&quot;_top&quot;</code>三种方式的显示方式几乎相同。</p>
-</li>
-</ul>
-</li>
-</ul>
-<h3 id="创建电子邮件"><a href="#创建电子邮件" class="headerlink" title="创建电子邮件"></a>创建电子邮件</h3><p>如果用户的计算机上没有安装电子邮件客户端，则无法发送电子邮件。</p>
-<ul>
-<li><p>基本语法</p>
-<ul>
-<li><code>&lt;a href=&quot;mailto:电子邮件地址”&gt;Link text&lt;/a&gt;</code></li>
-</ul>
-</li>
-<li><p>使用参数</p>
-<ul>
-<li>to    收信人，多个用 ；隔开</li>
-<li>cc   抄送，多个用 ；隔开</li>
-<li>bcc 暗抄送，多个用 ；隔开</li>
-<li>subject   主题</li>
-<li>body  内容<br>```</li>
-</ul>
-</li>
-</ul>
+        .box {
+            position: absolute;
+            top: 25%;
+            left: 33%;
+            height: 17em;
+            width: 27em;
+            background-color: hsla(17, 34%, 31%, 0.8);
+            box-shadow: 10px 10px 15px#141216;
+            border-radius: 2em;
+        }
+
+        .loginText {
+            text-align: center;
+            margin-top: 1em;
+            margin-bottom: 0.1em;
+            font-size: 1.5em;
+            font-weight: 600;
+            font-family: Baskerville, &quot;Palatino Linotype&quot;, Palatino, &quot;Century Schoolbook L&quot;, &quot;Times New Roman&quot;, &quot;serif&quot;;
+        }
+
+        .inputBox,
+        .submitBox {
+            float: left;
+            outline: none;
+            /*清除input被点中后出现外边框*/
+            height: 2.3em;
+            width: 15em;
+            text-align: center;
+            border: 0.2em solid #53868B;
+            border-radius: 1em;
+            margin-left: 8.5em;
+            margin-top: 1.5em;
+        }
+
+        .submitBox:hover {
+            background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div class=&quot;box&quot;&gt;
+        &lt;form action=&quot;#&quot;&gt;
+            &lt;p class=&quot;loginText&quot;&gt;Welcome&lt;/p&gt;
+            &lt;input class=&quot;inputBox&quot; type=&quot;text&quot; name=&quot;userName&quot; placeholder=&quot;Username&quot;&gt;
+            &lt;input class=&quot;inputBox&quot; type=&quot;password&quot; name=&quot;userPassword&quot; placeholder=&quot;Password&quot;&gt;
+            &lt;input class=&quot;submitBox&quot; type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;login&quot;&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+    &lt;div id=&quot;bg-pho&quot;&gt;&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+
+</code></pre><p>​```</p>
 
             </div>
             <hr />
@@ -643,9 +610,9 @@ class 属性大多数时候用于指向样式表中的类">
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《html总结2》
+                    《登录页》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/07/21/html-zong-jie-2/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/10/19/deng-lu-ye/" property="cc:attributionName"
                rel="cc:attributionURL">
                 怪默
             </a> 采用
@@ -685,29 +652,30 @@ class 属性大多数时候用于指向样式表中的类">
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/07/21/html-zong-jie-1/">
+                <a href="/2020/10/19/deng-lu-ye/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/4.png" class="responsive-img" alt="html总结1">
+                        <img src="/medias/featureimages/5.png" class="responsive-img" alt="登录页">
                         
-                        <span class="card-title">html总结1</span>
+                        <span class="card-title">登录页</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            html总结--基础,,元信息
+                            第五次练习
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-21
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-10-19
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
@@ -716,12 +684,21 @@ class 属性大多数时候用于指向样式表中的类">
                                     web
                                 </a>
                             
+                            <a href="/categories/web/练习/" class="post-category" target="_blank">
+                                    练习
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
+                    
+                    <a href="/tags/css/" target="_blank">
+                        <span class="chip bg-color">css</span>
+                    </a>
                     
                     <a href="/tags/html/" target="_blank">
                         <span class="chip bg-color">html</span>
@@ -738,24 +715,24 @@ class 属性大多数时候用于指向样式表中的类">
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/07/21/html-zong-jie-4/">
+                <a href="/2020/10/15/wo-de-lian-xi-jian-dan-ye/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="html总结4">
+                        <img src="/medias/featureimages/5.png" class="responsive-img" alt="我的练习导航页">
                         
-                        <span class="card-title">html总结4</span>
+                        <span class="card-title">我的练习导航页</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            html总结--表格与列表,,框架
+                            第四次练习
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-07-21
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-10-15
                             </span>
                         <span class="publish-author">
                             
@@ -765,12 +742,20 @@ class 属性大多数时候用于指向样式表中的类">
                                     web
                                 </a>
                             
+                            <a href="/categories/web/练习/" class="post-category" target="_blank">
+                                    练习
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
                 
                 <div class="card-action article-tags">
+                    
+                    <a href="/tags/css/" target="_blank">
+                        <span class="chip bg-color">css</span>
+                    </a>
                     
                     <a href="/tags/html/" target="_blank">
                         <span class="chip bg-color">html</span>
