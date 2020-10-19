@@ -22,9 +22,9 @@
       
         <tags>
             
-            <tag> css </tag>
-            
             <tag> html </tag>
+            
+            <tag> css </tag>
             
         </tags>
       
@@ -51,9 +51,9 @@
       
         <tags>
             
-            <tag> css </tag>
-            
             <tag> html </tag>
+            
+            <tag> css </tag>
             
         </tags>
       
@@ -80,9 +80,9 @@
       
         <tags>
             
-            <tag> css </tag>
-            
             <tag> html </tag>
+            
+            <tag> css </tag>
             
         </tags>
       
@@ -109,9 +109,9 @@
       
         <tags>
             
-            <tag> css </tag>
-            
             <tag> html </tag>
+            
+            <tag> css </tag>
             
         </tags>
       
@@ -138,9 +138,9 @@
       
         <tags>
             
-            <tag> css </tag>
-            
             <tag> html </tag>
+            
+            <tag> css </tag>
             
         </tags>
       
@@ -174,11 +174,11 @@
     
     
     <entry>
-      <title>html总结1</title>
-      <link href="/2020/07/21/html-zong-jie-1/"/>
-      <url>/2020/07/21/html-zong-jie-1/</url>
+      <title>html总结3</title>
+      <link href="/2020/07/21/html-zong-jie-3/"/>
+      <url>/2020/07/21/html-zong-jie-3/</url>
       
-        <content type="html"><![CDATA[<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><ul><li><code>&lt;h&gt;&lt;/h&gt;    从h1——h6</code></li><li>1.保证h1只使用一次<ul><li>2.按顺序表示</li><li>3.每个页面最好不超过三个标题</li></ul></li></ul><h3 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h3><ul><li><p><code>&lt;p&gt;&lt;/p&gt;</code></p><ul><li>1.p后面接数字无影响</li><li>2.段落里连续多个空格或换行最终只会变成一个</li><li>3.可以使用<code>&amp;nbsp</code>占位(可连续占位)</li><li>4.<br>可用于换行，无闭合标签,虽然标签<code>&lt;br&gt;</code>与<code>&lt;br/&gt;</code>作用相同，但<code>&lt;br&gt;</code>不符合标准。(注：自闭合标签<code>&gt;</code>前都加上<code>/</code>才符号w3c标准。)</li></ul></li></ul><h3 id="主体"><a href="#主体" class="headerlink" title="主体"></a>主体</h3><ul><li><p><code>&lt;body&gt;&lt;/body&gt;</code></p><ul><li>1.文档主体部分，即可显示部分</li></ul></li></ul><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><ul><li><code>&lt;!--注释内容--&gt;</code></li></ul><h2 id="元信息"><a href="#元信息" class="headerlink" title="元信息"></a>元信息</h2><h3 id="lt-meta-gt-标签"><a href="#lt-meta-gt-标签" class="headerlink" title="&lt;meta&gt;标签"></a><code>&lt;meta&gt;</code>标签</h3><ul><li><p>属性</p><ul><li><p>name属性</p><p>name属性主要用于描述网页，与之对应的属性值为content，content中的内容主要是便于搜索引擎机器人查找信息和分类信息用的。</p><ul><li><code>&lt;meta  name=&quot;参数”  content=&quot;参数值&quot;&gt;</code></li></ul></li><li><p>http-equiv属性</p><p>http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容，与之对应的属性值为content，content中的内容其实就是各个参数的变量值。</p><ul><li><code>&lt;meta http-equiv=&quot;参数“ content=&quot;参数值&quot;&gt;</code></li></ul></li></ul></li><li><p>name属性参数</p><ul><li><p>Keywords</p><p>keywords用来告诉搜索引擎你网页的关键字是什么。</p><ul><li>例：<code>&lt;meta   name=&quot;keywords&quot; content=&quot;science,education,culture&quot;&gt;</code></li></ul></li><li><p>description</p><p>description用来告诉搜索引擎你的网站主要内容。</p><ul><li>例：<code>&lt;meta name=&quot;description&quot; content=&quot;This page is about the science&quot;&gt;</code></li></ul></li><li><p>robots</p><p>robots用来告诉搜索机器人哪些页面需要索引，哪些页面不需要索引。<br>content的参数有all,none,index,noindex,follow,nofollow。默认是all。</p><ul><li>例：<code>&lt;meta name=&quot;robots&quot; content=&quot;none&quot;&gt;</code></li></ul></li><li><p>author</p><p>标注网页的作者</p><ul><li>例：<code>&lt;meta name=&quot;autor&quot; content=&quot;怪默呀”&gt;</code></li></ul></li></ul></li><li><p>http-equiv属性参数</p><ul><li><p>Expires</p><p>用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。<br>必须使用GMT时间格式</p><ul><li>例：<code>&lt;meta http-equiv=&quot;expires&quot;  content=&quot;Fri , 12  Jun 2020  23:14:53 GMT&quot;&gt;</code></li></ul></li><li><p>Pragma(cache模式)</p><p>禁止浏览器从本地计算机的缓存中访问页面内容。<br>这样设定，访问者将无法脱机浏览。</p><ul><li>例：<code>&lt;meta  http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;</code> </li></ul></li><li><p>Refresh</p><p>自动刷新并指向新页面。</p><ul><li><p>例：<code>&lt;meta  http-equiv=&quot;Refresh&quot; content=&quot;2;URL=http://www.seaantwh.top&quot;&gt;</code></p><p>其中的2是指停留2秒钟后自动刷新到URL网址。</p></li></ul></li><li><p>Set-Cookie</p><p>cookie设定<br>如果网页过期，那么存盘的cookie将被删除。<br>必须使用GMT的时间格式。</p><ul><li>例：<code>&lt;meta  http-equiv=&quot;Set-Cookie&quot; content=&quot;cookievalue=xxx;expires=Friday, 12-Jun-2020 23:24:25  GMT；path=/&quot;&gt;</code> </li></ul></li><li><p>Window-target</p><p>强制页面在当前窗口以独立页面显示。<br>用来防止别人在框架里调用自己的页面。</p><ul><li>例：<code>&lt;meta http-equiv=&quot;Window-target&quot; content=&quot;_top&quot;&gt;</code> </li></ul></li><li><p>content-Type</p><p>设定页面使用的字符集。</p><ul><li><p>例：<code>&lt;meta http-equiv=&quot;content-Type&quot; content=&quot;text/html;charset=gb2312&quot;&gt;</code></p><p><code>&lt;metahttp-equiv=&quot;Content-Type&quot;content=&quot;text/html;charset=信息参数&quot;/&gt;</code><br><code>meta标签的charset的信息参数如GB2312时，代表说明网站是采用的编码是简体中文；</code><br><code>meta标签的charset的信息参数如BIG5时，代表说明网站是采用的编码是繁体中文；</code><br><code>meta标签的charset的信息参数如iso-2022-jp时，代表说明网站是采用的编码是日文；</code><br><code>meta标签的charset的信息参数如ks_c_5601时，代表说明网站是采用的编码是韩文；</code><br><code>meta标签的charset的信息参数如ISO-8859-1时，代表说明网站是采用的编码是英文；</code><br><code>meta标签的charset的信息参数如UTF-8时，代表世界通用的语言编码；</code></p></li></ul></li><li><p>content-Language</p><p>显示语言的设定</p><ul><li>例：<code>&lt;meta http-equiv=&quot;Content-Language&quot; content=&quot;zh-cn&quot;/&gt;</code> </li></ul></li><li><p>Cache-Control</p><p>Cache-Control指定请求和响应遵循的缓存机制。<br>在请求消息或响应消息中设置Cache-Control并不会修改另一个消息处理过程中的缓存处理过程。<br>请求时的缓存指令包括no-cache、no-store、max-age、max-stale、min-fresh、only-if-cached。<br>响应消息中的指令包括public、private、no-cache、no-store、no-transform、must-revalidate、proxy-revalidate、max-age。</p><ul><li><p>指令具体·含义</p><p>Public指示响应可被任何缓存区缓存<br>Private指示对于单个用户的整个或部分响应消息，不能被共享缓存处理。这允许服务器仅仅描述当用户的部分响应消息，此响应消息对于其他用户的请求无效 。<br>no-cache指示请求或响应消息不能缓存<br>no-store用于防止重要的信息被无意的发布。在请求消息中发送将使得请求和响应消息都不使用缓存。<br>max-age指示客户机可以接收生存期不大于指定时间（以秒为单位）的响应<br>min-fresh指示客户机可以接收响应时间小于当前时间加上指定时间的响应<br>max-stale指示客户机可以接收超出超时期间的响应消息。如果指定max-stale消息的值，那么客户机可以接收超出超时期指定值之内的响应消息。</p></li></ul></li></ul></li></ul><h3 id="lt-title-gt-lt-title-gt-标签"><a href="#lt-title-gt-lt-title-gt-标签" class="headerlink" title="&lt;title&gt;&lt;/title&gt;标签"></a><code>&lt;title&gt;&lt;/title&gt;</code>标签</h3><ul><li>显示在浏览器标题栏或标签页</li><li>包含在<code>&lt;head&gt;&lt;/head&gt;</code>里，只能有一个</li></ul><h3 id="lt-link-gt-标签"><a href="#lt-link-gt-标签" class="headerlink" title="&lt;link&gt;标签"></a><code>&lt;link&gt;</code>标签</h3><ul><li><p>自定义图标</p><ul><li><p><code>&lt;link  rel=&quot;shortcut icon&quot;  href=&quot;favicon.ico&quot; type=&quot;image/x-icon/png&quot;&gt;</code></p><p>其他类型：<br><code>&lt;!-- third-generation iPad with high-resolution Retina display: --&gt;</code><br><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png&quot;&gt;</code><br><code>&lt;!-- iPhone with high-resolution Retina display: --&gt;</code><br><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png&quot;&gt;</code><br><code>&lt;!-- first- and second-generation iPad: --&gt;</code><br><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png&quot;&gt;</code><br><code>&lt;!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --&gt;</code><br><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png&quot;&gt;</code><br><code>&lt;!-- basic favicon --&gt;</code><br><code>&lt;link rel=&quot;shortcut icon&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png&quot;&gt;</code></p></li></ul></li><li><p>CSS样式表</p><p>  -<code>&lt;link href=&quot;main.css&quot; rel=&quot;stylesheet&quot;&gt;</code></p></li><li><p>其它</p></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="图像-lt-img-gt"><a href="#图像-lt-img-gt" class="headerlink" title="图像&lt;img&gt;"></a>图像<code>&lt;img&gt;</code></h2><h3 id="基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt"><a href="#基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt" class="headerlink" title="基本语法 &lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;"></a>基本语法 <code>&lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;</code></h3><ul><li>url可以是相对路径或绝对路径</li><li>text内容用作浏览器无法加载图像时对图像的描述</li></ul><h3 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h3><ul><li><p><code>&lt;body  background=&quot;url&quot;&gt;&lt;/body&gt;</code></p></li><li><p>使用CSS样式</p><ul><li><p>background-image:url(“图片地址”)</p></li><li><p>background-repeat:</p><ul><li>repeat-x   在x轴方向重复</li><li>repeat-y   在y轴方向重复</li><li>norepeat   没有重复</li></ul></li><li><p>background-size:</p><ul><li>400px   500px     像素</li><li>50% 80%   百分比</li></ul></li><li><p>background-position:</p></li></ul></li></ul><h3 id="align属性-排列图像"><a href="#align属性-排列图像" class="headerlink" title="align属性(排列图像)"></a>align属性(排列图像)</h3><ul><li><code>&lt;img src=&quot;&quot; align=&quot;bottom&quot;/&gt;   底部(默认)</code></li><li><code>&lt;img  src=&quot;&quot; align=&quot;middle&quot;/&gt;   中间</code></li><li><code>&lt;img src=&quot;&quot;  align=&quot;top&quot;/&gt;   顶部</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;left&quot;/&gt;   向左浮动</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;right&quot;/&gt;  向右浮动</code></li></ul><h3 id="图像大小"><a href="#图像大小" class="headerlink" title="图像大小"></a>图像大小</h3><ul><li><code>&lt;img src=&quot;&quot;  width=&quot;43&quot;  height=&quot;43&quot;/&gt;</code></li><li>直接数字指定的是像素，也可以指定百分比</li></ul><h3 id="创建图像映射"><a href="#创建图像映射" class="headerlink" title="创建图像映射"></a>创建图像映射</h3><p>创建带有可供点击区域的图像地图。<br>其中的每个区域都是一个超级链接。</p><ul><li><code>&lt;img src=&quot;&quot; border=&quot;0&quot; usemap=&quot;#maxmap&quot; alt=&quot;maxmap&quot; /&gt;注1</code></li></ul><pre><code>&lt;map name=&quot;planetmap&quot; id=&quot;planetmap&quot;&gt;       &lt;area shape=&quot;circle&quot; coords=&quot;180,139,14&quot; href =&quot;url1.jpg&quot; alt=&quot;map1&quot; /&gt;  注2        &lt;area shape=&quot;circle&quot; coords=&quot;129,161,10&quot; href =&quot;url2.jpg&quot; alt=&quot;map2&quot; /&gt;        &lt;area shape=&quot;rect&quot; coords=&quot;0,0,110,260&quot; href =&quot;url3.jpg&quot; alt=&quot;map3&quot; /&gt;&lt;/map&gt;</code></pre><pre><code>- 注解1    - 加载图像地图，`usemap`属性引用了`map`元素中的`name`或`id`属性(取决与浏览器)，所以应该在`map`元素中同时添加`name`或`id`属性。- 注解2    - &quot;shape&quot;属性——形状，可以是圆，三角形，矩形，多边形；    - &quot;coords&quot;属性——坐标，        - 以图像左上角为原点, 圆  coords=&quot;x,y,r&quot;                              矩形  coords=&quot;x1,y1,x2,y2&quot; 两组对角的坐标                             多边形  coords=&quot;x1,y1,x2,y2,x3,y3,&quot;&#39;&#39;&#39;,&quot;              - 多边形会自动封闭，因此在列表的结尾不需要重复第一个坐标来闭合整个区域。        - 如果某个 area 标签中的坐标和其他区域发生了重叠，会优先采用最先出现的 area 标签。        - 浏览器会忽略超过图像边界范围之外的坐标。</code></pre><h2 id="媒体"><a href="#媒体" class="headerlink" title="媒体"></a>媒体</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><ul><li><p>embed标签</p><p><code>&lt;object&gt;</code> 元素定义了在 HTML 文档中嵌入的对象，如Java 小程序, PDF 阅读器, Flash 播放器),图像,网页等.</p><ul><li><code>&lt;embed type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;</code></li></ul></li><li><p>object标签</p><p><code>&lt;object&gt;</code>标签用于包含对象，比如图像、音频、视频、Java applets、ActiveX、PDF 以及 Flash。<br>不要对图像使用 <code>&lt;object&gt;</code> 标签，请使用 <imf>标签代替。</imf></p><ul><li><p><code>&lt;object  type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;100&quot; heigth=&quot;100&quot;&gt;text&lt;/object&gt;</code></p><p>无法播放时会加载text文本</p></li></ul></li><li><p>audio标签</p><ul><li><p>基本语法   <code>&lt;audio src=&quot;&quot;  controls=&quot;controls&quot;&gt;text&lt;/audio&gt;</code></p></li><li><p>加载多个源</p><p>从第一个源开始，直到找到第一个能播放的，且只能播放一个</p><p>-<code>&lt;audio  controls&gt;&lt;source  src=&quot;url1.mp3&quot;/&gt;&lt;source  src=&quot;url1.ogg&quot;/&gt;&lt;embed  src=&quot;url.mp3/&gt; text&lt;/audio&gt;</code></p></li></ul></li></ul><ul><li><p>属性</p><ul><li>autoplay  音频在就绪后马上播放。</li><li>controls     向用户显示音频控件(比如播放/暂停按钮)</li><li>loop  每当音频结束时重新开始播放。</li><li>muted   音频输出为静音</li></ul></li></ul><ul><li>js插件</li><li>audio+embed+object</li></ul><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><ul><li><p>embed标签</p></li><li><p>object标签</p></li><li><p>video标签</p><ul><li>类似与audio</li></ul></li></ul>]]></content>
       
       
       <categories>
@@ -249,36 +249,11 @@
     
     
     <entry>
-      <title>html总结3</title>
-      <link href="/2020/07/21/html-zong-jie-3/"/>
-      <url>/2020/07/21/html-zong-jie-3/</url>
+      <title>html总结1</title>
+      <link href="/2020/07/21/html-zong-jie-1/"/>
+      <url>/2020/07/21/html-zong-jie-1/</url>
       
-        <content type="html"><![CDATA[<h2 id="图像-lt-img-gt"><a href="#图像-lt-img-gt" class="headerlink" title="图像&lt;img&gt;"></a>图像<code>&lt;img&gt;</code></h2><h3 id="基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt"><a href="#基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt" class="headerlink" title="基本语法 &lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;"></a>基本语法 <code>&lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;</code></h3><ul><li>url可以是相对路径或绝对路径</li><li>text内容用作浏览器无法加载图像时对图像的描述</li></ul><h3 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h3><ul><li><p><code>&lt;body  background=&quot;url&quot;&gt;&lt;/body&gt;</code></p></li><li><p>使用CSS样式</p><ul><li><p>background-image:url(“图片地址”)</p></li><li><p>background-repeat:</p><ul><li>repeat-x   在x轴方向重复</li><li>repeat-y   在y轴方向重复</li><li>norepeat   没有重复</li></ul></li><li><p>background-size:</p><ul><li>400px   500px     像素</li><li>50% 80%   百分比</li></ul></li><li><p>background-position:</p></li></ul></li></ul><h3 id="align属性-排列图像"><a href="#align属性-排列图像" class="headerlink" title="align属性(排列图像)"></a>align属性(排列图像)</h3><ul><li><code>&lt;img src=&quot;&quot; align=&quot;bottom&quot;/&gt;   底部(默认)</code></li><li><code>&lt;img  src=&quot;&quot; align=&quot;middle&quot;/&gt;   中间</code></li><li><code>&lt;img src=&quot;&quot;  align=&quot;top&quot;/&gt;   顶部</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;left&quot;/&gt;   向左浮动</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;right&quot;/&gt;  向右浮动</code></li></ul><h3 id="图像大小"><a href="#图像大小" class="headerlink" title="图像大小"></a>图像大小</h3><ul><li><code>&lt;img src=&quot;&quot;  width=&quot;43&quot;  height=&quot;43&quot;/&gt;</code></li><li>直接数字指定的是像素，也可以指定百分比</li></ul><h3 id="创建图像映射"><a href="#创建图像映射" class="headerlink" title="创建图像映射"></a>创建图像映射</h3><p>创建带有可供点击区域的图像地图。<br>其中的每个区域都是一个超级链接。</p><ul><li><code>&lt;img src=&quot;&quot; border=&quot;0&quot; usemap=&quot;#maxmap&quot; alt=&quot;maxmap&quot; /&gt;注1</code></li></ul><pre><code>&lt;map name=&quot;planetmap&quot; id=&quot;planetmap&quot;&gt;       &lt;area shape=&quot;circle&quot; coords=&quot;180,139,14&quot; href =&quot;url1.jpg&quot; alt=&quot;map1&quot; /&gt;  注2        &lt;area shape=&quot;circle&quot; coords=&quot;129,161,10&quot; href =&quot;url2.jpg&quot; alt=&quot;map2&quot; /&gt;        &lt;area shape=&quot;rect&quot; coords=&quot;0,0,110,260&quot; href =&quot;url3.jpg&quot; alt=&quot;map3&quot; /&gt;&lt;/map&gt;</code></pre><pre><code>- 注解1    - 加载图像地图，`usemap`属性引用了`map`元素中的`name`或`id`属性(取决与浏览器)，所以应该在`map`元素中同时添加`name`或`id`属性。- 注解2    - &quot;shape&quot;属性——形状，可以是圆，三角形，矩形，多边形；    - &quot;coords&quot;属性——坐标，        - 以图像左上角为原点, 圆  coords=&quot;x,y,r&quot;                              矩形  coords=&quot;x1,y1,x2,y2&quot; 两组对角的坐标                             多边形  coords=&quot;x1,y1,x2,y2,x3,y3,&quot;&#39;&#39;&#39;,&quot;              - 多边形会自动封闭，因此在列表的结尾不需要重复第一个坐标来闭合整个区域。        - 如果某个 area 标签中的坐标和其他区域发生了重叠，会优先采用最先出现的 area 标签。        - 浏览器会忽略超过图像边界范围之外的坐标。</code></pre><h2 id="媒体"><a href="#媒体" class="headerlink" title="媒体"></a>媒体</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><ul><li><p>embed标签</p><p><code>&lt;object&gt;</code> 元素定义了在 HTML 文档中嵌入的对象，如Java 小程序, PDF 阅读器, Flash 播放器),图像,网页等.</p><ul><li><code>&lt;embed type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;</code></li></ul></li><li><p>object标签</p><p><code>&lt;object&gt;</code>标签用于包含对象，比如图像、音频、视频、Java applets、ActiveX、PDF 以及 Flash。<br>不要对图像使用 <code>&lt;object&gt;</code> 标签，请使用 <imf>标签代替。</imf></p><ul><li><p><code>&lt;object  type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;100&quot; heigth=&quot;100&quot;&gt;text&lt;/object&gt;</code></p><p>无法播放时会加载text文本</p></li></ul></li><li><p>audio标签</p><ul><li><p>基本语法   <code>&lt;audio src=&quot;&quot;  controls=&quot;controls&quot;&gt;text&lt;/audio&gt;</code></p></li><li><p>加载多个源</p><p>从第一个源开始，直到找到第一个能播放的，且只能播放一个</p><p>-<code>&lt;audio  controls&gt;&lt;source  src=&quot;url1.mp3&quot;/&gt;&lt;source  src=&quot;url1.ogg&quot;/&gt;&lt;embed  src=&quot;url.mp3/&gt; text&lt;/audio&gt;</code></p></li></ul></li></ul><ul><li><p>属性</p><ul><li>autoplay  音频在就绪后马上播放。</li><li>controls     向用户显示音频控件(比如播放/暂停按钮)</li><li>loop  每当音频结束时重新开始播放。</li><li>muted   音频输出为静音</li></ul></li></ul><ul><li>js插件</li><li>audio+embed+object</li></ul><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><ul><li><p>embed标签</p></li><li><p>object标签</p></li><li><p>video标签</p><ul><li>类似与audio</li></ul></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> web </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> html </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html总结6</title>
-      <link href="/2020/07/21/html-zong-jie-6/"/>
-      <url>/2020/07/21/html-zong-jie-6/</url>
-      
-        <content type="html"><![CDATA[<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><ul><li>header   定义文档或文档页眉</li><li>nav   定义导航链接的容器</li><li>section  定义文档的节</li><li>article  定义独立的自包含文章</li><li>aside  定义内容之外的内容(如侧栏)</li><li>footer  定义文档或节的页脚</li><li>details  定义细节</li><li>summary  定义details元素的细节</li></ul><h3 id="响应式设计-以可变的尺寸传递网页"><a href="#响应式设计-以可变的尺寸传递网页" class="headerlink" title="响应式设计(以可变的尺寸传递网页)"></a>响应式设计(以可变的尺寸传递网页)</h3><ul><li>自己设计</li><li>使用现成的CSS框架</li></ul><h3 id="块"><a href="#块" class="headerlink" title="块"></a>块</h3><p>块级元素在浏览器显示时，通常会以新行来开始（和结束）。<br>例子：<code>&lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;</code></p><p>内联元素在显示时通常不会以新行开始。<br>例子：<code>&lt;b&gt;, &lt;td&gt;, &lt;a&gt;, &lt;img&gt;</code></p><ul><li><p>div元素</p><ul><li><code>&lt;div&gt;</code> 可定义文档中的分区或节</li><li><code>&lt;div&gt;</code> 标签可以把文档分割为独立的、不同的部分。</li></ul></li><li><p>span元素</p><ul><li><code>&lt;span&gt;</code>标签被用来组合文档中的行内元素。</li></ul></li></ul><h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><ul><li><p>绝对路径</p><ul><li>绝对文件路径是指向一个因特网文件的完整 URL：</li><li>例：<code>&lt;img src=&quot;https://seaantwh/source/images/picture.jpg&quot; alt=&quot;star&quot;&gt;</code></li></ul></li><li><p>相对路径</p><ul><li><p>相对路径指向了相对于当前页面的文件。</p></li><li><p>实例</p><p>​          <code>&lt;img src=&quot;picture.jpg&quot;&gt;picture.jpg 位于与当前网页相同的文件夹</code></p><p>​         <code>&lt;img src=&quot;images/picture.jpg&quot;&gt;picture.jpg位于当前文件夹的images文件夹中</code></p><p>​        <code>&lt;img src=&quot;/images/picture.jpg&quot;&gt;picture.jpg当前站点根目录的images文件夹中</code></p><p>​        <code>&lt;img src=&quot;../picture.jpg&quot;&gt;    picture.jpg 位于当前文件夹的上一级文件夹中</code></p></li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><ul><li><code>&lt;h&gt;&lt;/h&gt;    从h1——h6</code></li><li>1.保证h1只使用一次<ul><li>2.按顺序表示</li><li>3.每个页面最好不超过三个标题</li></ul></li></ul><h3 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h3><ul><li><p><code>&lt;p&gt;&lt;/p&gt;</code></p><ul><li>1.p后面接数字无影响</li><li>2.段落里连续多个空格或换行最终只会变成一个</li><li>3.可以使用<code>&amp;nbsp</code>占位(可连续占位)</li><li>4.<br>可用于换行，无闭合标签,虽然标签<code>&lt;br&gt;</code>与<code>&lt;br/&gt;</code>作用相同，但<code>&lt;br&gt;</code>不符合标准。(注：自闭合标签<code>&gt;</code>前都加上<code>/</code>才符号w3c标准。)</li></ul></li></ul><h3 id="主体"><a href="#主体" class="headerlink" title="主体"></a>主体</h3><ul><li><p><code>&lt;body&gt;&lt;/body&gt;</code></p><ul><li>1.文档主体部分，即可显示部分</li></ul></li></ul><h3 id="注释"><a href="#注释" class="headerlink" title="注释"></a>注释</h3><ul><li><code>&lt;!--注释内容--&gt;</code></li></ul><h2 id="元信息"><a href="#元信息" class="headerlink" title="元信息"></a>元信息</h2><h3 id="lt-meta-gt-标签"><a href="#lt-meta-gt-标签" class="headerlink" title="&lt;meta&gt;标签"></a><code>&lt;meta&gt;</code>标签</h3><ul><li><p>属性</p><ul><li><p>name属性</p><p>name属性主要用于描述网页，与之对应的属性值为content，content中的内容主要是便于搜索引擎机器人查找信息和分类信息用的。</p><ul><li><code>&lt;meta  name=&quot;参数”  content=&quot;参数值&quot;&gt;</code></li></ul></li><li><p>http-equiv属性</p><p>http-equiv顾名思义，相当于http的文件头作用，它可以向浏览器传回一些有用的信息，以帮助正确和精确地显示网页内容，与之对应的属性值为content，content中的内容其实就是各个参数的变量值。</p><ul><li><code>&lt;meta http-equiv=&quot;参数“ content=&quot;参数值&quot;&gt;</code></li></ul></li></ul></li><li><p>name属性参数</p><ul><li><p>Keywords</p><p>keywords用来告诉搜索引擎你网页的关键字是什么。</p><ul><li>例：<code>&lt;meta   name=&quot;keywords&quot; content=&quot;science,education,culture&quot;&gt;</code></li></ul></li><li><p>description</p><p>description用来告诉搜索引擎你的网站主要内容。</p><ul><li>例：<code>&lt;meta name=&quot;description&quot; content=&quot;This page is about the science&quot;&gt;</code></li></ul></li><li><p>robots</p><p>robots用来告诉搜索机器人哪些页面需要索引，哪些页面不需要索引。<br>content的参数有all,none,index,noindex,follow,nofollow。默认是all。</p><ul><li>例：<code>&lt;meta name=&quot;robots&quot; content=&quot;none&quot;&gt;</code></li></ul></li><li><p>author</p><p>标注网页的作者</p><ul><li>例：<code>&lt;meta name=&quot;autor&quot; content=&quot;怪默呀”&gt;</code></li></ul></li></ul></li><li><p>http-equiv属性参数</p><ul><li><p>Expires</p><p>用于设定网页的到期时间。一旦网页过期，必须到服务器上重新传输。<br>必须使用GMT时间格式</p><ul><li>例：<code>&lt;meta http-equiv=&quot;expires&quot;  content=&quot;Fri , 12  Jun 2020  23:14:53 GMT&quot;&gt;</code></li></ul></li><li><p>Pragma(cache模式)</p><p>禁止浏览器从本地计算机的缓存中访问页面内容。<br>这样设定，访问者将无法脱机浏览。</p><ul><li>例：<code>&lt;meta  http-equiv=&quot;Pragma&quot; content=&quot;no-cache&quot;&gt;</code> </li></ul></li><li><p>Refresh</p><p>自动刷新并指向新页面。</p><ul><li><p>例：<code>&lt;meta  http-equiv=&quot;Refresh&quot; content=&quot;2;URL=http://www.seaantwh.top&quot;&gt;</code></p><p>其中的2是指停留2秒钟后自动刷新到URL网址。</p></li></ul></li><li><p>Set-Cookie</p><p>cookie设定<br>如果网页过期，那么存盘的cookie将被删除。<br>必须使用GMT的时间格式。</p><ul><li>例：<code>&lt;meta  http-equiv=&quot;Set-Cookie&quot; content=&quot;cookievalue=xxx;expires=Friday, 12-Jun-2020 23:24:25  GMT；path=/&quot;&gt;</code> </li></ul></li><li><p>Window-target</p><p>强制页面在当前窗口以独立页面显示。<br>用来防止别人在框架里调用自己的页面。</p><ul><li>例：<code>&lt;meta http-equiv=&quot;Window-target&quot; content=&quot;_top&quot;&gt;</code> </li></ul></li><li><p>content-Type</p><p>设定页面使用的字符集。</p><ul><li><p>例：<code>&lt;meta http-equiv=&quot;content-Type&quot; content=&quot;text/html;charset=gb2312&quot;&gt;</code></p><p><code>&lt;metahttp-equiv=&quot;Content-Type&quot;content=&quot;text/html;charset=信息参数&quot;/&gt;</code><br><code>meta标签的charset的信息参数如GB2312时，代表说明网站是采用的编码是简体中文；</code><br><code>meta标签的charset的信息参数如BIG5时，代表说明网站是采用的编码是繁体中文；</code><br><code>meta标签的charset的信息参数如iso-2022-jp时，代表说明网站是采用的编码是日文；</code><br><code>meta标签的charset的信息参数如ks_c_5601时，代表说明网站是采用的编码是韩文；</code><br><code>meta标签的charset的信息参数如ISO-8859-1时，代表说明网站是采用的编码是英文；</code><br><code>meta标签的charset的信息参数如UTF-8时，代表世界通用的语言编码；</code></p></li></ul></li><li><p>content-Language</p><p>显示语言的设定</p><ul><li>例：<code>&lt;meta http-equiv=&quot;Content-Language&quot; content=&quot;zh-cn&quot;/&gt;</code> </li></ul></li><li><p>Cache-Control</p><p>Cache-Control指定请求和响应遵循的缓存机制。<br>在请求消息或响应消息中设置Cache-Control并不会修改另一个消息处理过程中的缓存处理过程。<br>请求时的缓存指令包括no-cache、no-store、max-age、max-stale、min-fresh、only-if-cached。<br>响应消息中的指令包括public、private、no-cache、no-store、no-transform、must-revalidate、proxy-revalidate、max-age。</p><ul><li><p>指令具体·含义</p><p>Public指示响应可被任何缓存区缓存<br>Private指示对于单个用户的整个或部分响应消息，不能被共享缓存处理。这允许服务器仅仅描述当用户的部分响应消息，此响应消息对于其他用户的请求无效 。<br>no-cache指示请求或响应消息不能缓存<br>no-store用于防止重要的信息被无意的发布。在请求消息中发送将使得请求和响应消息都不使用缓存。<br>max-age指示客户机可以接收生存期不大于指定时间（以秒为单位）的响应<br>min-fresh指示客户机可以接收响应时间小于当前时间加上指定时间的响应<br>max-stale指示客户机可以接收超出超时期间的响应消息。如果指定max-stale消息的值，那么客户机可以接收超出超时期指定值之内的响应消息。</p></li></ul></li></ul></li></ul><h3 id="lt-title-gt-lt-title-gt-标签"><a href="#lt-title-gt-lt-title-gt-标签" class="headerlink" title="&lt;title&gt;&lt;/title&gt;标签"></a><code>&lt;title&gt;&lt;/title&gt;</code>标签</h3><ul><li>显示在浏览器标题栏或标签页</li><li>包含在<code>&lt;head&gt;&lt;/head&gt;</code>里，只能有一个</li></ul><h3 id="lt-link-gt-标签"><a href="#lt-link-gt-标签" class="headerlink" title="&lt;link&gt;标签"></a><code>&lt;link&gt;</code>标签</h3><ul><li><p>自定义图标</p><ul><li><p><code>&lt;link  rel=&quot;shortcut icon&quot;  href=&quot;favicon.ico&quot; type=&quot;image/x-icon/png&quot;&gt;</code></p><p>其他类型：<br><code>&lt;!-- third-generation iPad with high-resolution Retina display: --&gt;</code><br><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;144x144&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon144.a6e4162070f4.png&quot;&gt;</code><br><code>&lt;!-- iPhone with high-resolution Retina display: --&gt;</code><br><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;114x114&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon114.0e9fabd44f85.png&quot;&gt;</code><br><code>&lt;!-- first- and second-generation iPad: --&gt;</code><br><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; sizes=&quot;72x72&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon72.8ff9d87c82a0.png&quot;&gt;</code><br><code>&lt;!-- non-Retina iPhone, iPod Touch, and Android 2.1+ devices: --&gt;</code><br><code>&lt;link rel=&quot;apple-touch-icon-precomposed&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon57.a2490b9a2d76.png&quot;&gt;</code><br><code>&lt;!-- basic favicon --&gt;</code><br><code>&lt;link rel=&quot;shortcut icon&quot; href=&quot;https://developer.cdn.mozilla.net/static/img/favicon32.e02854fdcf73.png&quot;&gt;</code></p></li></ul></li><li><p>CSS样式表</p><p>  -<code>&lt;link href=&quot;main.css&quot; rel=&quot;stylesheet&quot;&gt;</code></p></li><li><p>其它</p></li></ul>]]></content>
       
       
       <categories>
@@ -324,23 +299,23 @@
     
     
     <entry>
-      <title>歌—それを愛と呼ぶだけ</title>
-      <link href="/2020/07/20/ge-sorewoai-tohu-budake/"/>
-      <url>/2020/07/20/ge-sorewoai-tohu-budake/</url>
+      <title>html总结6</title>
+      <link href="/2020/07/21/html-zong-jie-6/"/>
+      <url>/2020/07/21/html-zong-jie-6/</url>
       
-        <content type="html"><![CDATA[<p>歌手：まふまふ<br><strong><em>貴方の言葉が 貴方の記憶が</em></strong><br>你的话语 你的记忆<br><strong><em>わずかな世界を満たして</em></strong><br>将这个小小的世界填满<br><strong><em>映画の終わりに数分あるような</em></strong><br>距离电影结束好像还有几分钟<br><strong><em>心地よい今日だ</em></strong><br>是如此愉悦的今日<br><strong><em>手に取る運命は 手放す運命が</em></strong><br>掌握的命运却只是<br><strong><em>増えていくだけ</em></strong><br>徒增了将逝的命运<br><strong><em>そんな小さな綻びに 気づいていたのに</em></strong><br>明明已经注意到了那般细小的破绽<br><strong><em>心が身体を見落とすまで</em></strong><br>直到心灵将身体忽略<br><strong><em>明日のない世界へ行くまで</em></strong><br>直到去往那没有未来的世界<br><strong><em>失うひとつを数えること</em></strong><br>连细数所失去的事物<br><strong><em>それを愛と呼ぶだけ</em></strong><br>也只是将之称为爱<br><strong><em>愛と呼ぶだけ</em></strong><br>我们只是将之称为爱<br><strong><em>貴方の笑顔も瞬きひとつで</em></strong><br>你的笑容也只是一眨眼<br><strong><em>見えなくなるくらい未熟だ</em></strong><br>便看不见了那般生疏<br><strong><em>それならもとより愛しい仕草を</em></strong><br>那样的话 那般令人爱怜的表情<br><strong><em>知らないままがいいなあ</em></strong><br>不如原本就不要知道比较好吧<br><strong><em>過ぎ去る生涯を 変わらぬ後悔を</em></strong><br>逝去的一生与不变的后悔<br><strong><em>命というから</em></strong><br>因为称之为“生命”<br><strong><em>どうしようもないほどに</em></strong><br>所以才被你<br><strong><em>貴方に惹かれているのだろう</em></strong><br>吸引到无可救药的程度了吧<br><strong><em>この手を伸ばせど届かぬ向こう</em></strong><br>朝着这只手伸出却无法触及的方向<br><strong><em>夢を見るより遠くまで</em></strong><br>直到比梦中所见更远的地方<br><strong><em>去り行く貴方を求めたこと</em></strong><br>寻求着已然离去的你<br><strong><em>それを愛と呼ぶだけ</em></strong><br>只是将之称为爱<br><strong><em>愛と呼ぶだけ</em></strong><br>我们只是将之称为爱</p>]]></content>
+        <content type="html"><![CDATA[<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><ul><li>header   定义文档或文档页眉</li><li>nav   定义导航链接的容器</li><li>section  定义文档的节</li><li>article  定义独立的自包含文章</li><li>aside  定义内容之外的内容(如侧栏)</li><li>footer  定义文档或节的页脚</li><li>details  定义细节</li><li>summary  定义details元素的细节</li></ul><h3 id="响应式设计-以可变的尺寸传递网页"><a href="#响应式设计-以可变的尺寸传递网页" class="headerlink" title="响应式设计(以可变的尺寸传递网页)"></a>响应式设计(以可变的尺寸传递网页)</h3><ul><li>自己设计</li><li>使用现成的CSS框架</li></ul><h3 id="块"><a href="#块" class="headerlink" title="块"></a>块</h3><p>块级元素在浏览器显示时，通常会以新行来开始（和结束）。<br>例子：<code>&lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;</code></p><p>内联元素在显示时通常不会以新行开始。<br>例子：<code>&lt;b&gt;, &lt;td&gt;, &lt;a&gt;, &lt;img&gt;</code></p><ul><li><p>div元素</p><ul><li><code>&lt;div&gt;</code> 可定义文档中的分区或节</li><li><code>&lt;div&gt;</code> 标签可以把文档分割为独立的、不同的部分。</li></ul></li><li><p>span元素</p><ul><li><code>&lt;span&gt;</code>标签被用来组合文档中的行内元素。</li></ul></li></ul><h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><ul><li><p>绝对路径</p><ul><li>绝对文件路径是指向一个因特网文件的完整 URL：</li><li>例：<code>&lt;img src=&quot;https://seaantwh/source/images/picture.jpg&quot; alt=&quot;star&quot;&gt;</code></li></ul></li><li><p>相对路径</p><ul><li><p>相对路径指向了相对于当前页面的文件。</p></li><li><p>实例</p><p>​          <code>&lt;img src=&quot;picture.jpg&quot;&gt;picture.jpg 位于与当前网页相同的文件夹</code></p><p>​         <code>&lt;img src=&quot;images/picture.jpg&quot;&gt;picture.jpg位于当前文件夹的images文件夹中</code></p><p>​        <code>&lt;img src=&quot;/images/picture.jpg&quot;&gt;picture.jpg当前站点根目录的images文件夹中</code></p><p>​        <code>&lt;img src=&quot;../picture.jpg&quot;&gt;    picture.jpg 位于当前文件夹的上一级文件夹中</code></p></li></ul></li></ul>]]></content>
       
       
       <categories>
           
-          <category> 歌单 </category>
+          <category> web </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 歌单 </tag>
+            <tag> html </tag>
             
         </tags>
       
@@ -349,11 +324,11 @@
     
     
     <entry>
-      <title>歌—ONE&#39;s hope</title>
-      <link href="/2020/07/20/ge-one-s-hope/"/>
-      <url>/2020/07/20/ge-one-s-hope/</url>
+      <title>歌—それを愛と呼ぶだけ</title>
+      <link href="/2020/07/20/ge-sorewoai-tohu-budake/"/>
+      <url>/2020/07/20/ge-sorewoai-tohu-budake/</url>
       
-        <content type="html"><![CDATA[<p>歌手：やなぎなぎ<br><strong><em>薄らと朱く染まる空 トンボが舞う，</em></strong><br>染上几许朱红的天空 蜻蜓漫舞纷飞，<br><strong><em>子供みたいにはしゃいでる 君を見てた，</em></strong><br>注视着像个孩子般 开心嬉笑的你，<br><strong><em>指差したその先を睨んで 君は言う，</em></strong><br>你直直盯着手指所指的方向，<br><strong><em>「逃げるなよ・・・」って，</em></strong><br>「不准跑啦…」这么说着，<br><strong><em>悔しがったその顔が可笑しくて笑ってた，</em></strong><br>那悔恨的表情逗趣地令我轻笑出声，<br><strong><em>あの頃，</em></strong><br>在那个时候，<br><strong><em>二年後の記念日 プレゼントもらった，</em></strong><br>两年后的纪念日 收到了礼物，<br><strong><em>少しだけ赤くなる 君がくれたもの，</em></strong><br>你赠与我的礼物 令我感到有些不好意思，<br><strong><em>小さな小箱に入った 輪っかのそれは，</em></strong><br>摆放在小巧盒子当中 圆环形状的那样物品，<br><strong><em>銀色に輝いていた，</em></strong><br>绽放出银色的光辉，<br><strong><em>君の事を あなたと呼ぶ日が来て，</em></strong><br>称呼你为 「亲爱的」的那一天来临了，<br><strong><em>白いドレスを纏った私に 「綺麗だよ」と言った，</em></strong><br>你对身着白色婚纱的我 「妳很漂亮喔」这么说着，<br><strong><em>恥ずかしさなど 忘れてしまったのかな？</em></strong><br>是不是连觉得害羞之类的 都忘记了呢？<br><strong><em>そっと、「愛してる」そう言ってキスをした，</em></strong><br>轻轻地唤着「我爱你」，亲吻了彼此，<br><strong><em>幸せだった，</em></strong><br>当时是那样地幸福，<br><strong><em>悩み事はありませんか？</em></strong><br>你是不是有什么烦心的事呢？<br><strong><em>ああ、やっぱり今日も，</em></strong><br>啊啊，果然今天也是如此，<br><strong><em>素直じゃないあなたは 答えてくれない，</em></strong><br>别扭的你 什么话也不回答，<br><strong><em>だけど、ねえ、</em></strong><br>今，但是，吶，现在，<br><strong><em>あなたは，</em></strong><br>你，<br><strong><em>笑ってますか？</em></strong><br>是否正笑着呢？<br><strong><em>夕日に映る あの日のあなたの笑顔，</em></strong><br>倒映在夕阳之中 你那一日的笑容，<br><strong><em>あの日誓った約束は 破れてしまった，</em></strong><br>那一日立下誓言的约定 被打破了，<br><strong><em>繋がっていた赤い糸の 先は霞んで見えない，</em></strong><br>过去连系着你我的红丝线 如今另一端却蒙眬地看不清楚…，<br><strong><em>だけど残されたあなたの一つの希望，</em></strong><br>但是还有一个你的希望留了下来，<br><strong><em>季節は流れ 思い出は駆け巡る，</em></strong><br>季节飞逝 回忆历历在目，<br><strong><em>あの日、君といた茜空 あなたといた時間，</em></strong><br>那一天，与你共享的暮色 与亲爱的你共渡的时间，<br><strong><em>いつか日かまた あなたの横で笑える日まで，</em></strong><br>直到能够再次 在你身边绽放笑容的那一天，<br><strong><em>浮気しないでよ？このリングに誓ってよ，</em></strong><br>在那之前可不能花心喔？ 向这个戒指发誓吧，<br><strong><em>私は大丈夫，</em></strong><br>我没问题的，<br><strong><em>だってあなたを今でも愛してるから，</em></strong><br>因为至今我仍深爱着你，<br><strong><em>どこからかやってきたトンボさん，</em></strong><br>不知从何处飞来的蜻蜓，<br><strong><em>ここからなら見えるでしょう？</em></strong><br>从这里应该就能够看见了吧？<br><strong><em>まだまだ小さな，</em></strong><br>还有些幼小的，<br><strong><em>ONE’S HOPE，</em></strong><br>一个希望。</p>]]></content>
+        <content type="html"><![CDATA[<p>歌手：まふまふ<br><strong><em>貴方の言葉が 貴方の記憶が</em></strong><br>你的话语 你的记忆<br><strong><em>わずかな世界を満たして</em></strong><br>将这个小小的世界填满<br><strong><em>映画の終わりに数分あるような</em></strong><br>距离电影结束好像还有几分钟<br><strong><em>心地よい今日だ</em></strong><br>是如此愉悦的今日<br><strong><em>手に取る運命は 手放す運命が</em></strong><br>掌握的命运却只是<br><strong><em>増えていくだけ</em></strong><br>徒增了将逝的命运<br><strong><em>そんな小さな綻びに 気づいていたのに</em></strong><br>明明已经注意到了那般细小的破绽<br><strong><em>心が身体を見落とすまで</em></strong><br>直到心灵将身体忽略<br><strong><em>明日のない世界へ行くまで</em></strong><br>直到去往那没有未来的世界<br><strong><em>失うひとつを数えること</em></strong><br>连细数所失去的事物<br><strong><em>それを愛と呼ぶだけ</em></strong><br>也只是将之称为爱<br><strong><em>愛と呼ぶだけ</em></strong><br>我们只是将之称为爱<br><strong><em>貴方の笑顔も瞬きひとつで</em></strong><br>你的笑容也只是一眨眼<br><strong><em>見えなくなるくらい未熟だ</em></strong><br>便看不见了那般生疏<br><strong><em>それならもとより愛しい仕草を</em></strong><br>那样的话 那般令人爱怜的表情<br><strong><em>知らないままがいいなあ</em></strong><br>不如原本就不要知道比较好吧<br><strong><em>過ぎ去る生涯を 変わらぬ後悔を</em></strong><br>逝去的一生与不变的后悔<br><strong><em>命というから</em></strong><br>因为称之为“生命”<br><strong><em>どうしようもないほどに</em></strong><br>所以才被你<br><strong><em>貴方に惹かれているのだろう</em></strong><br>吸引到无可救药的程度了吧<br><strong><em>この手を伸ばせど届かぬ向こう</em></strong><br>朝着这只手伸出却无法触及的方向<br><strong><em>夢を見るより遠くまで</em></strong><br>直到比梦中所见更远的地方<br><strong><em>去り行く貴方を求めたこと</em></strong><br>寻求着已然离去的你<br><strong><em>それを愛と呼ぶだけ</em></strong><br>只是将之称为爱<br><strong><em>愛と呼ぶだけ</em></strong><br>我们只是将之称为爱</p>]]></content>
       
       
       <categories>
@@ -399,36 +374,11 @@
     
     
     <entry>
-      <title>歌—サイ</title>
-      <link href="/2020/07/20/ge-sai/"/>
-      <url>/2020/07/20/ge-sai/</url>
+      <title>歌—ONE&#39;s hope</title>
+      <link href="/2020/07/20/ge-one-s-hope/"/>
+      <url>/2020/07/20/ge-one-s-hope/</url>
       
-        <content type="html"><![CDATA[<p>歌手：DECO<em>27 / ef<br>**</em>僕は それが 見えるように<strong>*<br>我还是能看见<br>*</strong>白く吐いた息のキャンパスに<strong>*<br>吐出的白色气息在校园中<br>*</strong>肌色重ねた***<br>肤色重叠</p><p><strong><em>君に それを見てほしくて</em></strong><br>想要你看见它<br><strong><em>赤と黄色 僕のパレットに</em></strong><br>红色和黄色的我的调色板<br><strong><em>君色作った</em></strong><br>做了你的颜色</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その姿は分からないの</em></strong><br>不明白那个身姿<br><strong><em>無くさないで 探さないで</em></strong><br>不用再寻找了<br><strong><em>僕が探して君に見せるから</em></strong><br>因为我会找来给你看的</p><p><strong><em>「そうなんだ」って言ってやった</em></strong><br>说了“是那样的”<br><strong><em>僕は君の言葉に沿って</em></strong><br>我沿着你的话<br><strong><em>そんな感じで逃げてきたの</em></strong><br>以这样的感觉逃避了<br><strong><em>「なんなんだ」って言ってやった</em></strong><br>说了“怎么回事”<br><strong><em>僕は気付いてないフリした</em></strong><br>我假装察觉不到了<br><strong><em>「そんなんやだ」って君は笑ってたけど・・・</em></strong><br>“这样啊。”你笑着，不过・・・</p><p><strong><em>アタシ それが知りたくって</em></strong><br>我想知道<br><strong><em>白く吐いた息は please tell me.</em></strong><br>请告诉我白色的吐出的气息<br><strong><em>なんでさ、逃げるの？</em></strong><br>为什么会逃跑呢？</p><p><strong><em>キミは「描きたい絵がある」と</em></strong><br>你说 有想要描绘的画<br><strong><em>でもそれには色が足りないと</em></strong><br>不过这颜色不够<br><strong><em>筆を回していた</em></strong><br>笔转动了</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その涙の色はまさに</em></strong><br>那泪水的颜色正是<br><strong><em>ずっとずっと探していた</em></strong><br>一直寻找着的<br><strong><em>僕が恋した 君が見せた</em></strong><br>我爱上了你所见到的<br><strong><em>君が見せたから</em></strong><br>你所见到的</p><p><strong><em>「相談が・・・」って言ってやった</em></strong><br>“相谈···」说做的<br><strong><em>愛の罠に誘いこむように</em></strong><br>和爱的陷阱一样<br><strong><em>「なんなんだ」って思った君は</em></strong><br>“什么啊”这样想的你<br><strong><em>僕の袖をギュッと掴んだ</em></strong><br>紧紧地抓住我的袖子</p><p><strong><em>ねえ君に見せたいもの</em></strong><br>想让你看见的东西<br><strong><em>そう君に恋した色</em></strong><br>是与你相恋的颜色</p><p><strong><em>「そうなんだ」って泣き出した</em></strong><br>“是这样啊”哭出来了<br><strong><em>君の涙筆でなぞって</em></strong><br>用你的眼泪描绘出来<br><strong><em>僕の描いた君の絵に</em></strong><br>我所描绘的你的画<br><strong><em>足してみたんだ</em></strong><br>试着贴补了<br><strong><em>「遭難だ」って 笑ったんだ</em></strong><br>“遇难。”这样的笑了。<br><strong><em>僕らが迷い込んだ このキャンバスは</em></strong><br>我们所迷惑的这画布<br><strong><em>色で満たされてた 白い吐息の世界</em></strong><br>色彩填满了白色的吐息的世界</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—ぼくら（城镇青年ED)</title>
-      <link href="/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/"/>
-      <url>/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：玖肆仟<br><strong><em>駆け足でウチに帰る</em></strong><br>奔跑在归家的路上<br><strong><em>子供たちの声がする</em></strong><br>孩子们欢声笑语<br><strong><em>つま先で 石を蹴りながら</em></strong><br>脚尖一边踢着石子<br><strong><em>めぐりめぐる 帰り道</em></strong><br>来而又去的归家路<br><strong><em>誰かの財布拾って 交番まで届けた</em></strong><br>拾着了谁的钱包 交给警察叔叔<br><strong><em>いつか 時が 過ぎて 仆ら</em></strong><br>若有一日岁月蹉跎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの 自分でいられるかな？</em></strong><br>还能做现在的 这样的自己吗？<br><strong><em>ハタチになって更に</em></strong><br>二十岁生日<br><strong><em>二年二ヶ月が過ぎた</em></strong><br>已经过了两年两个月<br><strong><em>やみくもに わけもわからず 我が尽で</em></strong><br>迷茫地走着自己弄不明白的道路<br><strong><em>ここまで来たけど</em></strong><br>终于算是走到这一步<br><strong><em>どこにも 辿り着けてない</em></strong><br>却没有到达过什么终点<br><strong><em>誰にも 出会えていない</em></strong><br>却没有邂逅过什么人<br><strong><em>いつか 時が 過ぎて</em></strong><br>若有一日岁月蹉跎<br><strong><em>仆らただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？<br><strong><em>心 折れて 夢に やぶれ</em></strong><br>经历心伤 经历梦碎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの こんなままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？</p>]]></content>
+        <content type="html"><![CDATA[<p>歌手：やなぎなぎ<br><strong><em>薄らと朱く染まる空 トンボが舞う，</em></strong><br>染上几许朱红的天空 蜻蜓漫舞纷飞，<br><strong><em>子供みたいにはしゃいでる 君を見てた，</em></strong><br>注视着像个孩子般 开心嬉笑的你，<br><strong><em>指差したその先を睨んで 君は言う，</em></strong><br>你直直盯着手指所指的方向，<br><strong><em>「逃げるなよ・・・」って，</em></strong><br>「不准跑啦…」这么说着，<br><strong><em>悔しがったその顔が可笑しくて笑ってた，</em></strong><br>那悔恨的表情逗趣地令我轻笑出声，<br><strong><em>あの頃，</em></strong><br>在那个时候，<br><strong><em>二年後の記念日 プレゼントもらった，</em></strong><br>两年后的纪念日 收到了礼物，<br><strong><em>少しだけ赤くなる 君がくれたもの，</em></strong><br>你赠与我的礼物 令我感到有些不好意思，<br><strong><em>小さな小箱に入った 輪っかのそれは，</em></strong><br>摆放在小巧盒子当中 圆环形状的那样物品，<br><strong><em>銀色に輝いていた，</em></strong><br>绽放出银色的光辉，<br><strong><em>君の事を あなたと呼ぶ日が来て，</em></strong><br>称呼你为 「亲爱的」的那一天来临了，<br><strong><em>白いドレスを纏った私に 「綺麗だよ」と言った，</em></strong><br>你对身着白色婚纱的我 「妳很漂亮喔」这么说着，<br><strong><em>恥ずかしさなど 忘れてしまったのかな？</em></strong><br>是不是连觉得害羞之类的 都忘记了呢？<br><strong><em>そっと、「愛してる」そう言ってキスをした，</em></strong><br>轻轻地唤着「我爱你」，亲吻了彼此，<br><strong><em>幸せだった，</em></strong><br>当时是那样地幸福，<br><strong><em>悩み事はありませんか？</em></strong><br>你是不是有什么烦心的事呢？<br><strong><em>ああ、やっぱり今日も，</em></strong><br>啊啊，果然今天也是如此，<br><strong><em>素直じゃないあなたは 答えてくれない，</em></strong><br>别扭的你 什么话也不回答，<br><strong><em>だけど、ねえ、</em></strong><br>今，但是，吶，现在，<br><strong><em>あなたは，</em></strong><br>你，<br><strong><em>笑ってますか？</em></strong><br>是否正笑着呢？<br><strong><em>夕日に映る あの日のあなたの笑顔，</em></strong><br>倒映在夕阳之中 你那一日的笑容，<br><strong><em>あの日誓った約束は 破れてしまった，</em></strong><br>那一日立下誓言的约定 被打破了，<br><strong><em>繋がっていた赤い糸の 先は霞んで見えない，</em></strong><br>过去连系着你我的红丝线 如今另一端却蒙眬地看不清楚…，<br><strong><em>だけど残されたあなたの一つの希望，</em></strong><br>但是还有一个你的希望留了下来，<br><strong><em>季節は流れ 思い出は駆け巡る，</em></strong><br>季节飞逝 回忆历历在目，<br><strong><em>あの日、君といた茜空 あなたといた時間，</em></strong><br>那一天，与你共享的暮色 与亲爱的你共渡的时间，<br><strong><em>いつか日かまた あなたの横で笑える日まで，</em></strong><br>直到能够再次 在你身边绽放笑容的那一天，<br><strong><em>浮気しないでよ？このリングに誓ってよ，</em></strong><br>在那之前可不能花心喔？ 向这个戒指发誓吧，<br><strong><em>私は大丈夫，</em></strong><br>我没问题的，<br><strong><em>だってあなたを今でも愛してるから，</em></strong><br>因为至今我仍深爱着你，<br><strong><em>どこからかやってきたトンボさん，</em></strong><br>不知从何处飞来的蜻蜓，<br><strong><em>ここからなら見えるでしょう？</em></strong><br>从这里应该就能够看见了吧？<br><strong><em>まだまだ小さな，</em></strong><br>还有些幼小的，<br><strong><em>ONE’S HOPE，</em></strong><br>一个希望。</p>]]></content>
       
       
       <categories>
@@ -499,6 +449,56 @@
     
     
     <entry>
+      <title>歌—サイ</title>
+      <link href="/2020/07/20/ge-sai/"/>
+      <url>/2020/07/20/ge-sai/</url>
+      
+        <content type="html"><![CDATA[<p>歌手：DECO<em>27 / ef<br>**</em>僕は それが 見えるように<strong>*<br>我还是能看见<br>*</strong>白く吐いた息のキャンパスに<strong>*<br>吐出的白色气息在校园中<br>*</strong>肌色重ねた***<br>肤色重叠</p><p><strong><em>君に それを見てほしくて</em></strong><br>想要你看见它<br><strong><em>赤と黄色 僕のパレットに</em></strong><br>红色和黄色的我的调色板<br><strong><em>君色作った</em></strong><br>做了你的颜色</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その姿は分からないの</em></strong><br>不明白那个身姿<br><strong><em>無くさないで 探さないで</em></strong><br>不用再寻找了<br><strong><em>僕が探して君に見せるから</em></strong><br>因为我会找来给你看的</p><p><strong><em>「そうなんだ」って言ってやった</em></strong><br>说了“是那样的”<br><strong><em>僕は君の言葉に沿って</em></strong><br>我沿着你的话<br><strong><em>そんな感じで逃げてきたの</em></strong><br>以这样的感觉逃避了<br><strong><em>「なんなんだ」って言ってやった</em></strong><br>说了“怎么回事”<br><strong><em>僕は気付いてないフリした</em></strong><br>我假装察觉不到了<br><strong><em>「そんなんやだ」って君は笑ってたけど・・・</em></strong><br>“这样啊。”你笑着，不过・・・</p><p><strong><em>アタシ それが知りたくって</em></strong><br>我想知道<br><strong><em>白く吐いた息は please tell me.</em></strong><br>请告诉我白色的吐出的气息<br><strong><em>なんでさ、逃げるの？</em></strong><br>为什么会逃跑呢？</p><p><strong><em>キミは「描きたい絵がある」と</em></strong><br>你说 有想要描绘的画<br><strong><em>でもそれには色が足りないと</em></strong><br>不过这颜色不够<br><strong><em>筆を回していた</em></strong><br>笔转动了</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その涙の色はまさに</em></strong><br>那泪水的颜色正是<br><strong><em>ずっとずっと探していた</em></strong><br>一直寻找着的<br><strong><em>僕が恋した 君が見せた</em></strong><br>我爱上了你所见到的<br><strong><em>君が見せたから</em></strong><br>你所见到的</p><p><strong><em>「相談が・・・」って言ってやった</em></strong><br>“相谈···」说做的<br><strong><em>愛の罠に誘いこむように</em></strong><br>和爱的陷阱一样<br><strong><em>「なんなんだ」って思った君は</em></strong><br>“什么啊”这样想的你<br><strong><em>僕の袖をギュッと掴んだ</em></strong><br>紧紧地抓住我的袖子</p><p><strong><em>ねえ君に見せたいもの</em></strong><br>想让你看见的东西<br><strong><em>そう君に恋した色</em></strong><br>是与你相恋的颜色</p><p><strong><em>「そうなんだ」って泣き出した</em></strong><br>“是这样啊”哭出来了<br><strong><em>君の涙筆でなぞって</em></strong><br>用你的眼泪描绘出来<br><strong><em>僕の描いた君の絵に</em></strong><br>我所描绘的你的画<br><strong><em>足してみたんだ</em></strong><br>试着贴补了<br><strong><em>「遭難だ」って 笑ったんだ</em></strong><br>“遇难。”这样的笑了。<br><strong><em>僕らが迷い込んだ このキャンバスは</em></strong><br>我们所迷惑的这画布<br><strong><em>色で満たされてた 白い吐息の世界</em></strong><br>色彩填满了白色的吐息的世界</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 歌单 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 歌单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>歌—ぼくら（城镇青年ED)</title>
+      <link href="/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/"/>
+      <url>/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/</url>
+      
+        <content type="html"><![CDATA[<p>歌手：玖肆仟<br><strong><em>駆け足でウチに帰る</em></strong><br>奔跑在归家的路上<br><strong><em>子供たちの声がする</em></strong><br>孩子们欢声笑语<br><strong><em>つま先で 石を蹴りながら</em></strong><br>脚尖一边踢着石子<br><strong><em>めぐりめぐる 帰り道</em></strong><br>来而又去的归家路<br><strong><em>誰かの財布拾って 交番まで届けた</em></strong><br>拾着了谁的钱包 交给警察叔叔<br><strong><em>いつか 時が 過ぎて 仆ら</em></strong><br>若有一日岁月蹉跎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの 自分でいられるかな？</em></strong><br>还能做现在的 这样的自己吗？<br><strong><em>ハタチになって更に</em></strong><br>二十岁生日<br><strong><em>二年二ヶ月が過ぎた</em></strong><br>已经过了两年两个月<br><strong><em>やみくもに わけもわからず 我が尽で</em></strong><br>迷茫地走着自己弄不明白的道路<br><strong><em>ここまで来たけど</em></strong><br>终于算是走到这一步<br><strong><em>どこにも 辿り着けてない</em></strong><br>却没有到达过什么终点<br><strong><em>誰にも 出会えていない</em></strong><br>却没有邂逅过什么人<br><strong><em>いつか 時が 過ぎて</em></strong><br>若有一日岁月蹉跎<br><strong><em>仆らただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？<br><strong><em>心 折れて 夢に やぶれ</em></strong><br>经历心伤 经历梦碎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの こんなままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 歌单 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 歌单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>仿bing</title>
       <link href="/2020/07/17/fang-bing/"/>
       <url>/2020/07/17/fang-bing/</url>
@@ -517,9 +517,9 @@
       
         <tags>
             
-            <tag> css </tag>
-            
             <tag> html </tag>
+            
+            <tag> css </tag>
             
         </tags>
       
@@ -571,9 +571,9 @@
       
         <tags>
             
-            <tag> css </tag>
-            
             <tag> html </tag>
+            
+            <tag> css </tag>
             
         </tags>
       

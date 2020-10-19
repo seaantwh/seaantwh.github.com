@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://seaantwh.github.io/link/index.html</loc>
+    <loc>http://seaantwh.github.io/archives/index.html</loc>
     
-    <lastmod>2020-10-19T10:57:53.597Z</lastmod>
+    <lastmod>2020-10-19T11:59:48.369Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://seaantwh.github.io/categories/index.html</loc>
+    
+    <lastmod>2020-10-19T11:27:29.750Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://seaantwh.github.io/contact/index.html</loc>
+    
+    <lastmod>2020-10-19T11:25:23.334Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://seaantwh.github.io/2020/07/11/ge-ren-xin-xi-shou-ji-biao/</loc>
     
-    <lastmod>2020-10-19T08:56:17.610Z</lastmod>
+    <lastmod>2020-10-19T11:19:09.669Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://seaantwh.github.io/link/index.html</loc>
+    
+    <lastmod>2020-10-19T10:57:53.597Z</lastmod>
     
   </url>
   
@@ -135,30 +156,9 @@
   </url>
   
   <url>
-    <loc>http://seaantwh.github.io/contact/index.html</loc>
-    
-    <lastmod>2020-07-22T08:32:53.792Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://seaantwh.github.io/categories/index.html</loc>
-    
-    <lastmod>2020-07-22T08:32:18.576Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://seaantwh.github.io/about/index.html</loc>
     
     <lastmod>2020-07-22T08:32:07.431Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://seaantwh.github.io/archives/index.html</loc>
-    
-    <lastmod>2020-07-22T08:31:51.718Z</lastmod>
     
   </url>
   
