@@ -249,6 +249,31 @@
     
     
     <entry>
+      <title>html总结4</title>
+      <link href="/2020/07/21/html-zong-jie-4/"/>
+      <url>/2020/07/21/html-zong-jie-4/</url>
+      
+        <content type="html"><![CDATA[<h2 id="表格和列表"><a href="#表格和列表" class="headerlink" title="表格和列表"></a>表格和列表</h2><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul><li><p>无序列表</p><ul><li><p><code>&lt;ul  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ul&gt;</code></p><p>type为内容前的小标签<br>常见的typename有  disc(实心圆)  circle(空心圆)    square(实心矩形)</p></li></ul></li><li><p>有序列表</p><ul><li><p><code>&lt;ol  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ol&gt;</code></p><p>ype为内容前的小标签<br>常见的typename有  1(数字)  a(小写英文字母）A(大写英文字母)    i(小写罗马字母)  I(大写罗马字母)</p></li></ul></li><li><p>嵌套列表</p><ul><li>无-无   无-有  有-有   有-无</li></ul></li><li><p>定义列表</p><ul><li><code>&lt;dl&gt;&lt;dt&gt;项目1&lt;/dt&gt;&lt;dd&gt;详细1&lt;/dd&gt;&lt;dt&gt;项目2&lt;/dt&gt;&lt;dd&gt;详细2&lt;/dd&gt;&lt;/dl&gt;</code></li></ul></li></ul><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ul><li><p><code>&lt;table&gt;&lt;/table&gt;</code>定义表格标签</p></li><li><p><code>&lt;th&gt;&lt;.th&gt;</code>定义表头</p><p>表头是默认加粗的</p></li><li><p><code>&lt;tr&gt;&lt;/tr&gt;</code>定义表格行</p></li><li><p><code>&lt;td&gt;&lt;/td&gt;</code>定义表格单元</p><p>上下行的表格单元会自动对齐并取最大的表格单元</p></li></ul><h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>通过使用框架，可以在同一个浏览器窗口中显示不止一个页面。每份HTML文档称为一个框架，并且每个框架都独立于其他的框架。</p><p>使用框架的坏处：<br>开发人员必须同时跟踪更多的HTML文档<br>很难打印整张页面</p><h3 id="lt-frameset-gt-标签"><a href="#lt-frameset-gt-标签" class="headerlink" title="&lt;frameset&gt;标签"></a><code>&lt;frameset&gt;</code>标签</h3><ul><li>框架结构标签（ <code>&lt;frameset&gt;</code>）定义如何将窗口分割为框架</li><li>每个 frameset 定义了一系列行或列</li><li>rows/cols 的值规定了每行/每列占据屏幕的面积</li></ul><h3 id="lt-frame-gt-标签"><a href="#lt-frame-gt-标签" class="headerlink" title="&lt;frame&gt;标签"></a><code>&lt;frame&gt;</code>标签</h3><ul><li>Frame 标签定义了放置在每个框架中的 HTML 文档。</li><li>假如一个框架有可见边框，用户可以拖动边框来改变它的大小。为了避免这种情况发生，可以在  <code>&lt;frame&gt;</code>标签中加入： <code>noresize=&quot;noresize&quot;</code>。</li></ul><h3 id="lt-noframes-gt-标签"><a href="#lt-noframes-gt-标签" class="headerlink" title="&lt;noframes&gt; 标签"></a><code>&lt;noframes&gt;</code> 标签</h3><ul><li><p>为不支持框架的浏览器添加  <code>&lt;noframes&gt;</code> 标签。</p></li><li><p>不能将  <code>&lt;body&gt;&lt;/body&gt;</code>标签与  <code>&lt;frameset&gt;&lt;/frameset&gt;</code> 标签同时使用！不过，假如你添加包含一段文本的  <code>&lt;noframes&gt;</code>标签，就必须将这段文字嵌套于  <code>&lt;body&gt;&lt;/body&gt;</code> 标签内。</p><pre><code>​       &lt;noframes&gt;​             &lt;body&gt;您的浏览器无法处理框架！&lt;/body&gt;​       &lt;/noframes&gt;</code></pre><h3 id="类别"><a href="#类别" class="headerlink" title="类别"></a>类别</h3></li><li><p>水平框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_a.htm&quot;&gt;     &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>垂直框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;     &lt;frame src=&quot;frame_a.htm&quot;&gt;    &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>混合框架</p><pre><code>&lt;frameset rows=&quot;50%,50%&quot;&gt;       &lt;frame src=&quot;frame_a.html&quot;&gt;&lt;frameset cols=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_b.html&quot;&gt;      &lt;frame src=&quot;frame_c.html&quot;&gt;&lt;/frameset&gt;&lt;/frameset&gt;</code></pre></li><li><p>内联框架</p><pre><code>&lt;iframe src=&quot;/i/eg_landscape.jpg&quot;&gt;&lt;/iframe&gt;&lt;p&gt;一些老的浏览器不支持 iframe。&lt;/p&gt;&lt;p&gt;如果得不到支持，iframe 是不可见的。&lt;/p&gt;</code></pre><pre><code>  - HTML内联框架是为了实现在网页中显示网页，突出了内联二字，就是在一个网页中，我们能够控制在这个网页中用多大的框去显示另外一个网页，并且能通过CSS对其进行控制。  - 而内联框架则可以放在`&lt;body&gt;`里面</code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>html总结6</title>
       <link href="/2020/07/21/html-zong-jie-6/"/>
       <url>/2020/07/21/html-zong-jie-6/</url>
@@ -299,86 +324,11 @@
     
     
     <entry>
-      <title>html总结4</title>
-      <link href="/2020/07/21/html-zong-jie-4/"/>
-      <url>/2020/07/21/html-zong-jie-4/</url>
-      
-        <content type="html"><![CDATA[<h2 id="表格和列表"><a href="#表格和列表" class="headerlink" title="表格和列表"></a>表格和列表</h2><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul><li><p>无序列表</p><ul><li><p><code>&lt;ul  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ul&gt;</code></p><p>type为内容前的小标签<br>常见的typename有  disc(实心圆)  circle(空心圆)    square(实心矩形)</p></li></ul></li><li><p>有序列表</p><ul><li><p><code>&lt;ol  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ol&gt;</code></p><p>ype为内容前的小标签<br>常见的typename有  1(数字)  a(小写英文字母）A(大写英文字母)    i(小写罗马字母)  I(大写罗马字母)</p></li></ul></li><li><p>嵌套列表</p><ul><li>无-无   无-有  有-有   有-无</li></ul></li><li><p>定义列表</p><ul><li><code>&lt;dl&gt;&lt;dt&gt;项目1&lt;/dt&gt;&lt;dd&gt;详细1&lt;/dd&gt;&lt;dt&gt;项目2&lt;/dt&gt;&lt;dd&gt;详细2&lt;/dd&gt;&lt;/dl&gt;</code></li></ul></li></ul><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ul><li><p><code>&lt;table&gt;&lt;/table&gt;</code>定义表格标签</p></li><li><p><code>&lt;th&gt;&lt;.th&gt;</code>定义表头</p><p>表头是默认加粗的</p></li><li><p><code>&lt;tr&gt;&lt;/tr&gt;</code>定义表格行</p></li><li><p><code>&lt;td&gt;&lt;/td&gt;</code>定义表格单元</p><p>上下行的表格单元会自动对齐并取最大的表格单元</p></li></ul><h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>通过使用框架，可以在同一个浏览器窗口中显示不止一个页面。每份HTML文档称为一个框架，并且每个框架都独立于其他的框架。</p><p>使用框架的坏处：<br>开发人员必须同时跟踪更多的HTML文档<br>很难打印整张页面</p><h3 id="lt-frameset-gt-标签"><a href="#lt-frameset-gt-标签" class="headerlink" title="&lt;frameset&gt;标签"></a><code>&lt;frameset&gt;</code>标签</h3><ul><li>框架结构标签（ <code>&lt;frameset&gt;</code>）定义如何将窗口分割为框架</li><li>每个 frameset 定义了一系列行或列</li><li>rows/cols 的值规定了每行/每列占据屏幕的面积</li></ul><h3 id="lt-frame-gt-标签"><a href="#lt-frame-gt-标签" class="headerlink" title="&lt;frame&gt;标签"></a><code>&lt;frame&gt;</code>标签</h3><ul><li>Frame 标签定义了放置在每个框架中的 HTML 文档。</li><li>假如一个框架有可见边框，用户可以拖动边框来改变它的大小。为了避免这种情况发生，可以在  <code>&lt;frame&gt;</code>标签中加入： <code>noresize=&quot;noresize&quot;</code>。</li></ul><h3 id="lt-noframes-gt-标签"><a href="#lt-noframes-gt-标签" class="headerlink" title="&lt;noframes&gt; 标签"></a><code>&lt;noframes&gt;</code> 标签</h3><ul><li><p>为不支持框架的浏览器添加  <code>&lt;noframes&gt;</code> 标签。</p></li><li><p>不能将  <code>&lt;body&gt;&lt;/body&gt;</code>标签与  <code>&lt;frameset&gt;&lt;/frameset&gt;</code> 标签同时使用！不过，假如你添加包含一段文本的  <code>&lt;noframes&gt;</code>标签，就必须将这段文字嵌套于  <code>&lt;body&gt;&lt;/body&gt;</code> 标签内。</p><pre><code>​       &lt;noframes&gt;​             &lt;body&gt;您的浏览器无法处理框架！&lt;/body&gt;​       &lt;/noframes&gt;</code></pre><h3 id="类别"><a href="#类别" class="headerlink" title="类别"></a>类别</h3></li><li><p>水平框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_a.htm&quot;&gt;     &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>垂直框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;     &lt;frame src=&quot;frame_a.htm&quot;&gt;    &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>混合框架</p><pre><code>&lt;frameset rows=&quot;50%,50%&quot;&gt;       &lt;frame src=&quot;frame_a.html&quot;&gt;&lt;frameset cols=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_b.html&quot;&gt;      &lt;frame src=&quot;frame_c.html&quot;&gt;&lt;/frameset&gt;&lt;/frameset&gt;</code></pre></li><li><p>内联框架</p><pre><code>&lt;iframe src=&quot;/i/eg_landscape.jpg&quot;&gt;&lt;/iframe&gt;&lt;p&gt;一些老的浏览器不支持 iframe。&lt;/p&gt;&lt;p&gt;如果得不到支持，iframe 是不可见的。&lt;/p&gt;</code></pre><pre><code>  - HTML内联框架是为了实现在网页中显示网页，突出了内联二字，就是在一个网页中，我们能够控制在这个网页中用多大的框去显示另外一个网页，并且能通过CSS对其进行控制。  - 而内联框架则可以放在`&lt;body&gt;`里面</code></pre></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> web </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> html </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>歌—それを愛と呼ぶだけ</title>
       <link href="/2020/07/20/ge-sorewoai-tohu-budake/"/>
       <url>/2020/07/20/ge-sorewoai-tohu-budake/</url>
       
         <content type="html"><![CDATA[<p>歌手：まふまふ<br><strong><em>貴方の言葉が 貴方の記憶が</em></strong><br>你的话语 你的记忆<br><strong><em>わずかな世界を満たして</em></strong><br>将这个小小的世界填满<br><strong><em>映画の終わりに数分あるような</em></strong><br>距离电影结束好像还有几分钟<br><strong><em>心地よい今日だ</em></strong><br>是如此愉悦的今日<br><strong><em>手に取る運命は 手放す運命が</em></strong><br>掌握的命运却只是<br><strong><em>増えていくだけ</em></strong><br>徒增了将逝的命运<br><strong><em>そんな小さな綻びに 気づいていたのに</em></strong><br>明明已经注意到了那般细小的破绽<br><strong><em>心が身体を見落とすまで</em></strong><br>直到心灵将身体忽略<br><strong><em>明日のない世界へ行くまで</em></strong><br>直到去往那没有未来的世界<br><strong><em>失うひとつを数えること</em></strong><br>连细数所失去的事物<br><strong><em>それを愛と呼ぶだけ</em></strong><br>也只是将之称为爱<br><strong><em>愛と呼ぶだけ</em></strong><br>我们只是将之称为爱<br><strong><em>貴方の笑顔も瞬きひとつで</em></strong><br>你的笑容也只是一眨眼<br><strong><em>見えなくなるくらい未熟だ</em></strong><br>便看不见了那般生疏<br><strong><em>それならもとより愛しい仕草を</em></strong><br>那样的话 那般令人爱怜的表情<br><strong><em>知らないままがいいなあ</em></strong><br>不如原本就不要知道比较好吧<br><strong><em>過ぎ去る生涯を 変わらぬ後悔を</em></strong><br>逝去的一生与不变的后悔<br><strong><em>命というから</em></strong><br>因为称之为“生命”<br><strong><em>どうしようもないほどに</em></strong><br>所以才被你<br><strong><em>貴方に惹かれているのだろう</em></strong><br>吸引到无可救药的程度了吧<br><strong><em>この手を伸ばせど届かぬ向こう</em></strong><br>朝着这只手伸出却无法触及的方向<br><strong><em>夢を見るより遠くまで</em></strong><br>直到比梦中所见更远的地方<br><strong><em>去り行く貴方を求めたこと</em></strong><br>寻求着已然离去的你<br><strong><em>それを愛と呼ぶだけ</em></strong><br>只是将之称为爱<br><strong><em>愛と呼ぶだけ</em></strong><br>我们只是将之称为爱</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—Happy Birthday</title>
-      <link href="/2020/07/20/ge-happy-birthday/"/>
-      <url>/2020/07/20/ge-happy-birthday/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：back number<br><strong><em>いつの間にやら日付は変わって</em></strong><br>不知不觉日期就变化了<br><strong><em>なんで年って取るんだろう</em></strong><br>岁数为什么要增长呢<br><strong><em>もう背は伸びないくせに</em></strong><br>明明不会再长高了<br><strong><em>着信の音で飛び起きたけど損したな</em></strong><br>亏我听到消息提示音 一下就坐了起来<br><strong><em>君かと思ったのに</em></strong><br>还以为是你呢</p><p><strong><em>何かの手違いで</em></strong><br>会不会在什么阴差阳错下<br><strong><em>好きになってくれないかな</em></strong><br>你喜欢上我呢<br><strong><em>どうにも君のいない場所は</em></strong><br>总觉得你不在的地方<br><strong><em>空気が薄くてさ</em></strong><br>连空气都来得稀薄啊</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>愛が何かは知らないけれど</em></strong><br>虽然不知道爱是什么<br><strong><em>好きと言う名前の痛みになら詳しいかも</em></strong><br>但也许对名为喜欢的疼痛却一清二楚<br><strong><em>君にも教えてあげたいけれど結局</em></strong><br>尽管也想教给你这种感受 但最终<br><strong><em>教わるのは俺だろう</em></strong><br>受教的还是我吧</p><p><strong><em>このまま今日が終わり明日が来れば</em></strong><br>像这样今天过去明天到来<br><strong><em>いつになっても縮まらないこの距離を</em></strong><br>无论何时始终无法缩短的距离<br><strong><em>駆け引きにも綱引きにもならないやり取りを</em></strong><br>谈不上恋爱战略或是此消彼长的你来我往<br><strong><em>もっと単純な名前で呼んであげられるよ</em></strong><br>想用更加单纯的名字呼唤你<br><strong><em>何ひとつ終われないけど</em></strong><br>尽管最后什么都解决不了</p><p><strong><em>つまらない言葉の繰り返しで</em></strong><br>重复着一些无聊的话语<br><strong><em>つじつまもきっと合ってない物語の続きに</em></strong><br>来推进前后完全矛盾的故事后续<br><strong><em>ひとりよがりの毎日に</em></strong><br>在自命清高的每一天<br><strong><em>ハッピーバースデー</em></strong><br>仅仅希望你能对我说<br><strong><em>君に言って欲しいだけ</em></strong><br>生日快乐</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—ONE&#39;s hope</title>
-      <link href="/2020/07/20/ge-one-s-hope/"/>
-      <url>/2020/07/20/ge-one-s-hope/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：やなぎなぎ<br><strong><em>薄らと朱く染まる空 トンボが舞う，</em></strong><br>染上几许朱红的天空 蜻蜓漫舞纷飞，<br><strong><em>子供みたいにはしゃいでる 君を見てた，</em></strong><br>注视着像个孩子般 开心嬉笑的你，<br><strong><em>指差したその先を睨んで 君は言う，</em></strong><br>你直直盯着手指所指的方向，<br><strong><em>「逃げるなよ・・・」って，</em></strong><br>「不准跑啦…」这么说着，<br><strong><em>悔しがったその顔が可笑しくて笑ってた，</em></strong><br>那悔恨的表情逗趣地令我轻笑出声，<br><strong><em>あの頃，</em></strong><br>在那个时候，<br><strong><em>二年後の記念日 プレゼントもらった，</em></strong><br>两年后的纪念日 收到了礼物，<br><strong><em>少しだけ赤くなる 君がくれたもの，</em></strong><br>你赠与我的礼物 令我感到有些不好意思，<br><strong><em>小さな小箱に入った 輪っかのそれは，</em></strong><br>摆放在小巧盒子当中 圆环形状的那样物品，<br><strong><em>銀色に輝いていた，</em></strong><br>绽放出银色的光辉，<br><strong><em>君の事を あなたと呼ぶ日が来て，</em></strong><br>称呼你为 「亲爱的」的那一天来临了，<br><strong><em>白いドレスを纏った私に 「綺麗だよ」と言った，</em></strong><br>你对身着白色婚纱的我 「妳很漂亮喔」这么说着，<br><strong><em>恥ずかしさなど 忘れてしまったのかな？</em></strong><br>是不是连觉得害羞之类的 都忘记了呢？<br><strong><em>そっと、「愛してる」そう言ってキスをした，</em></strong><br>轻轻地唤着「我爱你」，亲吻了彼此，<br><strong><em>幸せだった，</em></strong><br>当时是那样地幸福，<br><strong><em>悩み事はありませんか？</em></strong><br>你是不是有什么烦心的事呢？<br><strong><em>ああ、やっぱり今日も，</em></strong><br>啊啊，果然今天也是如此，<br><strong><em>素直じゃないあなたは 答えてくれない，</em></strong><br>别扭的你 什么话也不回答，<br><strong><em>だけど、ねえ、</em></strong><br>今，但是，吶，现在，<br><strong><em>あなたは，</em></strong><br>你，<br><strong><em>笑ってますか？</em></strong><br>是否正笑着呢？<br><strong><em>夕日に映る あの日のあなたの笑顔，</em></strong><br>倒映在夕阳之中 你那一日的笑容，<br><strong><em>あの日誓った約束は 破れてしまった，</em></strong><br>那一日立下誓言的约定 被打破了，<br><strong><em>繋がっていた赤い糸の 先は霞んで見えない，</em></strong><br>过去连系着你我的红丝线 如今另一端却蒙眬地看不清楚…，<br><strong><em>だけど残されたあなたの一つの希望，</em></strong><br>但是还有一个你的希望留了下来，<br><strong><em>季節は流れ 思い出は駆け巡る，</em></strong><br>季节飞逝 回忆历历在目，<br><strong><em>あの日、君といた茜空 あなたといた時間，</em></strong><br>那一天，与你共享的暮色 与亲爱的你共渡的时间，<br><strong><em>いつか日かまた あなたの横で笑える日まで，</em></strong><br>直到能够再次 在你身边绽放笑容的那一天，<br><strong><em>浮気しないでよ？このリングに誓ってよ，</em></strong><br>在那之前可不能花心喔？ 向这个戒指发誓吧，<br><strong><em>私は大丈夫，</em></strong><br>我没问题的，<br><strong><em>だってあなたを今でも愛してるから，</em></strong><br>因为至今我仍深爱着你，<br><strong><em>どこからかやってきたトンボさん，</em></strong><br>不知从何处飞来的蜻蜓，<br><strong><em>ここからなら見えるでしょう？</em></strong><br>从这里应该就能够看见了吧？<br><strong><em>まだまだ小さな，</em></strong><br>还有些幼小的，<br><strong><em>ONE’S HOPE，</em></strong><br>一个希望。</p>]]></content>
       
       
       <categories>
@@ -424,11 +374,36 @@
     
     
     <entry>
-      <title>歌—ぼくら（城镇青年ED)</title>
-      <link href="/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/"/>
-      <url>/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/</url>
+      <title>歌—ONE&#39;s hope</title>
+      <link href="/2020/07/20/ge-one-s-hope/"/>
+      <url>/2020/07/20/ge-one-s-hope/</url>
       
-        <content type="html"><![CDATA[<p>歌手：玖肆仟<br><strong><em>駆け足でウチに帰る</em></strong><br>奔跑在归家的路上<br><strong><em>子供たちの声がする</em></strong><br>孩子们欢声笑语<br><strong><em>つま先で 石を蹴りながら</em></strong><br>脚尖一边踢着石子<br><strong><em>めぐりめぐる 帰り道</em></strong><br>来而又去的归家路<br><strong><em>誰かの財布拾って 交番まで届けた</em></strong><br>拾着了谁的钱包 交给警察叔叔<br><strong><em>いつか 時が 過ぎて 仆ら</em></strong><br>若有一日岁月蹉跎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの 自分でいられるかな？</em></strong><br>还能做现在的 这样的自己吗？<br><strong><em>ハタチになって更に</em></strong><br>二十岁生日<br><strong><em>二年二ヶ月が過ぎた</em></strong><br>已经过了两年两个月<br><strong><em>やみくもに わけもわからず 我が尽で</em></strong><br>迷茫地走着自己弄不明白的道路<br><strong><em>ここまで来たけど</em></strong><br>终于算是走到这一步<br><strong><em>どこにも 辿り着けてない</em></strong><br>却没有到达过什么终点<br><strong><em>誰にも 出会えていない</em></strong><br>却没有邂逅过什么人<br><strong><em>いつか 時が 過ぎて</em></strong><br>若有一日岁月蹉跎<br><strong><em>仆らただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？<br><strong><em>心 折れて 夢に やぶれ</em></strong><br>经历心伤 经历梦碎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの こんなままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？</p>]]></content>
+        <content type="html"><![CDATA[<p>歌手：やなぎなぎ<br><strong><em>薄らと朱く染まる空 トンボが舞う，</em></strong><br>染上几许朱红的天空 蜻蜓漫舞纷飞，<br><strong><em>子供みたいにはしゃいでる 君を見てた，</em></strong><br>注视着像个孩子般 开心嬉笑的你，<br><strong><em>指差したその先を睨んで 君は言う，</em></strong><br>你直直盯着手指所指的方向，<br><strong><em>「逃げるなよ・・・」って，</em></strong><br>「不准跑啦…」这么说着，<br><strong><em>悔しがったその顔が可笑しくて笑ってた，</em></strong><br>那悔恨的表情逗趣地令我轻笑出声，<br><strong><em>あの頃，</em></strong><br>在那个时候，<br><strong><em>二年後の記念日 プレゼントもらった，</em></strong><br>两年后的纪念日 收到了礼物，<br><strong><em>少しだけ赤くなる 君がくれたもの，</em></strong><br>你赠与我的礼物 令我感到有些不好意思，<br><strong><em>小さな小箱に入った 輪っかのそれは，</em></strong><br>摆放在小巧盒子当中 圆环形状的那样物品，<br><strong><em>銀色に輝いていた，</em></strong><br>绽放出银色的光辉，<br><strong><em>君の事を あなたと呼ぶ日が来て，</em></strong><br>称呼你为 「亲爱的」的那一天来临了，<br><strong><em>白いドレスを纏った私に 「綺麗だよ」と言った，</em></strong><br>你对身着白色婚纱的我 「妳很漂亮喔」这么说着，<br><strong><em>恥ずかしさなど 忘れてしまったのかな？</em></strong><br>是不是连觉得害羞之类的 都忘记了呢？<br><strong><em>そっと、「愛してる」そう言ってキスをした，</em></strong><br>轻轻地唤着「我爱你」，亲吻了彼此，<br><strong><em>幸せだった，</em></strong><br>当时是那样地幸福，<br><strong><em>悩み事はありませんか？</em></strong><br>你是不是有什么烦心的事呢？<br><strong><em>ああ、やっぱり今日も，</em></strong><br>啊啊，果然今天也是如此，<br><strong><em>素直じゃないあなたは 答えてくれない，</em></strong><br>别扭的你 什么话也不回答，<br><strong><em>だけど、ねえ、</em></strong><br>今，但是，吶，现在，<br><strong><em>あなたは，</em></strong><br>你，<br><strong><em>笑ってますか？</em></strong><br>是否正笑着呢？<br><strong><em>夕日に映る あの日のあなたの笑顔，</em></strong><br>倒映在夕阳之中 你那一日的笑容，<br><strong><em>あの日誓った約束は 破れてしまった，</em></strong><br>那一日立下誓言的约定 被打破了，<br><strong><em>繋がっていた赤い糸の 先は霞んで見えない，</em></strong><br>过去连系着你我的红丝线 如今另一端却蒙眬地看不清楚…，<br><strong><em>だけど残されたあなたの一つの希望，</em></strong><br>但是还有一个你的希望留了下来，<br><strong><em>季節は流れ 思い出は駆け巡る，</em></strong><br>季节飞逝 回忆历历在目，<br><strong><em>あの日、君といた茜空 あなたといた時間，</em></strong><br>那一天，与你共享的暮色 与亲爱的你共渡的时间，<br><strong><em>いつか日かまた あなたの横で笑える日まで，</em></strong><br>直到能够再次 在你身边绽放笑容的那一天，<br><strong><em>浮気しないでよ？このリングに誓ってよ，</em></strong><br>在那之前可不能花心喔？ 向这个戒指发誓吧，<br><strong><em>私は大丈夫，</em></strong><br>我没问题的，<br><strong><em>だってあなたを今でも愛してるから，</em></strong><br>因为至今我仍深爱着你，<br><strong><em>どこからかやってきたトンボさん，</em></strong><br>不知从何处飞来的蜻蜓，<br><strong><em>ここからなら見えるでしょう？</em></strong><br>从这里应该就能够看见了吧？<br><strong><em>まだまだ小さな，</em></strong><br>还有些幼小的，<br><strong><em>ONE’S HOPE，</em></strong><br>一个希望。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 歌单 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 歌单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>歌—Happy Birthday</title>
+      <link href="/2020/07/20/ge-happy-birthday/"/>
+      <url>/2020/07/20/ge-happy-birthday/</url>
+      
+        <content type="html"><![CDATA[<p>歌手：back number<br><strong><em>いつの間にやら日付は変わって</em></strong><br>不知不觉日期就变化了<br><strong><em>なんで年って取るんだろう</em></strong><br>岁数为什么要增长呢<br><strong><em>もう背は伸びないくせに</em></strong><br>明明不会再长高了<br><strong><em>着信の音で飛び起きたけど損したな</em></strong><br>亏我听到消息提示音 一下就坐了起来<br><strong><em>君かと思ったのに</em></strong><br>还以为是你呢</p><p><strong><em>何かの手違いで</em></strong><br>会不会在什么阴差阳错下<br><strong><em>好きになってくれないかな</em></strong><br>你喜欢上我呢<br><strong><em>どうにも君のいない場所は</em></strong><br>总觉得你不在的地方<br><strong><em>空気が薄くてさ</em></strong><br>连空气都来得稀薄啊</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>愛が何かは知らないけれど</em></strong><br>虽然不知道爱是什么<br><strong><em>好きと言う名前の痛みになら詳しいかも</em></strong><br>但也许对名为喜欢的疼痛却一清二楚<br><strong><em>君にも教えてあげたいけれど結局</em></strong><br>尽管也想教给你这种感受 但最终<br><strong><em>教わるのは俺だろう</em></strong><br>受教的还是我吧</p><p><strong><em>このまま今日が終わり明日が来れば</em></strong><br>像这样今天过去明天到来<br><strong><em>いつになっても縮まらないこの距離を</em></strong><br>无论何时始终无法缩短的距离<br><strong><em>駆け引きにも綱引きにもならないやり取りを</em></strong><br>谈不上恋爱战略或是此消彼长的你来我往<br><strong><em>もっと単純な名前で呼んであげられるよ</em></strong><br>想用更加单纯的名字呼唤你<br><strong><em>何ひとつ終われないけど</em></strong><br>尽管最后什么都解决不了</p><p><strong><em>つまらない言葉の繰り返しで</em></strong><br>重复着一些无聊的话语<br><strong><em>つじつまもきっと合ってない物語の続きに</em></strong><br>来推进前后完全矛盾的故事后续<br><strong><em>ひとりよがりの毎日に</em></strong><br>在自命清高的每一天<br><strong><em>ハッピーバースデー</em></strong><br>仅仅希望你能对我说<br><strong><em>君に言って欲しいだけ</em></strong><br>生日快乐</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p>]]></content>
       
       
       <categories>
@@ -454,6 +429,31 @@
       <url>/2020/07/20/ge-sai/</url>
       
         <content type="html"><![CDATA[<p>歌手：DECO<em>27 / ef<br>**</em>僕は それが 見えるように<strong>*<br>我还是能看见<br>*</strong>白く吐いた息のキャンパスに<strong>*<br>吐出的白色气息在校园中<br>*</strong>肌色重ねた***<br>肤色重叠</p><p><strong><em>君に それを見てほしくて</em></strong><br>想要你看见它<br><strong><em>赤と黄色 僕のパレットに</em></strong><br>红色和黄色的我的调色板<br><strong><em>君色作った</em></strong><br>做了你的颜色</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その姿は分からないの</em></strong><br>不明白那个身姿<br><strong><em>無くさないで 探さないで</em></strong><br>不用再寻找了<br><strong><em>僕が探して君に見せるから</em></strong><br>因为我会找来给你看的</p><p><strong><em>「そうなんだ」って言ってやった</em></strong><br>说了“是那样的”<br><strong><em>僕は君の言葉に沿って</em></strong><br>我沿着你的话<br><strong><em>そんな感じで逃げてきたの</em></strong><br>以这样的感觉逃避了<br><strong><em>「なんなんだ」って言ってやった</em></strong><br>说了“怎么回事”<br><strong><em>僕は気付いてないフリした</em></strong><br>我假装察觉不到了<br><strong><em>「そんなんやだ」って君は笑ってたけど・・・</em></strong><br>“这样啊。”你笑着，不过・・・</p><p><strong><em>アタシ それが知りたくって</em></strong><br>我想知道<br><strong><em>白く吐いた息は please tell me.</em></strong><br>请告诉我白色的吐出的气息<br><strong><em>なんでさ、逃げるの？</em></strong><br>为什么会逃跑呢？</p><p><strong><em>キミは「描きたい絵がある」と</em></strong><br>你说 有想要描绘的画<br><strong><em>でもそれには色が足りないと</em></strong><br>不过这颜色不够<br><strong><em>筆を回していた</em></strong><br>笔转动了</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その涙の色はまさに</em></strong><br>那泪水的颜色正是<br><strong><em>ずっとずっと探していた</em></strong><br>一直寻找着的<br><strong><em>僕が恋した 君が見せた</em></strong><br>我爱上了你所见到的<br><strong><em>君が見せたから</em></strong><br>你所见到的</p><p><strong><em>「相談が・・・」って言ってやった</em></strong><br>“相谈···」说做的<br><strong><em>愛の罠に誘いこむように</em></strong><br>和爱的陷阱一样<br><strong><em>「なんなんだ」って思った君は</em></strong><br>“什么啊”这样想的你<br><strong><em>僕の袖をギュッと掴んだ</em></strong><br>紧紧地抓住我的袖子</p><p><strong><em>ねえ君に見せたいもの</em></strong><br>想让你看见的东西<br><strong><em>そう君に恋した色</em></strong><br>是与你相恋的颜色</p><p><strong><em>「そうなんだ」って泣き出した</em></strong><br>“是这样啊”哭出来了<br><strong><em>君の涙筆でなぞって</em></strong><br>用你的眼泪描绘出来<br><strong><em>僕の描いた君の絵に</em></strong><br>我所描绘的你的画<br><strong><em>足してみたんだ</em></strong><br>试着贴补了<br><strong><em>「遭難だ」って 笑ったんだ</em></strong><br>“遇难。”这样的笑了。<br><strong><em>僕らが迷い込んだ このキャンバスは</em></strong><br>我们所迷惑的这画布<br><strong><em>色で満たされてた 白い吐息の世界</em></strong><br>色彩填满了白色的吐息的世界</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 歌单 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 歌单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>歌—ぼくら（城镇青年ED)</title>
+      <link href="/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/"/>
+      <url>/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/</url>
+      
+        <content type="html"><![CDATA[<p>歌手：玖肆仟<br><strong><em>駆け足でウチに帰る</em></strong><br>奔跑在归家的路上<br><strong><em>子供たちの声がする</em></strong><br>孩子们欢声笑语<br><strong><em>つま先で 石を蹴りながら</em></strong><br>脚尖一边踢着石子<br><strong><em>めぐりめぐる 帰り道</em></strong><br>来而又去的归家路<br><strong><em>誰かの財布拾って 交番まで届けた</em></strong><br>拾着了谁的钱包 交给警察叔叔<br><strong><em>いつか 時が 過ぎて 仆ら</em></strong><br>若有一日岁月蹉跎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの 自分でいられるかな？</em></strong><br>还能做现在的 这样的自己吗？<br><strong><em>ハタチになって更に</em></strong><br>二十岁生日<br><strong><em>二年二ヶ月が過ぎた</em></strong><br>已经过了两年两个月<br><strong><em>やみくもに わけもわからず 我が尽で</em></strong><br>迷茫地走着自己弄不明白的道路<br><strong><em>ここまで来たけど</em></strong><br>终于算是走到这一步<br><strong><em>どこにも 辿り着けてない</em></strong><br>却没有到达过什么终点<br><strong><em>誰にも 出会えていない</em></strong><br>却没有邂逅过什么人<br><strong><em>いつか 時が 過ぎて</em></strong><br>若有一日岁月蹉跎<br><strong><em>仆らただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？<br><strong><em>心 折れて 夢に やぶれ</em></strong><br>经历心伤 经历梦碎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの こんなままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？</p>]]></content>
       
       
       <categories>
