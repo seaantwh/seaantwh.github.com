@@ -22,9 +22,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -51,9 +51,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -80,9 +80,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -109,9 +109,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -138,9 +138,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -249,256 +249,6 @@
     
     
     <entry>
-      <title>html总结4</title>
-      <link href="/2020/07/21/html-zong-jie-4/"/>
-      <url>/2020/07/21/html-zong-jie-4/</url>
-      
-        <content type="html"><![CDATA[<h2 id="表格和列表"><a href="#表格和列表" class="headerlink" title="表格和列表"></a>表格和列表</h2><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul><li><p>无序列表</p><ul><li><p><code>&lt;ul  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ul&gt;</code></p><p>type为内容前的小标签<br>常见的typename有  disc(实心圆)  circle(空心圆)    square(实心矩形)</p></li></ul></li><li><p>有序列表</p><ul><li><p><code>&lt;ol  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ol&gt;</code></p><p>ype为内容前的小标签<br>常见的typename有  1(数字)  a(小写英文字母）A(大写英文字母)    i(小写罗马字母)  I(大写罗马字母)</p></li></ul></li><li><p>嵌套列表</p><ul><li>无-无   无-有  有-有   有-无</li></ul></li><li><p>定义列表</p><ul><li><code>&lt;dl&gt;&lt;dt&gt;项目1&lt;/dt&gt;&lt;dd&gt;详细1&lt;/dd&gt;&lt;dt&gt;项目2&lt;/dt&gt;&lt;dd&gt;详细2&lt;/dd&gt;&lt;/dl&gt;</code></li></ul></li></ul><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ul><li><p><code>&lt;table&gt;&lt;/table&gt;</code>定义表格标签</p></li><li><p><code>&lt;th&gt;&lt;.th&gt;</code>定义表头</p><p>表头是默认加粗的</p></li><li><p><code>&lt;tr&gt;&lt;/tr&gt;</code>定义表格行</p></li><li><p><code>&lt;td&gt;&lt;/td&gt;</code>定义表格单元</p><p>上下行的表格单元会自动对齐并取最大的表格单元</p></li></ul><h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>通过使用框架，可以在同一个浏览器窗口中显示不止一个页面。每份HTML文档称为一个框架，并且每个框架都独立于其他的框架。</p><p>使用框架的坏处：<br>开发人员必须同时跟踪更多的HTML文档<br>很难打印整张页面</p><h3 id="lt-frameset-gt-标签"><a href="#lt-frameset-gt-标签" class="headerlink" title="&lt;frameset&gt;标签"></a><code>&lt;frameset&gt;</code>标签</h3><ul><li>框架结构标签（ <code>&lt;frameset&gt;</code>）定义如何将窗口分割为框架</li><li>每个 frameset 定义了一系列行或列</li><li>rows/cols 的值规定了每行/每列占据屏幕的面积</li></ul><h3 id="lt-frame-gt-标签"><a href="#lt-frame-gt-标签" class="headerlink" title="&lt;frame&gt;标签"></a><code>&lt;frame&gt;</code>标签</h3><ul><li>Frame 标签定义了放置在每个框架中的 HTML 文档。</li><li>假如一个框架有可见边框，用户可以拖动边框来改变它的大小。为了避免这种情况发生，可以在  <code>&lt;frame&gt;</code>标签中加入： <code>noresize=&quot;noresize&quot;</code>。</li></ul><h3 id="lt-noframes-gt-标签"><a href="#lt-noframes-gt-标签" class="headerlink" title="&lt;noframes&gt; 标签"></a><code>&lt;noframes&gt;</code> 标签</h3><ul><li><p>为不支持框架的浏览器添加  <code>&lt;noframes&gt;</code> 标签。</p></li><li><p>不能将  <code>&lt;body&gt;&lt;/body&gt;</code>标签与  <code>&lt;frameset&gt;&lt;/frameset&gt;</code> 标签同时使用！不过，假如你添加包含一段文本的  <code>&lt;noframes&gt;</code>标签，就必须将这段文字嵌套于  <code>&lt;body&gt;&lt;/body&gt;</code> 标签内。</p><pre><code>​       &lt;noframes&gt;​             &lt;body&gt;您的浏览器无法处理框架！&lt;/body&gt;​       &lt;/noframes&gt;</code></pre><h3 id="类别"><a href="#类别" class="headerlink" title="类别"></a>类别</h3></li><li><p>水平框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_a.htm&quot;&gt;     &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>垂直框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;     &lt;frame src=&quot;frame_a.htm&quot;&gt;    &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>混合框架</p><pre><code>&lt;frameset rows=&quot;50%,50%&quot;&gt;       &lt;frame src=&quot;frame_a.html&quot;&gt;&lt;frameset cols=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_b.html&quot;&gt;      &lt;frame src=&quot;frame_c.html&quot;&gt;&lt;/frameset&gt;&lt;/frameset&gt;</code></pre></li><li><p>内联框架</p><pre><code>&lt;iframe src=&quot;/i/eg_landscape.jpg&quot;&gt;&lt;/iframe&gt;&lt;p&gt;一些老的浏览器不支持 iframe。&lt;/p&gt;&lt;p&gt;如果得不到支持，iframe 是不可见的。&lt;/p&gt;</code></pre><pre><code>  - HTML内联框架是为了实现在网页中显示网页，突出了内联二字，就是在一个网页中，我们能够控制在这个网页中用多大的框去显示另外一个网页，并且能通过CSS对其进行控制。  - 而内联框架则可以放在`&lt;body&gt;`里面</code></pre></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> web </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> html </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html总结6</title>
-      <link href="/2020/07/21/html-zong-jie-6/"/>
-      <url>/2020/07/21/html-zong-jie-6/</url>
-      
-        <content type="html"><![CDATA[<h3 id="布局"><a href="#布局" class="headerlink" title="布局"></a>布局</h3><ul><li>header   定义文档或文档页眉</li><li>nav   定义导航链接的容器</li><li>section  定义文档的节</li><li>article  定义独立的自包含文章</li><li>aside  定义内容之外的内容(如侧栏)</li><li>footer  定义文档或节的页脚</li><li>details  定义细节</li><li>summary  定义details元素的细节</li></ul><h3 id="响应式设计-以可变的尺寸传递网页"><a href="#响应式设计-以可变的尺寸传递网页" class="headerlink" title="响应式设计(以可变的尺寸传递网页)"></a>响应式设计(以可变的尺寸传递网页)</h3><ul><li>自己设计</li><li>使用现成的CSS框架</li></ul><h3 id="块"><a href="#块" class="headerlink" title="块"></a>块</h3><p>块级元素在浏览器显示时，通常会以新行来开始（和结束）。<br>例子：<code>&lt;h1&gt;, &lt;p&gt;, &lt;ul&gt;, &lt;table&gt;</code></p><p>内联元素在显示时通常不会以新行开始。<br>例子：<code>&lt;b&gt;, &lt;td&gt;, &lt;a&gt;, &lt;img&gt;</code></p><ul><li><p>div元素</p><ul><li><code>&lt;div&gt;</code> 可定义文档中的分区或节</li><li><code>&lt;div&gt;</code> 标签可以把文档分割为独立的、不同的部分。</li></ul></li><li><p>span元素</p><ul><li><code>&lt;span&gt;</code>标签被用来组合文档中的行内元素。</li></ul></li></ul><h3 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h3><ul><li><p>绝对路径</p><ul><li>绝对文件路径是指向一个因特网文件的完整 URL：</li><li>例：<code>&lt;img src=&quot;https://seaantwh/source/images/picture.jpg&quot; alt=&quot;star&quot;&gt;</code></li></ul></li><li><p>相对路径</p><ul><li><p>相对路径指向了相对于当前页面的文件。</p></li><li><p>实例</p><p>​          <code>&lt;img src=&quot;picture.jpg&quot;&gt;picture.jpg 位于与当前网页相同的文件夹</code></p><p>​         <code>&lt;img src=&quot;images/picture.jpg&quot;&gt;picture.jpg位于当前文件夹的images文件夹中</code></p><p>​        <code>&lt;img src=&quot;/images/picture.jpg&quot;&gt;picture.jpg当前站点根目录的images文件夹中</code></p><p>​        <code>&lt;img src=&quot;../picture.jpg&quot;&gt;    picture.jpg 位于当前文件夹的上一级文件夹中</code></p></li></ul></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> web </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> html </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>html总结5</title>
-      <link href="/2020/07/21/html-zong-jie-5/"/>
-      <url>/2020/07/21/html-zong-jie-5/</url>
-      
-        <content type="html"><![CDATA[<h2 id="表单"><a href="#表单" class="headerlink" title="表单"></a>表单</h2><p>HTML 表单用于搜集不同类型的用户输入。</p><h3 id="lt-form-gt-lt-form-gt"><a href="#lt-form-gt-lt-form-gt" class="headerlink" title="&lt;form&gt;&lt;/form&gt;"></a><code>&lt;form&gt;&lt;/form&gt;</code></h3><ul><li><code>&lt;form&gt;</code>标签定义 HTML 表单</li><li>action 属性定义在提交表单时执行的动作。</li><li>method 属性规定在提交表单时所用的 HTTP 方法（GET 或 POST）</li><li>Name 属性：如果要正确地被提交，每个输入字段必须设置一个 name 属性。</li></ul><h3 id="lt-input-gt"><a href="#lt-input-gt" class="headerlink" title="&lt;input/&gt;"></a><code>&lt;input/&gt;</code></h3><ul><li><p>文本域</p><p>框默认为20字符</p><pre><code>&lt;form&gt;名：&lt;input type=&quot;text&quot; name=&quot;firstname&quot;&gt;&lt;br /&gt;姓：&lt;input type=&quot;text&quot; name=&quot;lastname&quot;&gt;&lt;/form&gt;</code></pre></li><li><p>密码域</p><p>密码隐藏不可见，以星号或圆点替代</p><pre><code>&lt;form&gt;用户：&lt;input type=&quot;text&quot; name=&quot;user&quot;&gt;&lt;br /&gt;密码：&lt;input type=&quot;password&quot; name=&quot;password&quot;&gt;&lt;/form&gt;</code></pre></li><li><p>单选按钮</p><p>同一组的单选按钮，name 取值一定要一致这样同一组的单选按钮才可以起到单选的作用。</p><ul><li><pre class="line-numbers language-&lt;form&gt;"><code class="language-&lt;form&gt;"><input type="radio" name="sex" value="male">Male<br><input type="radio" name="sex" value="female">Female</form><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li></ul></li><li><p>复选框</p><p>同一组的复选框，name 取值一定要一致这样同一组的单选按钮才可以起到单选的作用。</p><ul><li><pre><code>&lt;form&gt;&lt;input type=&quot;checkbox&quot; name=&quot;vehicle&quot; value=&quot;Bike&quot;&gt;I have a bike&lt;br&gt;&lt;input type=&quot;checkbox&quot; name=&quot;vehicle&quot; value=&quot;Car&quot;&gt;I have a car&lt;/form&gt;</code></pre></li></ul></li><li><p>提交按钮</p><ul><li><pre><code>&lt;form name=&quot;input&quot; action=&quot;提交至&quot; method=&quot;get&quot;&gt;&lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;&lt;/form&gt;</code></pre></li><li><pre><code>&lt;form action=&quot;&quot;&gt;&lt;input type=&quot;button&quot; value=&quot;Hello world!&quot;&gt;&lt;/form&gt;</code></pre></li></ul></li><li><p>下拉列表</p><p><code>&lt;select&gt;</code> 元素定义下拉列表：<br><code>&lt;option&gt;</code>元素定义待选择的选项。<br>列表通常会把首个选项显示为被选选项。<br>通过添加 <code>selected</code>属性来定义预定义选项。</p><pre><code>无预选值    &lt;form action=&quot;&quot;&gt;&lt;select name=&quot;cars&quot;&gt;&lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;&lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;&lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;&lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;&lt;/select&gt;&lt;/form&gt;</code></pre><pre><code>带预选值&lt;form action=&quot;&quot;&gt;&lt;select name=&quot;cars&quot;&gt;&lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;&lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;&lt;option value=&quot;fiat&quot; selected&gt;Fiat&lt;/option&gt;&lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;&lt;/select&gt;&lt;/form&gt;</code></pre></li><li><p>预定义选项列表</p><p>用户会在他们输入数据时看到预定义选项的下拉列表。<br>（<code>&lt;input&gt;</code> 元素的 list 属性必须引用 <code>&lt;datalist&gt;</code> 元素的 id 属性)</p><pre><code>&lt;form action=&quot;action_page.php&quot;&gt;&lt;input list=&quot;browsers&quot;&gt;&lt;datalist id=&quot;browsers&quot;&gt; &lt;option value=&quot;Internet Explorer&quot;&gt; &lt;option value=&quot;Firefox&quot;&gt; &lt;option value=&quot;Chrome&quot;&gt; &lt;option value=&quot;Opera&quot;&gt; &lt;option value=&quot;Safari&quot;&gt;&lt;/datalist&gt; &lt;/form&gt;</code></pre></li><li><p>type所有类型</p><p>button,checkbox,file,hidden    ,image,password,radio,reset,submit,text</p></li></ul><h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><ul><li><p>带边框的表单</p><pre><code>&lt;form action=&quot;&quot;&gt;&lt;fieldset&gt;&lt;legend&gt;Personal information:&lt;/legend&gt;Name: &lt;input type=&quot;text&quot; size=&quot;30&quot;&gt;&lt;br&gt;E-mail: &lt;input type=&quot;text&quot; size=&quot;30&quot;&gt;&lt;br&gt;Date of birth: &lt;input type=&quot;text&quot; size=&quot;10&quot;&gt;&lt;/fieldset&gt;    &lt;/form&gt;</code></pre><ul><li><code>&lt;fieldset&gt;</code>标签可将表单内的相关元素分组。(生成边框)</li><li><code>&lt;legend&gt;</code> 标签为 fieldset 元素定义标题。</li></ul></li><li><p>利用表单发送电子邮件</p></li></ul><pre><code>  &lt;form action=&quot;mailto:someone@example.com&quot; method=&quot;post&quot; enctype=&quot;text/plain&quot;&gt;  E-mail:&lt;br&gt;  &lt;input type=&quot;text&quot; name=&quot;mail&quot; value=&quot;your email&quot;&gt;&lt;br&gt;  Comment:&lt;br&gt;  &lt;input type=&quot;text&quot; name=&quot;comment&quot; value=&quot;your comment&quot; size=&quot;50&quot;&gt;&lt;br&gt;&lt;br&gt;  &lt;input type=&quot;submit&quot; value=&quot;发送&quot;&gt;                    &lt;/form&gt;</code></pre><h2 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h2><h3 id="lt-script-gt-lt-script-gt"><a href="#lt-script-gt-lt-script-gt" class="headerlink" title="&lt;script&gt;&lt;/script&gt;"></a><code>&lt;script&gt;&lt;/script&gt;</code></h3><p>如果浏览器压根没法识别 <code>&lt;script&gt;</code>标签，那么<code>&lt;script&gt;</code>标签所包含的内容将以文本方式显示在页面上。为了避免这种情况发生，你应该将脚本隐藏在注释标签当中。那些老的浏览器（无法识别 <code>&lt;script&gt;</code> 标签的浏览器）将忽略这些注释，所以不会将标签的内容显示到页面上。而那些新的浏览器将读懂这些脚本并执行它们，即使代码被嵌套在注释标签内。</p><ul><li>包含脚本语句</li><li>利用src指向外部脚本</li></ul><h3 id="lt-noscript-gt-lt-noscript-gt"><a href="#lt-noscript-gt-lt-noscript-gt" class="headerlink" title="&lt;noscript&gt;&lt;/noscript&gt;"></a><code>&lt;noscript&gt;&lt;/noscript&gt;</code></h3><ul><li>只有在浏览器不支持脚本或者禁用脚本时，才会显示 noscript 元素中的内容：</li><li>oscript 元素可包含普通 HTML 页面的 body 元素中能够找到的所有元素。</li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> web </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> html </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—それを愛と呼ぶだけ</title>
-      <link href="/2020/07/20/ge-sorewoai-tohu-budake/"/>
-      <url>/2020/07/20/ge-sorewoai-tohu-budake/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：まふまふ<br><strong><em>貴方の言葉が 貴方の記憶が</em></strong><br>你的话语 你的记忆<br><strong><em>わずかな世界を満たして</em></strong><br>将这个小小的世界填满<br><strong><em>映画の終わりに数分あるような</em></strong><br>距离电影结束好像还有几分钟<br><strong><em>心地よい今日だ</em></strong><br>是如此愉悦的今日<br><strong><em>手に取る運命は 手放す運命が</em></strong><br>掌握的命运却只是<br><strong><em>増えていくだけ</em></strong><br>徒增了将逝的命运<br><strong><em>そんな小さな綻びに 気づいていたのに</em></strong><br>明明已经注意到了那般细小的破绽<br><strong><em>心が身体を見落とすまで</em></strong><br>直到心灵将身体忽略<br><strong><em>明日のない世界へ行くまで</em></strong><br>直到去往那没有未来的世界<br><strong><em>失うひとつを数えること</em></strong><br>连细数所失去的事物<br><strong><em>それを愛と呼ぶだけ</em></strong><br>也只是将之称为爱<br><strong><em>愛と呼ぶだけ</em></strong><br>我们只是将之称为爱<br><strong><em>貴方の笑顔も瞬きひとつで</em></strong><br>你的笑容也只是一眨眼<br><strong><em>見えなくなるくらい未熟だ</em></strong><br>便看不见了那般生疏<br><strong><em>それならもとより愛しい仕草を</em></strong><br>那样的话 那般令人爱怜的表情<br><strong><em>知らないままがいいなあ</em></strong><br>不如原本就不要知道比较好吧<br><strong><em>過ぎ去る生涯を 変わらぬ後悔を</em></strong><br>逝去的一生与不变的后悔<br><strong><em>命というから</em></strong><br>因为称之为“生命”<br><strong><em>どうしようもないほどに</em></strong><br>所以才被你<br><strong><em>貴方に惹かれているのだろう</em></strong><br>吸引到无可救药的程度了吧<br><strong><em>この手を伸ばせど届かぬ向こう</em></strong><br>朝着这只手伸出却无法触及的方向<br><strong><em>夢を見るより遠くまで</em></strong><br>直到比梦中所见更远的地方<br><strong><em>去り行く貴方を求めたこと</em></strong><br>寻求着已然离去的你<br><strong><em>それを愛と呼ぶだけ</em></strong><br>只是将之称为爱<br><strong><em>愛と呼ぶだけ</em></strong><br>我们只是将之称为爱</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—Happy Birthday</title>
-      <link href="/2020/07/20/ge-happy-birthday/"/>
-      <url>/2020/07/20/ge-happy-birthday/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：back number<br><strong><em>いつの間にやら日付は変わって</em></strong><br>不知不觉日期就变化了<br><strong><em>なんで年って取るんだろう</em></strong><br>岁数为什么要增长呢<br><strong><em>もう背は伸びないくせに</em></strong><br>明明不会再长高了<br><strong><em>着信の音で飛び起きたけど損したな</em></strong><br>亏我听到消息提示音 一下就坐了起来<br><strong><em>君かと思ったのに</em></strong><br>还以为是你呢</p><p><strong><em>何かの手違いで</em></strong><br>会不会在什么阴差阳错下<br><strong><em>好きになってくれないかな</em></strong><br>你喜欢上我呢<br><strong><em>どうにも君のいない場所は</em></strong><br>总觉得你不在的地方<br><strong><em>空気が薄くてさ</em></strong><br>连空气都来得稀薄啊</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>愛が何かは知らないけれど</em></strong><br>虽然不知道爱是什么<br><strong><em>好きと言う名前の痛みになら詳しいかも</em></strong><br>但也许对名为喜欢的疼痛却一清二楚<br><strong><em>君にも教えてあげたいけれど結局</em></strong><br>尽管也想教给你这种感受 但最终<br><strong><em>教わるのは俺だろう</em></strong><br>受教的还是我吧</p><p><strong><em>このまま今日が終わり明日が来れば</em></strong><br>像这样今天过去明天到来<br><strong><em>いつになっても縮まらないこの距離を</em></strong><br>无论何时始终无法缩短的距离<br><strong><em>駆け引きにも綱引きにもならないやり取りを</em></strong><br>谈不上恋爱战略或是此消彼长的你来我往<br><strong><em>もっと単純な名前で呼んであげられるよ</em></strong><br>想用更加单纯的名字呼唤你<br><strong><em>何ひとつ終われないけど</em></strong><br>尽管最后什么都解决不了</p><p><strong><em>つまらない言葉の繰り返しで</em></strong><br>重复着一些无聊的话语<br><strong><em>つじつまもきっと合ってない物語の続きに</em></strong><br>来推进前后完全矛盾的故事后续<br><strong><em>ひとりよがりの毎日に</em></strong><br>在自命清高的每一天<br><strong><em>ハッピーバースデー</em></strong><br>仅仅希望你能对我说<br><strong><em>君に言って欲しいだけ</em></strong><br>生日快乐</p><p><strong><em>くだらない話は思い付くのに</em></strong><br>明明能想出些毫无意义的话<br><strong><em>君を抱き締めていい理由だけが見付からない</em></strong><br>却唯独找不到可以拥抱你的理由<br><strong><em>ああそうか そうだよな</em></strong><br>啊这样呀 说的也是呢<br><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p><p><strong><em>ハッピーバースデー 片想いの俺</em></strong><br>祝单恋你的我 生日快乐</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—ONE&#39;s hope</title>
-      <link href="/2020/07/20/ge-one-s-hope/"/>
-      <url>/2020/07/20/ge-one-s-hope/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：やなぎなぎ<br><strong><em>薄らと朱く染まる空 トンボが舞う，</em></strong><br>染上几许朱红的天空 蜻蜓漫舞纷飞，<br><strong><em>子供みたいにはしゃいでる 君を見てた，</em></strong><br>注视着像个孩子般 开心嬉笑的你，<br><strong><em>指差したその先を睨んで 君は言う，</em></strong><br>你直直盯着手指所指的方向，<br><strong><em>「逃げるなよ・・・」って，</em></strong><br>「不准跑啦…」这么说着，<br><strong><em>悔しがったその顔が可笑しくて笑ってた，</em></strong><br>那悔恨的表情逗趣地令我轻笑出声，<br><strong><em>あの頃，</em></strong><br>在那个时候，<br><strong><em>二年後の記念日 プレゼントもらった，</em></strong><br>两年后的纪念日 收到了礼物，<br><strong><em>少しだけ赤くなる 君がくれたもの，</em></strong><br>你赠与我的礼物 令我感到有些不好意思，<br><strong><em>小さな小箱に入った 輪っかのそれは，</em></strong><br>摆放在小巧盒子当中 圆环形状的那样物品，<br><strong><em>銀色に輝いていた，</em></strong><br>绽放出银色的光辉，<br><strong><em>君の事を あなたと呼ぶ日が来て，</em></strong><br>称呼你为 「亲爱的」的那一天来临了，<br><strong><em>白いドレスを纏った私に 「綺麗だよ」と言った，</em></strong><br>你对身着白色婚纱的我 「妳很漂亮喔」这么说着，<br><strong><em>恥ずかしさなど 忘れてしまったのかな？</em></strong><br>是不是连觉得害羞之类的 都忘记了呢？<br><strong><em>そっと、「愛してる」そう言ってキスをした，</em></strong><br>轻轻地唤着「我爱你」，亲吻了彼此，<br><strong><em>幸せだった，</em></strong><br>当时是那样地幸福，<br><strong><em>悩み事はありませんか？</em></strong><br>你是不是有什么烦心的事呢？<br><strong><em>ああ、やっぱり今日も，</em></strong><br>啊啊，果然今天也是如此，<br><strong><em>素直じゃないあなたは 答えてくれない，</em></strong><br>别扭的你 什么话也不回答，<br><strong><em>だけど、ねえ、</em></strong><br>今，但是，吶，现在，<br><strong><em>あなたは，</em></strong><br>你，<br><strong><em>笑ってますか？</em></strong><br>是否正笑着呢？<br><strong><em>夕日に映る あの日のあなたの笑顔，</em></strong><br>倒映在夕阳之中 你那一日的笑容，<br><strong><em>あの日誓った約束は 破れてしまった，</em></strong><br>那一日立下誓言的约定 被打破了，<br><strong><em>繋がっていた赤い糸の 先は霞んで見えない，</em></strong><br>过去连系着你我的红丝线 如今另一端却蒙眬地看不清楚…，<br><strong><em>だけど残されたあなたの一つの希望，</em></strong><br>但是还有一个你的希望留了下来，<br><strong><em>季節は流れ 思い出は駆け巡る，</em></strong><br>季节飞逝 回忆历历在目，<br><strong><em>あの日、君といた茜空 あなたといた時間，</em></strong><br>那一天，与你共享的暮色 与亲爱的你共渡的时间，<br><strong><em>いつか日かまた あなたの横で笑える日まで，</em></strong><br>直到能够再次 在你身边绽放笑容的那一天，<br><strong><em>浮気しないでよ？このリングに誓ってよ，</em></strong><br>在那之前可不能花心喔？ 向这个戒指发誓吧，<br><strong><em>私は大丈夫，</em></strong><br>我没问题的，<br><strong><em>だってあなたを今でも愛してるから，</em></strong><br>因为至今我仍深爱着你，<br><strong><em>どこからかやってきたトンボさん，</em></strong><br>不知从何处飞来的蜻蜓，<br><strong><em>ここからなら見えるでしょう？</em></strong><br>从这里应该就能够看见了吧？<br><strong><em>まだまだ小さな，</em></strong><br>还有些幼小的，<br><strong><em>ONE’S HOPE，</em></strong><br>一个希望。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—ささえる人の歌</title>
-      <link href="/2020/07/20/ge-sasaeruren-noge/"/>
-      <url>/2020/07/20/ge-sasaeruren-noge/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：back number<br><strong><em>元気で毎日暮らしてますか</em></strong><br>有健康地过好每天吗<br><strong><em>朝は起きられているのでしょうか</em></strong><br>早上能不赖床了吗<br><strong><em>野菜もきちんと食べていますか</em></strong><br>蔬菜也有好好吃了吗<br><strong><em>つらい想いはしてませんか</em></strong><br>没有受到委屈吧<br><strong><em>頑張ってって言いながら</em></strong><br>我口头说着“加油啊”<br><strong><em>あまり無理しないでねって</em></strong><br>心里头却正想着<br><strong><em>思っています</em></strong><br>“不要太勉强了啊”<br><strong><em>心配になる事も寂しくなる事も</em></strong><br>虽然时常会有<br><strong><em>あるけど</em></strong><br>担心和寂寞<br><strong><em>元気でいてくれたら</em></strong><br>但只要你身体健康<br><strong><em>愛する人がどこにいても</em></strong><br>爱你的人无论在何处<br><strong><em>心から笑えますように</em></strong><br>都会从心中微笑<br><strong><em>少しくらい嫌な事があっても</em></strong><br>就算是有点讨厌的事情<br><strong><em>今日を笑って終えてくれたなら</em></strong><br>今天笑着把它完成的话<br><strong><em>ただそれだけで</em></strong><br>仅仅就这样<br><strong><em>それだけでいい</em></strong><br>便就足够了<br><strong><em>こっちは心配いらないから</em></strong><br>不需要担心这边<br><strong><em>たまに疲れたら帰っておいで</em></strong><br>偶尔累了便回来一趟吧<br><strong><em>あなたの好きなものを作って</em></strong><br>因为我做了你喜欢的东西<br><strong><em>待っているから</em></strong><br>等着你<br><strong><em>人生は一度だから</em></strong><br>人生只有一次<br><strong><em>自分が思うように</em></strong><br>好好为自己着想<br><strong><em>生きるのもいい</em></strong><br>为自己生存也好<br><strong><em>本当は出世なんて</em></strong><br>其实“出人头地”什么的<br><strong><em>してもしなくてもいいんだよ</em></strong><br>没有成功也不要紧啊<br><strong><em>間違えたっていい</em></strong><br>弄错了也无妨<br><strong><em>そのままでいい</em></strong><br>就那样足够了<br><strong><em>愛する人がどこにいても</em></strong><br>爱你的人无论在哪<br><strong><em>心から笑えますように</em></strong><br>都会在心中替你高兴<br><strong><em>少しくらい嫌な事があっても</em></strong><br>就算是有点讨厌的事情<br><strong><em>今日を笑って終えてくれたなら</em></strong><br>今天把它笑着完成的话<br><strong><em>ただそれだけで</em></strong><br>便足够了<br><strong><em>それだけでいい</em></strong><br>只要那样就足够了<br><strong><em>こっちは心配いらないから</em></strong><br>这边不需要担心<br><strong><em>たまに疲れたら帰っておいで</em></strong><br>偶尔感到疲倦的话便回来吧<br><strong><em>あなたの好きなものを作って</em></strong><br>因为做了你喜欢的东西<br><strong><em>待っているから</em></strong><br>等着你呢<br><strong><em>待っているから</em></strong><br>等着你呢</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—ぼくら（城镇青年ED)</title>
-      <link href="/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/"/>
-      <url>/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：玖肆仟<br><strong><em>駆け足でウチに帰る</em></strong><br>奔跑在归家的路上<br><strong><em>子供たちの声がする</em></strong><br>孩子们欢声笑语<br><strong><em>つま先で 石を蹴りながら</em></strong><br>脚尖一边踢着石子<br><strong><em>めぐりめぐる 帰り道</em></strong><br>来而又去的归家路<br><strong><em>誰かの財布拾って 交番まで届けた</em></strong><br>拾着了谁的钱包 交给警察叔叔<br><strong><em>いつか 時が 過ぎて 仆ら</em></strong><br>若有一日岁月蹉跎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの 自分でいられるかな？</em></strong><br>还能做现在的 这样的自己吗？<br><strong><em>ハタチになって更に</em></strong><br>二十岁生日<br><strong><em>二年二ヶ月が過ぎた</em></strong><br>已经过了两年两个月<br><strong><em>やみくもに わけもわからず 我が尽で</em></strong><br>迷茫地走着自己弄不明白的道路<br><strong><em>ここまで来たけど</em></strong><br>终于算是走到这一步<br><strong><em>どこにも 辿り着けてない</em></strong><br>却没有到达过什么终点<br><strong><em>誰にも 出会えていない</em></strong><br>却没有邂逅过什么人<br><strong><em>いつか 時が 過ぎて</em></strong><br>若有一日岁月蹉跎<br><strong><em>仆らただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？<br><strong><em>心 折れて 夢に やぶれ</em></strong><br>经历心伤 经历梦碎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの こんなままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—サイ</title>
-      <link href="/2020/07/20/ge-sai/"/>
-      <url>/2020/07/20/ge-sai/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：DECO<em>27 / ef<br>**</em>僕は それが 見えるように<strong>*<br>我还是能看见<br>*</strong>白く吐いた息のキャンパスに<strong>*<br>吐出的白色气息在校园中<br>*</strong>肌色重ねた***<br>肤色重叠</p><p><strong><em>君に それを見てほしくて</em></strong><br>想要你看见它<br><strong><em>赤と黄色 僕のパレットに</em></strong><br>红色和黄色的我的调色板<br><strong><em>君色作った</em></strong><br>做了你的颜色</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その姿は分からないの</em></strong><br>不明白那个身姿<br><strong><em>無くさないで 探さないで</em></strong><br>不用再寻找了<br><strong><em>僕が探して君に見せるから</em></strong><br>因为我会找来给你看的</p><p><strong><em>「そうなんだ」って言ってやった</em></strong><br>说了“是那样的”<br><strong><em>僕は君の言葉に沿って</em></strong><br>我沿着你的话<br><strong><em>そんな感じで逃げてきたの</em></strong><br>以这样的感觉逃避了<br><strong><em>「なんなんだ」って言ってやった</em></strong><br>说了“怎么回事”<br><strong><em>僕は気付いてないフリした</em></strong><br>我假装察觉不到了<br><strong><em>「そんなんやだ」って君は笑ってたけど・・・</em></strong><br>“这样啊。”你笑着，不过・・・</p><p><strong><em>アタシ それが知りたくって</em></strong><br>我想知道<br><strong><em>白く吐いた息は please tell me.</em></strong><br>请告诉我白色的吐出的气息<br><strong><em>なんでさ、逃げるの？</em></strong><br>为什么会逃跑呢？</p><p><strong><em>キミは「描きたい絵がある」と</em></strong><br>你说 有想要描绘的画<br><strong><em>でもそれには色が足りないと</em></strong><br>不过这颜色不够<br><strong><em>筆を回していた</em></strong><br>笔转动了</p><p><strong><em>あれ？何かが雫れ落ちた</em></strong><br>咦？有什么东西落下了<br><strong><em>その涙の色はまさに</em></strong><br>那泪水的颜色正是<br><strong><em>ずっとずっと探していた</em></strong><br>一直寻找着的<br><strong><em>僕が恋した 君が見せた</em></strong><br>我爱上了你所见到的<br><strong><em>君が見せたから</em></strong><br>你所见到的</p><p><strong><em>「相談が・・・」って言ってやった</em></strong><br>“相谈···」说做的<br><strong><em>愛の罠に誘いこむように</em></strong><br>和爱的陷阱一样<br><strong><em>「なんなんだ」って思った君は</em></strong><br>“什么啊”这样想的你<br><strong><em>僕の袖をギュッと掴んだ</em></strong><br>紧紧地抓住我的袖子</p><p><strong><em>ねえ君に見せたいもの</em></strong><br>想让你看见的东西<br><strong><em>そう君に恋した色</em></strong><br>是与你相恋的颜色</p><p><strong><em>「そうなんだ」って泣き出した</em></strong><br>“是这样啊”哭出来了<br><strong><em>君の涙筆でなぞって</em></strong><br>用你的眼泪描绘出来<br><strong><em>僕の描いた君の絵に</em></strong><br>我所描绘的你的画<br><strong><em>足してみたんだ</em></strong><br>试着贴补了<br><strong><em>「遭難だ」って 笑ったんだ</em></strong><br>“遇难。”这样的笑了。<br><strong><em>僕らが迷い込んだ このキャンバスは</em></strong><br>我们所迷惑的这画布<br><strong><em>色で満たされてた 白い吐息の世界</em></strong><br>色彩填满了白色的吐息的世界</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>歌—猫</title>
-      <link href="/2020/07/20/ge-mao/"/>
-      <url>/2020/07/20/ge-mao/</url>
-      
-        <content type="html"><![CDATA[<p>歌手：DISH//<br><strong><em>夕焼けが燃えてこの街ごと</em></strong><br>在被夕阳燃烧着的这个小镇中<br><strong><em>飲み込んでしまいそうな今日に</em></strong><br>在这即将被吞噬的今日<br><strong><em>僕は君を手放してしまった</em></strong><br>我将你的手放开了</p><p><strong><em>明日が不安だ</em></strong><br>对于明天感到不安<br><strong><em>とても嫌だ</em></strong><br>真是让人讨厌<br><strong><em>だからこの僕も一緒に</em></strong><br>所以夕阳啊<br><strong><em>飲み込んでしまえよ夕焼け</em></strong><br>把这样的我一同吞噬掉吧</p><p><strong><em>だけどもそうはいかないよな</em></strong><br>但这样是行不通的吧<br><strong><em>明日ってウザいほど来るよな</em></strong><br>明天就算令人厌烦也一样会到来<br><strong><em>眠たい夜になんだか</em></strong><br>在疲惫的夜晚里 不知为何<br><strong><em>笑っちゃう</em></strong><br>笑了出来</p><p><strong><em>家まで帰ろう</em></strong><br>回家吧<br><strong><em>1人で帰ろう</em></strong><br>就算一个人 也回家吧<br><strong><em>昨日のことなど</em></strong><br>昨天发生的事<br><strong><em>幻だと思おう</em></strong><br>仿佛只是一抹幻影<br><strong><em>君の顔なんて忘れてやるさ</em></strong><br>我想把你的脸忘却<br><strong><em>馬鹿馬鹿しいだろそうだろ</em></strong><br>这样的我很傻吧 是吧<br><strong><em>君がいなくなった日々も</em></strong><br>在没有你的日子里<br><strong><em>このどうしようもない気だるさも</em></strong><br>在这无法摆脱的无力感中<br><strong><em>心と体が喧嘩して</em></strong><br>心灵和身体在互相争吵<br><strong><em>頼りない僕は寝転んで</em></strong><br>无依无靠的我随便地躺着<br><strong><em>猫になったんだよな君は</em></strong><br>你一定是变成猫了吧<br><strong><em>いつかフラッと現れてくれ</em></strong><br>什么时候能突然出现在我面前呢<br><strong><em>何気ない毎日を</em></strong><br>把漫不经心度过的每一天<br><strong><em>君色に染めておくれよ</em></strong><br>都染上你的色彩吧</p><p><strong><em>夕焼けが燃えてこの街ごと</em></strong><br>在被夕阳燃烧着的这个小镇中<br><strong><em>飲み込んでしまいそうな今日に</em></strong><br>在这即将被吞噬的今日<br><strong><em>僕は君を手放してしまった</em></strong><br>我将你的手放开了</p><p><strong><em>若すぎる僕らはまた1から</em></strong><br>太过年轻的我们 可以从头再开始<br><strong><em>出会うことは可能なのかな</em></strong><br>但还能再次相遇吗<br><strong><em>願うだけ無駄ならもうダメだ</em></strong><br>如果连祈祷都做不到 那就无望了啊</p><p><strong><em>家までつくのが</em></strong><br>回家这件事<br><strong><em>こんなにも嫌だ</em></strong><br>是那么让我厌烦<br><strong><em>歩くスピードは</em></strong><br>我走路的速度<br><strong><em>君が隣にいる時のまんま</em></strong><br>和你还在我身边的时候一样呢<br><strong><em>想い出巡らせ</em></strong><br>回忆缠绕在脑海<br><strong><em>がんじがらめのため息ばっか</em></strong><br>却只剩下无奈的叹息<br><strong><em>馬鹿にしろよ笑えよ</em></strong><br>来嘲笑我这个傻瓜吧 笑吧<br><strong><em>君がいなくなった日々は</em></strong><br>没有你的每一天<br><strong><em>面白いくらいにつまらない</em></strong><br>无聊到有趣<br><strong><em>全力で忘れようとするけど</em></strong><br>就算拼尽全力想要忘了你<br><strong><em>全身で君を求めてる</em></strong><br>还是忍不住全身心去寻求你<br><strong><em>猫になったんだよな君は</em></strong><br>你一定是变成猫了吧<br><strong><em>いつかまた</em></strong><br>什么时候<br><strong><em>あの声を聞かせてよ</em></strong><br>能再让我听到你的声音呢<br><strong><em>矛盾ばっかで</em></strong><br>就算是这样矛盾的<br><strong><em>無茶苦茶な僕を</em></strong><br>一片混乱的我</p><p><strong><em>慰めてほしい</em></strong><br>也希望能得到你的安慰</p><p><strong><em>君がいなくなった日々も</em></strong><br>在没有你的日子里<br><strong><em>このどうしようもない気だるさも</em></strong><br>在这无法摆脱的无力感中<br><strong><em>心と体が喧嘩して</em></strong><br>心灵和身体在互相争吵<br><strong><em>頼りない僕は寝転んで</em></strong><br>无依无靠的我随便地躺着<br><strong><em>猫になったんだよな君は</em></strong><br>你一定是变成猫了吧<br><strong><em>いつかフラッと現れてくれ</em></strong><br>什么时候能突然出现在我面前呢<br><strong><em>何気ない毎日を</em></strong><br>把平平常常度过的每一天<br><strong><em>君色に染めておくれよ</em></strong><br>都染上你的颜色吧</p><p><strong><em>君がもし捨て猫だったら</em></strong><br>如果你是一只被人抛弃的猫<br><strong><em>この腕の中で抱きしめるよ</em></strong><br>我会用我的臂弯抱紧你<br><strong><em>ケガしてるならその傷拭うし</em></strong><br>若你受伤 我会为你擦拭伤口<br><strong><em>精一杯の温もりをあげる</em></strong><br>把我竭尽全力的温暖都给你<br><strong><em>会いたいんだ忘れられない</em></strong><br>好想再见你 没办法忘记你<br><strong><em>猫になってでも現れてほしい</em></strong><br>就算你变成一只猫 也希望你能出现<br><strong><em>いつか君がフラッと現れて</em></strong><br>如果某天你能突然出现在我面前<br><strong><em>僕はまた幸せで</em></strong><br>我就能重获这份幸福了</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 歌单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 歌单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>仿bing</title>
       <link href="/2020/07/17/fang-bing/"/>
       <url>/2020/07/17/fang-bing/</url>
@@ -517,34 +267,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>2020书单</title>
-      <link href="/2020/07/11/2020-shu-dan/"/>
-      <url>/2020/07/11/2020-shu-dan/</url>
-      
-        <content type="html"><![CDATA[<h4 id="云边有个小卖部"><a href="#云边有个小卖部" class="headerlink" title="云边有个小卖部"></a>云边有个小卖部</h4><blockquote><p>作者：张嘉佳</p><p>阅读时间：2020-07-10~07-11</p><p>阅读时长：2时15分</p><p>评价：8.4</p></blockquote><h4 id="明朝那些事"><a href="#明朝那些事" class="headerlink" title="明朝那些事"></a>明朝那些事</h4><blockquote><p>作者：当时明月</p><p>阅读时间：2020-07-11~07-22</p><p>阅读时长：28时20分</p><p>评价：8.4</p></blockquote><h4 id="你的名字。-Another-Side-Earthbound"><a href="#你的名字。-Another-Side-Earthbound" class="headerlink" title="你的名字。(Another Side:Earthbound)"></a>你的名字。(Another Side:Earthbound)</h4><blockquote><p>作者：新海诚，加纳新太</p><p>译者：枯山水</p><p>阅读时间：2020-07-22</p><p>阅读时长：1时28分</p><p>评价：8.3</p></blockquote><h4 id="你的名字。"><a href="#你的名字。" class="headerlink" title="你的名字。"></a>你的名字。</h4><blockquote><p>作者：新海诚</p><p>译者：枯山水</p><p>阅读时间：2020-07-22</p><p>阅读时长：1时14分</p><p>评价：8.6</p></blockquote><h4 id="战争变种"><a href="#战争变种" class="headerlink" title="战争变种"></a>战争变种</h4><blockquote><p>作者：刘慈欣等</p><p>阅读时间：2020-07-18~07-24</p><p>阅读时长：2时24分</p><p>评价：7.1</p></blockquote><h4 id="第一序列"><a href="#第一序列" class="headerlink" title="第一序列"></a>第一序列</h4><blockquote><p>作者：会说话的肘子</p><p>阅读时间：2020-07-24~07-27</p><p>阅读时长：49时46分(未完)</p><p>评价：8.2</p></blockquote><h4 id="她和她的猫"><a href="#她和她的猫" class="headerlink" title="她和她的猫"></a>她和她的猫</h4><blockquote><p>作者：新海诚，永川成基</p><p>译者：李友敏</p><p>阅读时间：2020-07-28</p><p>阅读时长：1时26分</p><p>评价：8.3</p></blockquote><h4 id="我是大玩家"><a href="#我是大玩家" class="headerlink" title="我是大玩家"></a>我是大玩家</h4><blockquote><p>作者：会说话的肘子</p><p>阅读时间：2020-07-28~08-01</p><p>阅读时长：20时16分</p><p>评价：6.3</p></blockquote><h4 id="全球高武"><a href="#全球高武" class="headerlink" title="全球高武"></a>全球高武</h4><blockquote><p>作者：老鹰吃小鸡</p><p>阅读时间：2020-08-03~08-10</p><p>阅读时长：117时40分</p><p>评价：7.9</p></blockquote><h4 id="剃须。然后捡到女高中生1"><a href="#剃须。然后捡到女高中生1" class="headerlink" title="剃须。然后捡到女高中生1"></a>剃须。然后捡到女高中生1</h4><blockquote><p>作者：しめさば</p><p>译者：沙漠赏日</p><p>阅读时间：2020-08-10</p><p>阅读时长：2时05分</p><p>评价：8.1</p></blockquote><h4 id="我的一天有48小时"><a href="#我的一天有48小时" class="headerlink" title="我的一天有48小时"></a>我的一天有48小时</h4><blockquote><p>作者：小呆昭</p><p>阅读时间：2020-08-13~08-15</p><p>阅读时长：22时55分(未完)</p><p>评价：8.3</p></blockquote><h4 id="好感度120-的北条同学似乎愿意为我做任何事1"><a href="#好感度120-的北条同学似乎愿意为我做任何事1" class="headerlink" title="好感度120%的北条同学似乎愿意为我做任何事1"></a>好感度120%的北条同学似乎愿意为我做任何事1</h4><blockquote><p>作者：本田ヒカイ</p><p>译者：王仁鸿</p><p>阅读时间：2020-08-15~08-16</p><p>阅读时长：2时13分</p><p>评价：8.0</p></blockquote><h4 id="然后，没有你的九月来临了"><a href="#然后，没有你的九月来临了" class="headerlink" title="然后，没有你的九月来临了"></a>然后，没有你的九月来临了</h4><blockquote><p>作者：天泽夏月</p><p>译者：陈盈垂</p><p>阅读时间：2020-08-16</p><p>阅读时长：1时18分</p><p>评价：8.1</p></blockquote><h4 id="逆天邪神"><a href="#逆天邪神" class="headerlink" title="逆天邪神"></a>逆天邪神</h4><blockquote><p>作者：逆苍天</p><p>阅读时间：2020-08-17~08-20</p><p>阅读时长：42时25分(未完)</p><p>评价：8.3</p></blockquote><h4 id="我与她的绝对领域1"><a href="#我与她的绝对领域1" class="headerlink" title="我与她的绝对领域1"></a>我与她的绝对领域1</h4><blockquote><p>作者：鹰山诚一</p><p>译者：杜信彰</p><p>阅读时间：2020-08-17</p><p>阅读时长：52分</p><p>评价：8.0</p></blockquote><h4 id="一念永恒"><a href="#一念永恒" class="headerlink" title="一念永恒"></a>一念永恒</h4><blockquote><p>作者：耳根</p><p>阅读时间：2020-08-38~09-01</p><p>阅读时长：36时24分</p><p>评价：8.0</p></blockquote>]]></content>
-      
-      
-      <categories>
-          
-          <category> 书单 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 书单 </tag>
+            <tag> html </tag>
             
         </tags>
       
@@ -571,9 +296,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
