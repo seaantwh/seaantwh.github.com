@@ -4,18 +4,16 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="登录页, 怪默">
+    <meta name="keywords" content="注册页, 怪默">
     <meta name="baidu-site-verification" content="fmlEuI34ir">
     <meta name="google-site-verification" content="yCy2azpds5XSuGZvis6OuA-XIGF5GuGpYRAaGfD6o48">
     <meta name="360-site-verification" content="b7c11a830ef90fd1464ad6206bb7b6e7">
-    <meta name="description" content="​```
-
-&amp;lt;!doctype html&amp;gt;
+    <meta name="description" content="&amp;lt;!doctype html&amp;gt;
 &amp;lt;html&amp;gt;
 
 &amp;lt;head&amp;gt;
-    &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
-    &amp;lt;title&amp;gt;login">
+  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt;Register&amp;lt;/ti">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -23,7 +21,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>登录页 | 怪默</title>
+    <title>注册页 | 怪默</title>
     <link rel="icon" type="image/png" href="/medias/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -310,13 +308,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/7.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        登录页
+                        注册页
                     </div>
                 </div>
             </div>
@@ -435,6 +433,10 @@
                             <span class="chip bg-color">css</span>
                         </a>
                         
+                        <a href="/tags/JavaScript/" target="_blank">
+                            <span class="chip bg-color">JavaScript</span>
+                        </a>
+                        
                     </div>
                     
                 </div>
@@ -459,7 +461,7 @@
             <div class="post-info">
                 <div class="post-date info-break-policy">
                     <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-19
+                    2020-10-30
                 </div>
 
                 <div class="post-author info-break-policy">
@@ -473,14 +475,14 @@
                 
                 <div class="info-break-policy">
                     <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    295
+                    513
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    3 分
                 </div>
                 
                 
@@ -496,87 +498,119 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <pre><code>​```
-
-&lt;!doctype html&gt;
+                <pre><code>&lt;!doctype html&gt;
 &lt;html&gt;
 
 &lt;head&gt;
-    &lt;meta charset=&quot;utf-8&quot;&gt;
-    &lt;title&gt;login&lt;/title&gt;
-    &lt;style&gt;
-        * {
-            padding: 0;
-            margin: 0;
-        }
+  &lt;meta charset=&quot;utf-8&quot;&gt;
+  &lt;title&gt;Register&lt;/title&gt;
+  &lt;style&gt;
+    * {
+      padding: 0;
+      margin: 0;
+    }
 
-        #bg-pho {
-            background-image: url(&quot;wallhaven-6k2ogx.jpg&quot;);
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -10;
-            background-size: cover;
-        }
+    #bg-pho {
+      background-image: url(&quot;https://ftp.bmp.ovh/imgs/2020/10/cfc716bce02a8057.jpg&quot;);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -10;
+      background-size: cover;
+    }
 
-        .box {
-            position: absolute;
-            top: 25%;
-            left: 33%;
-            height: 17em;
-            width: 27em;
-            background-color: hsla(17, 34%, 31%, 0.8);
-            box-shadow: 10px 10px 15px#141216;
-            border-radius: 2em;
-        }
+    .box {
+      position: absolute;
+      top: 25%;
+      left: 29%;
+      height: 21em;
+      width: 33em;
+      background-color: hsla(17, 34%, 31%, 0.8);
+      box-shadow: 10px 10px 15px#141216;
+      border-radius: 2em;
+    }
 
-        .loginText {
-            text-align: center;
-            margin-top: 1em;
-            margin-bottom: 0.1em;
-            font-size: 1.5em;
-            font-weight: 600;
-            font-family: Baskerville, &quot;Palatino Linotype&quot;, Palatino, &quot;Century Schoolbook L&quot;, &quot;Times New Roman&quot;, &quot;serif&quot;;
-        }
+    .loginText {
+      text-align: center;
+      margin-top: 1em;
+      margin-bottom: 0.1em;
+      font-size: 1.5em;
+      font-weight: 600;
+      font-family: Baskerville, &quot;Palatino Linotype&quot;, Palatino, &quot;Century Schoolbook L&quot;, &quot;Times New Roman&quot;, &quot;serif&quot;;
+    }
 
-        .inputBox,
-        .submitBox {
-            float: left;
-            outline: none;
-            /*清除input被点中后出现外边框*/
-            height: 2.3em;
-            width: 15em;
-            text-align: center;
-            border: 0.2em solid #53868B;
-            border-radius: 1em;
-            margin-left: 8.5em;
-            margin-top: 1.5em;
-        }
+    #form {
+      display: table;
+      float: left;
+      margin-left: 0px;
+      margin-right: 0px;
+    }
 
-        .submitBox:hover {
-            background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
-        }
-    &lt;/style&gt;
+    .inputBox,
+    .submitBox {
+      float: left;
+      outline: none;
+      /*清除input被点中后出现外边框*/
+      height: 2.3em;
+      width: 15em;
+      text-align: center;
+      border: 0.2em solid #53868B;
+      border-radius: 1em;
+      margin-left: 12em;
+      margin-top: 1.5em;
+    }
+
+    .submitBox:hover {
+      background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+    }
+&lt;/style&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
-    &lt;div class=&quot;box&quot;&gt;
-        &lt;form action=&quot;#&quot;&gt;
-            &lt;p class=&quot;loginText&quot;&gt;Welcome&lt;/p&gt;
-            &lt;input class=&quot;inputBox&quot; type=&quot;text&quot; name=&quot;userName&quot; placeholder=&quot;Username&quot;&gt;
-            &lt;input class=&quot;inputBox&quot; type=&quot;password&quot; name=&quot;userPassword&quot; placeholder=&quot;Password&quot;&gt;
-            &lt;input class=&quot;submitBox&quot; type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;login&quot;&gt;
-        &lt;/form&gt;
-    &lt;/div&gt;
-    &lt;div id=&quot;bg-pho&quot;&gt;&lt;/div&gt;
+  &lt;div class=&quot;box&quot;&gt;
+    &lt;form action=&quot;#&quot; id=&quot;form&quot; onsubmit=&quot;return check_password()&quot;&gt;
+      &lt;p class=&quot;loginText&quot;&gt;Join Us&lt;/p&gt;
+      &lt;input id=&quot;name&quot; class=&quot;inputBox&quot; type=&quot;text&quot; name=&quot;userName&quot; placeholder=&quot;Set Name&quot;&gt;
+      &lt;input id=&quot;password&quot; class=&quot;inputBox&quot; type=&quot;password&quot; name=&quot;userPassword&quot; placeholder=&quot;Set Password(8 size)&quot;&gt;
+      &lt;input id=&quot;repeat&quot; class=&quot;inputBox&quot; type=&quot;password&quot; name=&quot;userPassword&quot; placeholder=&quot;Repeat Password&quot;&gt;
+      &lt;input class=&quot;submitBox&quot; type=&quot;submit&quot; name=&quot;submit&quot; value=&quot;Register&quot;&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+  &lt;div id=&quot;bg-pho&quot;&gt;&lt;/div&gt;
+  &lt;script&gt;
+    function check_password() {
+      var name = document.getElementById(&quot;name&quot;).value;
+      var pass = document.getElementById(&quot;password&quot;).value;
+      var word = document.getElementById(&quot;repeat&quot;).value;
+      hand = &quot;true&quot;;
+      if (name.length &lt; 1) {  //用户名是否空
+        alert(&quot;You need have a good name&quot;);
+        hand = &quot;false&quot;;
+      }
+      if (pass.length &lt; 8) { //密码长度
+        alert(&quot;Your password should be longer than eight digits&quot;);
+        hand = &quot;false&quot;;
+      }
+      if (pass !== word) { //非严格等于无效
+        alert(&quot;The password you entered twice is not the same&quot;);
+        hand = &quot;false&quot;;
+      }
+      if (hand == &quot;false&quot;) {
+        return false;
+      }
+      if(hand == &quot;true&quot;){
+        alert(&quot;Your have successfully registered&quot;);
+        location.href=&quot;https://tk.rthe.net/login.html&quot;;  //重定向至新页面
+        return false; //返回false，否则将跳转
+      }
+    }
+&lt;/script&gt;
 &lt;/body&gt;
 
 &lt;/html&gt;
-
-</code></pre><p>​```</p>
-<p><img src="https://seaantwh.gitee.io/gallery/img/00/20201019.jpg" alt="1"></p>
+</code></pre><p><img src="https://seaantwh.gitee.io/gallery/img/00/20201030-01.jpg" alt="1"><br><img src="https://seaantwh.gitee.io/gallery/img/00/20201030-02.jpg" alt="1"><br><img src="https://seaantwh.gitee.io/gallery/img/00/20201030-03.jpg" alt="1"><br><img src="https://seaantwh.gitee.io/gallery/img/00/20201030-04.jpg" alt="1"></p>
 
             </div>
             <hr />
@@ -611,9 +645,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《登录页》
+                    《注册页》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/10/19/deng-lu-ye/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2020/10/30/zhu-ce-ye/" property="cc:attributionName"
                rel="cc:attributionURL">
                 怪默
             </a> 采用
@@ -657,35 +691,31 @@
             <div class="article-badge left-badge text-color">
                 <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/10/30/zhu-ce-ye/">
+                <a href="/2021/01/01/2021-shu-dan/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/9.jpg" class="responsive-img" alt="注册页">
+                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="2021书单">
                         
-                        <span class="card-title">注册页</span>
+                        <span class="card-title">2021书单</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第六次练习
+                            从现在开始记录读过的每本书
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2020-10-30
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2021-01-01
                         </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/web/" class="post-category" target="_blank">
-                                    web
-                                </a>
-                            
-                            <a href="/categories/web/练习/" class="post-category" target="_blank">
-                                    练习
+                            <a href="/categories/书单/" class="post-category" target="_blank">
+                                    书单
                                 </a>
                             
                             
@@ -695,16 +725,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/html/" target="_blank">
-                        <span class="chip bg-color">html</span>
-                    </a>
-                    
-                    <a href="/tags/css/" target="_blank">
-                        <span class="chip bg-color">css</span>
-                    </a>
-                    
-                    <a href="/tags/JavaScript/" target="_blank">
-                        <span class="chip bg-color">JavaScript</span>
+                    <a href="/tags/书单/" target="_blank">
+                        <span class="chip bg-color">书单</span>
                     </a>
                     
                 </div>
@@ -718,24 +740,24 @@
                 下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/10/15/wo-de-lian-xi-jian-dan-ye/">
+                <a href="/2020/10/19/deng-lu-ye/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="我的练习导航页">
+                        <img src="/medias/featureimages/7.jpg" class="responsive-img" alt="登录页">
                         
-                        <span class="card-title">我的练习导航页</span>
+                        <span class="card-title">登录页</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第四次练习
+                            第五次练习
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-10-15
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2020-10-19
                             </span>
                         <span class="publish-author">
                             

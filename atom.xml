@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seaantwh.github.io/"/>
-  <updated>2020-10-19T08:55:29.261Z</updated>
+  <updated>2021-05-12T13:04:06.576Z</updated>
   <id>http://seaantwh.github.io/</id>
   
   <author>
@@ -17,11 +17,77 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2021书单</title>
+    <link href="http://seaantwh.github.io/2021/01/01/2021-shu-dan/"/>
+    <id>http://seaantwh.github.io/2021/01/01/2021-shu-dan/</id>
+    <published>2021-01-01T00:08:08.000Z</published>
+    <updated>2021-05-12T13:04:06.576Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h4 id=&quot;罗生门&quot;&gt;&lt;a href=&quot;#罗生门&quot; class=&quot;headerlink&quot; title=&quot;罗生门&quot;&gt;&lt;/a&gt;罗生门&lt;/h4&gt;&lt;blockquote&gt;
+&lt;p&gt;作者：芥川龙之介&lt;/p&gt;
+&lt;p&gt;译者: 
+        
+      
+    
+    </summary>
+    
+      <category term="书单" scheme="http://seaantwh.github.io/categories/%E4%B9%A6%E5%8D%95/"/>
+    
+    
+      <category term="书单" scheme="http://seaantwh.github.io/tags/%E4%B9%A6%E5%8D%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>注册页</title>
+    <link href="http://seaantwh.github.io/2020/10/30/zhu-ce-ye/"/>
+    <id>http://seaantwh.github.io/2020/10/30/zhu-ce-ye/</id>
+    <published>2020-10-30T05:23:00.000Z</published>
+    <updated>2021-05-12T13:42:29.684Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;pre&gt;&lt;code&gt;&amp;lt;!doctype html&amp;gt;
+&amp;lt;html&amp;gt;
+
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt;Register&amp;lt;/title&amp;gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+      <category term="练习" scheme="http://seaantwh.github.io/categories/web/%E7%BB%83%E4%B9%A0/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
+    
+      <category term="JavaScript" scheme="http://seaantwh.github.io/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>登录页</title>
     <link href="http://seaantwh.github.io/2020/10/19/deng-lu-ye/"/>
     <id>http://seaantwh.github.io/2020/10/19/deng-lu-ye/</id>
     <published>2020-10-19T07:45:00.000Z</published>
-    <updated>2020-10-19T08:55:29.261Z</updated>
+    <updated>2021-05-12T13:55:28.505Z</updated>
     
     <summary type="html">
     
@@ -47,9 +113,9 @@
       <category term="练习" scheme="http://seaantwh.github.io/categories/web/%E7%BB%83%E4%B9%A0/"/>
     
     
-      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
-    
       <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
     
   </entry>
   
@@ -58,7 +124,7 @@
     <link href="http://seaantwh.github.io/2020/10/15/wo-de-lian-xi-jian-dan-ye/"/>
     <id>http://seaantwh.github.io/2020/10/15/wo-de-lian-xi-jian-dan-ye/</id>
     <published>2020-10-15T14:45:00.000Z</published>
-    <updated>2020-10-19T08:55:21.430Z</updated>
+    <updated>2021-05-12T13:53:33.844Z</updated>
     
     <summary type="html">
     
@@ -82,9 +148,9 @@
       <category term="练习" scheme="http://seaantwh.github.io/categories/web/%E7%BB%83%E4%B9%A0/"/>
     
     
-      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
-    
       <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
     
   </entry>
   
@@ -93,7 +159,7 @@
     <link href="http://seaantwh.github.io/2020/10/04/ge-ren-bo-ke-shou-ye-2.0/"/>
     <id>http://seaantwh.github.io/2020/10/04/ge-ren-bo-ke-shou-ye-2.0/</id>
     <published>2020-10-04T15:25:00.000Z</published>
-    <updated>2020-10-19T08:55:13.256Z</updated>
+    <updated>2021-05-12T13:50:28.051Z</updated>
     
     <summary type="html">
     
@@ -118,9 +184,9 @@
       <category term="练习" scheme="http://seaantwh.github.io/categories/web/%E7%BB%83%E4%B9%A0/"/>
     
     
-      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
-    
       <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
     
   </entry>
   
@@ -154,9 +220,9 @@
       <category term="练习" scheme="http://seaantwh.github.io/categories/web/%E7%BB%83%E4%B9%A0/"/>
     
     
-      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
-    
       <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
     
   </entry>
   
@@ -165,7 +231,7 @@
     <link href="http://seaantwh.github.io/2020/09/04/fang-bing-2/"/>
     <id>http://seaantwh.github.io/2020/09/04/fang-bing-2/</id>
     <published>2020-09-04T08:07:00.000Z</published>
-    <updated>2020-10-19T08:56:03.211Z</updated>
+    <updated>2021-05-12T13:52:17.217Z</updated>
     
     <summary type="html">
     
@@ -187,9 +253,9 @@
       <category term="练习" scheme="http://seaantwh.github.io/categories/web/%E7%BB%83%E4%B9%A0/"/>
     
     
-      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
-    
       <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+      <category term="css" scheme="http://seaantwh.github.io/tags/css/"/>
     
   </entry>
   
@@ -247,32 +313,6 @@
   </entry>
   
   <entry>
-    <title>html总结3</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-3/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-3/</id>
-    <published>2020-07-21T00:25:00.000Z</published>
-    <updated>2020-07-21T13:39:42.274Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;图像-lt-img-gt&quot;&gt;&lt;a href=&quot;#图像-lt-img-gt&quot; class=&quot;headerlink&quot; title=&quot;图像&amp;lt;img&amp;gt;&quot;&gt;&lt;/a&gt;图像&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/h2&gt;&lt;h3
-        
-      
-    
-    </summary>
-    
-      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
-    
-    
-      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
     <title>html总结1</title>
     <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-1/"/>
     <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-1/</id>
@@ -286,6 +326,59 @@
         
         
           &lt;h2 id=&quot;基础&quot;&gt;&lt;a href=&quot;#基础&quot; class=&quot;headerlink&quot; title=&quot;基础&quot;&gt;&lt;/a&gt;基础&lt;/h2&gt;&lt;h3 id=&quot;标题&quot;&gt;&lt;a href=&quot;#标题&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html总结5</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-5/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-5/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:40:00.506Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;表单&quot;&gt;&lt;a href=&quot;#表单&quot; class=&quot;headerlink&quot; title=&quot;表单&quot;&gt;&lt;/a&gt;表单&lt;/h2&gt;&lt;p&gt;HTML 表单用于搜集不同类型的用户输入。&lt;/p&gt;
+&lt;h3 id=&quot;lt-form-gt-lt-form-gt&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
+    
+    
+      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>html总结3</title>
+    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-3/"/>
+    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-3/</id>
+    <published>2020-07-21T00:25:00.000Z</published>
+    <updated>2020-07-21T13:39:42.274Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;图像-lt-img-gt&quot;&gt;&lt;a href=&quot;#图像-lt-img-gt&quot; class=&quot;headerlink&quot; title=&quot;图像&amp;lt;img&amp;gt;&quot;&gt;&lt;/a&gt;图像&lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt;&lt;/h2&gt;&lt;h3
         
       
     
@@ -354,33 +447,6 @@
   </entry>
   
   <entry>
-    <title>html总结5</title>
-    <link href="http://seaantwh.github.io/2020/07/21/html-zong-jie-5/"/>
-    <id>http://seaantwh.github.io/2020/07/21/html-zong-jie-5/</id>
-    <published>2020-07-21T00:25:00.000Z</published>
-    <updated>2020-07-21T13:40:00.506Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h2 id=&quot;表单&quot;&gt;&lt;a href=&quot;#表单&quot; class=&quot;headerlink&quot; title=&quot;表单&quot;&gt;&lt;/a&gt;表单&lt;/h2&gt;&lt;p&gt;HTML 表单用于搜集不同类型的用户输入。&lt;/p&gt;
-&lt;h3 id=&quot;lt-form-gt-lt-form-gt&quot;&gt;&lt;a
-        
-      
-    
-    </summary>
-    
-      <category term="web" scheme="http://seaantwh.github.io/categories/web/"/>
-    
-    
-      <category term="html" scheme="http://seaantwh.github.io/tags/html/"/>
-    
-  </entry>
-  
-  <entry>
     <title>html总结1</title>
     <link href="http://seaantwh.github.io/2020/07/21/zi-ding-yi-css/"/>
     <id>http://seaantwh.github.io/2020/07/21/zi-ding-yi-css/</id>
@@ -433,11 +499,11 @@
   </entry>
   
   <entry>
-    <title>歌—ONE&#39;s hope</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge-one-s-hope/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge-one-s-hope/</id>
+    <title>歌—ささえる人の歌</title>
+    <link href="http://seaantwh.github.io/2020/07/20/ge-sasaeruren-noge/"/>
+    <id>http://seaantwh.github.io/2020/07/20/ge-sasaeruren-noge/</id>
     <published>2020-07-20T11:31:00.000Z</published>
-    <updated>2020-08-20T12:03:06.902Z</updated>
+    <updated>2020-08-20T12:08:43.039Z</updated>
     
     <summary type="html">
     
@@ -445,7 +511,7 @@
       
         
         
-          &lt;p&gt;歌手：やなぎなぎ&lt;br&gt;&lt;strong&gt;&lt;em&gt;薄らと朱く染まる空 トンボが舞う，&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;染上几许朱红的天空 蜻蜓漫舞纷飞，&lt;br&gt;&lt;strong&gt;&lt;em&gt;子供みたいにはしゃいでる
+          &lt;p&gt;歌手：back
         
       
     
@@ -459,11 +525,11 @@
   </entry>
   
   <entry>
-    <title>歌—ぼくら（城镇青年ED)</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/</id>
+    <title>歌—ONE&#39;s hope</title>
+    <link href="http://seaantwh.github.io/2020/07/20/ge-one-s-hope/"/>
+    <id>http://seaantwh.github.io/2020/07/20/ge-one-s-hope/</id>
     <published>2020-07-20T11:31:00.000Z</published>
-    <updated>2020-08-20T12:19:21.582Z</updated>
+    <updated>2020-08-20T12:03:06.902Z</updated>
     
     <summary type="html">
     
@@ -471,7 +537,7 @@
       
         
         
-          &lt;p&gt;歌手：玖肆仟&lt;br&gt;&lt;strong&gt;&lt;em&gt;駆け足でウチに帰る&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;奔跑在归家的路上&lt;br&gt;&lt;strong&gt;&lt;em&gt;子供たちの声がする&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;孩子们欢声笑语&lt;br&gt;&lt;strong&gt;&lt;em&gt;つま先で
+          &lt;p&gt;歌手：やなぎなぎ&lt;br&gt;&lt;strong&gt;&lt;em&gt;薄らと朱く染まる空 トンボが舞う，&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;染上几许朱红的天空 蜻蜓漫舞纷飞，&lt;br&gt;&lt;strong&gt;&lt;em&gt;子供みたいにはしゃいでる
         
       
     
@@ -511,32 +577,6 @@
   </entry>
   
   <entry>
-    <title>歌—ささえる人の歌</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge-sasaeruren-noge/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge-sasaeruren-noge/</id>
-    <published>2020-07-20T11:31:00.000Z</published>
-    <updated>2020-08-20T12:08:43.039Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;歌手：back
-        
-      
-    
-    </summary>
-    
-      <category term="歌单" scheme="http://seaantwh.github.io/categories/%E6%AD%8C%E5%8D%95/"/>
-    
-    
-      <category term="歌单" scheme="http://seaantwh.github.io/tags/%E6%AD%8C%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
     <title>歌—サイ</title>
     <link href="http://seaantwh.github.io/2020/07/20/ge-sai/"/>
     <id>http://seaantwh.github.io/2020/07/20/ge-sai/</id>
@@ -550,32 +590,6 @@
         
         
           &lt;p&gt;歌手：DECO&lt;em&gt;27 / ef&lt;br&gt;**&lt;/em&gt;僕は それが
-        
-      
-    
-    </summary>
-    
-      <category term="歌单" scheme="http://seaantwh.github.io/categories/%E6%AD%8C%E5%8D%95/"/>
-    
-    
-      <category term="歌单" scheme="http://seaantwh.github.io/tags/%E6%AD%8C%E5%8D%95/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>歌—猫</title>
-    <link href="http://seaantwh.github.io/2020/07/20/ge-mao/"/>
-    <id>http://seaantwh.github.io/2020/07/20/ge-mao/</id>
-    <published>2020-07-20T11:31:00.000Z</published>
-    <updated>2020-08-20T12:13:51.782Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;p&gt;歌手：DISH//&lt;br&gt;&lt;strong&gt;&lt;em&gt;夕焼けが燃えてこの街ごと&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;在被夕阳燃烧着的这个小镇中&lt;br&gt;&lt;strong&gt;&lt;em&gt;飲み込んでしまいそうな今日に&lt;/em&gt;&lt;/strong&gt;&lt;br&gt;在这即将被吞噬的今日&lt;br&gt;&lt;strong
         
       
     
