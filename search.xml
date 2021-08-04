@@ -47,9 +47,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
             <tag> JavaScript </tag>
             
@@ -78,9 +78,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -107,9 +107,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -136,9 +136,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -165,9 +165,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -194,9 +194,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -230,6 +230,31 @@
     
     
     <entry>
+      <title>html总结3</title>
+      <link href="/2020/07/21/html-zong-jie-3/"/>
+      <url>/2020/07/21/html-zong-jie-3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="图像-lt-img-gt"><a href="#图像-lt-img-gt" class="headerlink" title="图像&lt;img&gt;"></a>图像<code>&lt;img&gt;</code></h2><h3 id="基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt"><a href="#基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt" class="headerlink" title="基本语法 &lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;"></a>基本语法 <code>&lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;</code></h3><ul><li>url可以是相对路径或绝对路径</li><li>text内容用作浏览器无法加载图像时对图像的描述</li></ul><h3 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h3><ul><li><p><code>&lt;body  background=&quot;url&quot;&gt;&lt;/body&gt;</code></p></li><li><p>使用CSS样式</p><ul><li><p>background-image:url(“图片地址”)</p></li><li><p>background-repeat:</p><ul><li>repeat-x   在x轴方向重复</li><li>repeat-y   在y轴方向重复</li><li>norepeat   没有重复</li></ul></li><li><p>background-size:</p><ul><li>400px   500px     像素</li><li>50% 80%   百分比</li></ul></li><li><p>background-position:</p></li></ul></li></ul><h3 id="align属性-排列图像"><a href="#align属性-排列图像" class="headerlink" title="align属性(排列图像)"></a>align属性(排列图像)</h3><ul><li><code>&lt;img src=&quot;&quot; align=&quot;bottom&quot;/&gt;   底部(默认)</code></li><li><code>&lt;img  src=&quot;&quot; align=&quot;middle&quot;/&gt;   中间</code></li><li><code>&lt;img src=&quot;&quot;  align=&quot;top&quot;/&gt;   顶部</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;left&quot;/&gt;   向左浮动</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;right&quot;/&gt;  向右浮动</code></li></ul><h3 id="图像大小"><a href="#图像大小" class="headerlink" title="图像大小"></a>图像大小</h3><ul><li><code>&lt;img src=&quot;&quot;  width=&quot;43&quot;  height=&quot;43&quot;/&gt;</code></li><li>直接数字指定的是像素，也可以指定百分比</li></ul><h3 id="创建图像映射"><a href="#创建图像映射" class="headerlink" title="创建图像映射"></a>创建图像映射</h3><p>创建带有可供点击区域的图像地图。<br>其中的每个区域都是一个超级链接。</p><ul><li><code>&lt;img src=&quot;&quot; border=&quot;0&quot; usemap=&quot;#maxmap&quot; alt=&quot;maxmap&quot; /&gt;注1</code></li></ul><pre><code>&lt;map name=&quot;planetmap&quot; id=&quot;planetmap&quot;&gt;       &lt;area shape=&quot;circle&quot; coords=&quot;180,139,14&quot; href =&quot;url1.jpg&quot; alt=&quot;map1&quot; /&gt;  注2        &lt;area shape=&quot;circle&quot; coords=&quot;129,161,10&quot; href =&quot;url2.jpg&quot; alt=&quot;map2&quot; /&gt;        &lt;area shape=&quot;rect&quot; coords=&quot;0,0,110,260&quot; href =&quot;url3.jpg&quot; alt=&quot;map3&quot; /&gt;&lt;/map&gt;</code></pre><pre><code>- 注解1    - 加载图像地图，`usemap`属性引用了`map`元素中的`name`或`id`属性(取决与浏览器)，所以应该在`map`元素中同时添加`name`或`id`属性。- 注解2    - &quot;shape&quot;属性——形状，可以是圆，三角形，矩形，多边形；    - &quot;coords&quot;属性——坐标，        - 以图像左上角为原点, 圆  coords=&quot;x,y,r&quot;                              矩形  coords=&quot;x1,y1,x2,y2&quot; 两组对角的坐标                             多边形  coords=&quot;x1,y1,x2,y2,x3,y3,&quot;&#39;&#39;&#39;,&quot;              - 多边形会自动封闭，因此在列表的结尾不需要重复第一个坐标来闭合整个区域。        - 如果某个 area 标签中的坐标和其他区域发生了重叠，会优先采用最先出现的 area 标签。        - 浏览器会忽略超过图像边界范围之外的坐标。</code></pre><h2 id="媒体"><a href="#媒体" class="headerlink" title="媒体"></a>媒体</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><ul><li><p>embed标签</p><p><code>&lt;object&gt;</code> 元素定义了在 HTML 文档中嵌入的对象，如Java 小程序, PDF 阅读器, Flash 播放器),图像,网页等.</p><ul><li><code>&lt;embed type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;</code></li></ul></li><li><p>object标签</p><p><code>&lt;object&gt;</code>标签用于包含对象，比如图像、音频、视频、Java applets、ActiveX、PDF 以及 Flash。<br>不要对图像使用 <code>&lt;object&gt;</code> 标签，请使用 <imf>标签代替。</imf></p><ul><li><p><code>&lt;object  type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;100&quot; heigth=&quot;100&quot;&gt;text&lt;/object&gt;</code></p><p>无法播放时会加载text文本</p></li></ul></li><li><p>audio标签</p><ul><li><p>基本语法   <code>&lt;audio src=&quot;&quot;  controls=&quot;controls&quot;&gt;text&lt;/audio&gt;</code></p></li><li><p>加载多个源</p><p>从第一个源开始，直到找到第一个能播放的，且只能播放一个</p><p>-<code>&lt;audio  controls&gt;&lt;source  src=&quot;url1.mp3&quot;/&gt;&lt;source  src=&quot;url1.ogg&quot;/&gt;&lt;embed  src=&quot;url.mp3/&gt; text&lt;/audio&gt;</code></p></li></ul></li></ul><ul><li><p>属性</p><ul><li>autoplay  音频在就绪后马上播放。</li><li>controls     向用户显示音频控件(比如播放/暂停按钮)</li><li>loop  每当音频结束时重新开始播放。</li><li>muted   音频输出为静音</li></ul></li></ul><ul><li>js插件</li><li>audio+embed+object</li></ul><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><ul><li><p>embed标签</p></li><li><p>object标签</p></li><li><p>video标签</p><ul><li>类似与audio</li></ul></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>html总结1</title>
       <link href="/2020/07/21/html-zong-jie-1/"/>
       <url>/2020/07/21/html-zong-jie-1/</url>
@@ -255,11 +280,11 @@
     
     
     <entry>
-      <title>html总结2</title>
-      <link href="/2020/07/21/html-zong-jie-2/"/>
-      <url>/2020/07/21/html-zong-jie-2/</url>
+      <title>html总结4</title>
+      <link href="/2020/07/21/html-zong-jie-4/"/>
+      <url>/2020/07/21/html-zong-jie-4/</url>
       
-        <content type="html"><![CDATA[<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>HTML 元素可以设置属性<br>属性可以在元素中添加附加信息<br>属性一般描述于开始标签<br>属性总是以名称/值对的形式出现，比如：<code>name=&quot;value&quot;</code>。</p><h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><ul><li><p>规定元素的类名</p><p>class 属性大多数时候用于指向样式表中的类（class）。<br>不过，也可以利用它通过 JavaScript 来改变带有指定 class 的 HTML 元素。<br>类名不能以数字开头！</p></li><li><p>class 属性不能在以下 HTML 元素中使用：base, head, html, meta, param, script, style 以及 title。</p><p>元素赋予多个 class，例如：<code>&lt;span class=&quot;left_menu important&quot;&gt;</code>。<br>在css中以<code>.classname</code>来引用全部，也可以具体引用，如 <code>p.classname  h1.classname</code>。<br>classname不能以数字开头，只能以字母或下划线开头。区分大小写·。</p></li></ul><h3 id="id"><a href="#id" class="headerlink" title="id"></a>id</h3><ul><li><p>规定元素唯一的id(类似与身份证号)</p><p>命名：<br>必须以字母 A-Z 或 a-z 开头<br>其后的字符：<code>字母(A-Za-z)、数字(0-9)、连字符(&quot;-&quot;)、下划线(&quot;_&quot;)、冒号(&quot;:&quot;) 以及点号(&quot;.&quot;)</code><br>区分大小写。</p></li><li><p>通过 <code>#.idname</code> 在CSS中引用</p><p>id 属性可用作链接锚（link anchor），通过 JavaScript（HTML DOM）或通过 CSS 为带有指定 id 的元素改变或添加样式</p></li></ul><pre><code>- 语法：`&lt;a name=&quot;label&quot;&gt;锚(显示在页面上的文本)&lt;/a&gt;`  name 属性规定锚（anchor）的名称。  锚也可以是图片等。  当使用锚时，我们可以创建直接跳至该锚(比如页面中某个小节)的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了。  可以使用 id 属性来替代 name 属性，命名锚同样有效。- 实例：创建一个锚`&lt; a name=&quot;anwser&quot;&gt;这是答案&lt;a&gt;`    - 同一个文档中创建指向该锚的链接：`&lt;a href=&quot;#this&quot;&gt;隐藏在本文的答案&lt;/a&gt;`    - 其它文档中创建指向该锚的链接：`&lt;a href=&quot;https://www.seaantwh.top/#this&gt; 前往其它文档寻找答案&lt;a&gt;`</code></pre><h3 id="title"><a href="#title" class="headerlink" title="title"></a>title</h3><ul><li><p>规定元素的额外信息（可在工具提示中显示）</p><p>这些额外信息通常会在鼠标移到元素上时显示一段工具提示文本（tooltip text）。</p></li></ul><h3 id="style"><a href="#style" class="headerlink" title="style"></a>style</h3><pre><code>- 规定元素行内样式   style 属性将覆盖任何全局的样式设定，例如在 &lt;style&gt; 标签或在外部样式表中规定的样式。  `&lt;element style=&quot;style_definitions&quot;&gt;`，多个CSS属性和值用分号隔开。</code></pre><h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><h2 id="链接-lt-a-gt-lt-a-gt"><a href="#链接-lt-a-gt-lt-a-gt" class="headerlink" title="链接 &lt;a&gt;&lt;/a&gt;"></a>链接 <code>&lt;a&gt;&lt;/a&gt;</code></h2><h3 id="创建链接"><a href="#创建链接" class="headerlink" title="创建链接"></a>创建链接</h3><ul><li><p>href属性</p><ul><li><p>语法：<code>&lt;a href=&quot;url&quot;&gt;Link text&lt;/a&gt;</code></p><p>url 可以为相对路径或绝对路径</p></li><li><p>Link text 可以为文本，图片，其它HTML元素等</p></li></ul></li><li><p>name属性</p><h3 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h3></li></ul><p>规定在何处打开链接文档。<br>如果在一个<code>&lt;a&gt;</code>标签内包含一个 target 属性，浏览器将会载入和显示用这个标签的 href 属性命名的、名称与这个目标吻合的框架或者窗口中的文档。如果这个指定名称或 id 的框架或者窗口不存在，浏览器将打开一个新的窗口，给这个窗口一个指定的标记，然后将新的文档载入那个窗口。从此以后，超链接文档就可以指向这个新的窗口。</p><ul><li><p>打开新窗口</p><ul><li><p><code>&lt;a href=&quot;url&quot;  target=&quot;目标名&quot;&gt;内容&lt;a&gt;</code></p><p>若没有以此目标为名的窗口将打开新窗口，并将这个窗口标记为这个名字。</p></li></ul></li><li><p>在框架中打开窗口</p><p>在一个 <code>&lt;frameset&gt;</code> 显示中将超链接内容定向到一个或者多个框架中。<br>将这个内容列表放入一个带有两个框架的文档的其中一个框架中<br>并用相邻的框架来显示选定的文档</p><ul><li><p>在一个 <code>&lt;frameset&gt;</code>显示中将超链接内容定向到一个或者多个框架中。</p></li><li><pre><code>&lt;h3&gt;Table of Contents&lt;/h3&gt;&lt;ul&gt;      &lt;li&gt;&lt;a href=&quot;pref.html&quot; target=&quot;view_frame&quot;&gt;Preface&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap1.html&quot; target=&quot;view_frame&quot;&gt;Chapter 1&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap2.html&quot; target=&quot;view_frame&quot;&gt;Chapter 2&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap3.html&quot; target=&quot;view_frame&quot;&gt;Chapter 3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre></li><li><p>将这个内容列表放入一个带有两个框架的文档的其中一个框架中，并用相邻的框架来显示选定的文档</p></li></ul></li></ul><pre><code>    &lt;frameset cols=&quot;20%  80%&quot;&gt;      &lt;frame src=&quot;toc.html&quot;&gt;      &lt;frame src=&quot;pref.html&quot; name=&quot;view_frame&quot;&gt;    &lt;/frameset&gt;</code></pre><ul><li><p>保留的目标名</p><p>这些 target 的所有 4 个值都以下划线开始。任何其他用一个下划线作为开头的窗口或者目标都会被浏览器忽略，因此，不要将下划线作为文档中定义的任何框架 name 或 id 的第一个字符。</p><ul><li><p><code>_blank</code></p><ul><li>浏览器总在一个新打开、未命名的窗口中载入目标文档。</li></ul></li><li><p><code>_self</code></p><ul><li>对没有指定目标的为默认</li><li>在原来框架或窗口打开文档</li></ul></li><li><p><code>_parent</code></p><ul><li>这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。</li><li>如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效。</li></ul></li><li><p><code>_top</code></p><ul><li>这个目标使得文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口。</li></ul></li><li><p>当网页没有框架时，<code>target=&quot;_self&quot;</code>和<code>target=&quot;_parent&quot;</code>以及<code>target=&quot;_top&quot;</code>三种方式的显示方式几乎相同。</p></li></ul></li></ul><h3 id="创建电子邮件"><a href="#创建电子邮件" class="headerlink" title="创建电子邮件"></a>创建电子邮件</h3><p>如果用户的计算机上没有安装电子邮件客户端，则无法发送电子邮件。</p><ul><li><p>基本语法</p><ul><li><code>&lt;a href=&quot;mailto:电子邮件地址”&gt;Link text&lt;/a&gt;</code></li></ul></li><li><p>使用参数</p><ul><li>to    收信人，多个用 ；隔开</li><li>cc   抄送，多个用 ；隔开</li><li>bcc 暗抄送，多个用 ；隔开</li><li>subject   主题</li><li>body  内容<br>```</li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="表格和列表"><a href="#表格和列表" class="headerlink" title="表格和列表"></a>表格和列表</h2><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul><li><p>无序列表</p><ul><li><p><code>&lt;ul  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ul&gt;</code></p><p>type为内容前的小标签<br>常见的typename有  disc(实心圆)  circle(空心圆)    square(实心矩形)</p></li></ul></li><li><p>有序列表</p><ul><li><p><code>&lt;ol  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ol&gt;</code></p><p>ype为内容前的小标签<br>常见的typename有  1(数字)  a(小写英文字母）A(大写英文字母)    i(小写罗马字母)  I(大写罗马字母)</p></li></ul></li><li><p>嵌套列表</p><ul><li>无-无   无-有  有-有   有-无</li></ul></li><li><p>定义列表</p><ul><li><code>&lt;dl&gt;&lt;dt&gt;项目1&lt;/dt&gt;&lt;dd&gt;详细1&lt;/dd&gt;&lt;dt&gt;项目2&lt;/dt&gt;&lt;dd&gt;详细2&lt;/dd&gt;&lt;/dl&gt;</code></li></ul></li></ul><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ul><li><p><code>&lt;table&gt;&lt;/table&gt;</code>定义表格标签</p></li><li><p><code>&lt;th&gt;&lt;.th&gt;</code>定义表头</p><p>表头是默认加粗的</p></li><li><p><code>&lt;tr&gt;&lt;/tr&gt;</code>定义表格行</p></li><li><p><code>&lt;td&gt;&lt;/td&gt;</code>定义表格单元</p><p>上下行的表格单元会自动对齐并取最大的表格单元</p></li></ul><h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>通过使用框架，可以在同一个浏览器窗口中显示不止一个页面。每份HTML文档称为一个框架，并且每个框架都独立于其他的框架。</p><p>使用框架的坏处：<br>开发人员必须同时跟踪更多的HTML文档<br>很难打印整张页面</p><h3 id="lt-frameset-gt-标签"><a href="#lt-frameset-gt-标签" class="headerlink" title="&lt;frameset&gt;标签"></a><code>&lt;frameset&gt;</code>标签</h3><ul><li>框架结构标签（ <code>&lt;frameset&gt;</code>）定义如何将窗口分割为框架</li><li>每个 frameset 定义了一系列行或列</li><li>rows/cols 的值规定了每行/每列占据屏幕的面积</li></ul><h3 id="lt-frame-gt-标签"><a href="#lt-frame-gt-标签" class="headerlink" title="&lt;frame&gt;标签"></a><code>&lt;frame&gt;</code>标签</h3><ul><li>Frame 标签定义了放置在每个框架中的 HTML 文档。</li><li>假如一个框架有可见边框，用户可以拖动边框来改变它的大小。为了避免这种情况发生，可以在  <code>&lt;frame&gt;</code>标签中加入： <code>noresize=&quot;noresize&quot;</code>。</li></ul><h3 id="lt-noframes-gt-标签"><a href="#lt-noframes-gt-标签" class="headerlink" title="&lt;noframes&gt; 标签"></a><code>&lt;noframes&gt;</code> 标签</h3><ul><li><p>为不支持框架的浏览器添加  <code>&lt;noframes&gt;</code> 标签。</p></li><li><p>不能将  <code>&lt;body&gt;&lt;/body&gt;</code>标签与  <code>&lt;frameset&gt;&lt;/frameset&gt;</code> 标签同时使用！不过，假如你添加包含一段文本的  <code>&lt;noframes&gt;</code>标签，就必须将这段文字嵌套于  <code>&lt;body&gt;&lt;/body&gt;</code> 标签内。</p><pre><code>​       &lt;noframes&gt;​             &lt;body&gt;您的浏览器无法处理框架！&lt;/body&gt;​       &lt;/noframes&gt;</code></pre><h3 id="类别"><a href="#类别" class="headerlink" title="类别"></a>类别</h3></li><li><p>水平框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_a.htm&quot;&gt;     &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>垂直框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;     &lt;frame src=&quot;frame_a.htm&quot;&gt;    &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>混合框架</p><pre><code>&lt;frameset rows=&quot;50%,50%&quot;&gt;       &lt;frame src=&quot;frame_a.html&quot;&gt;&lt;frameset cols=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_b.html&quot;&gt;      &lt;frame src=&quot;frame_c.html&quot;&gt;&lt;/frameset&gt;&lt;/frameset&gt;</code></pre></li><li><p>内联框架</p><pre><code>&lt;iframe src=&quot;/i/eg_landscape.jpg&quot;&gt;&lt;/iframe&gt;&lt;p&gt;一些老的浏览器不支持 iframe。&lt;/p&gt;&lt;p&gt;如果得不到支持，iframe 是不可见的。&lt;/p&gt;</code></pre><pre><code>  - HTML内联框架是为了实现在网页中显示网页，突出了内联二字，就是在一个网页中，我们能够控制在这个网页中用多大的框去显示另外一个网页，并且能通过CSS对其进行控制。  - 而内联框架则可以放在`&lt;body&gt;`里面</code></pre></li></ul>]]></content>
       
       
       <categories>
@@ -280,11 +305,11 @@
     
     
     <entry>
-      <title>html总结3</title>
-      <link href="/2020/07/21/html-zong-jie-3/"/>
-      <url>/2020/07/21/html-zong-jie-3/</url>
+      <title>html总结2</title>
+      <link href="/2020/07/21/html-zong-jie-2/"/>
+      <url>/2020/07/21/html-zong-jie-2/</url>
       
-        <content type="html"><![CDATA[<h2 id="图像-lt-img-gt"><a href="#图像-lt-img-gt" class="headerlink" title="图像&lt;img&gt;"></a>图像<code>&lt;img&gt;</code></h2><h3 id="基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt"><a href="#基本语法-lt-img-src-quot-url-quot-alt-quot-text-quot-gt" class="headerlink" title="基本语法 &lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;"></a>基本语法 <code>&lt;img  src=&quot;url&quot;  alt=&quot;text&quot;/&gt;</code></h3><ul><li>url可以是相对路径或绝对路径</li><li>text内容用作浏览器无法加载图像时对图像的描述</li></ul><h3 id="背景图"><a href="#背景图" class="headerlink" title="背景图"></a>背景图</h3><ul><li><p><code>&lt;body  background=&quot;url&quot;&gt;&lt;/body&gt;</code></p></li><li><p>使用CSS样式</p><ul><li><p>background-image:url(“图片地址”)</p></li><li><p>background-repeat:</p><ul><li>repeat-x   在x轴方向重复</li><li>repeat-y   在y轴方向重复</li><li>norepeat   没有重复</li></ul></li><li><p>background-size:</p><ul><li>400px   500px     像素</li><li>50% 80%   百分比</li></ul></li><li><p>background-position:</p></li></ul></li></ul><h3 id="align属性-排列图像"><a href="#align属性-排列图像" class="headerlink" title="align属性(排列图像)"></a>align属性(排列图像)</h3><ul><li><code>&lt;img src=&quot;&quot; align=&quot;bottom&quot;/&gt;   底部(默认)</code></li><li><code>&lt;img  src=&quot;&quot; align=&quot;middle&quot;/&gt;   中间</code></li><li><code>&lt;img src=&quot;&quot;  align=&quot;top&quot;/&gt;   顶部</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;left&quot;/&gt;   向左浮动</code></li><li><code>&lt;img src=&quot;&quot; align=&quot;right&quot;/&gt;  向右浮动</code></li></ul><h3 id="图像大小"><a href="#图像大小" class="headerlink" title="图像大小"></a>图像大小</h3><ul><li><code>&lt;img src=&quot;&quot;  width=&quot;43&quot;  height=&quot;43&quot;/&gt;</code></li><li>直接数字指定的是像素，也可以指定百分比</li></ul><h3 id="创建图像映射"><a href="#创建图像映射" class="headerlink" title="创建图像映射"></a>创建图像映射</h3><p>创建带有可供点击区域的图像地图。<br>其中的每个区域都是一个超级链接。</p><ul><li><code>&lt;img src=&quot;&quot; border=&quot;0&quot; usemap=&quot;#maxmap&quot; alt=&quot;maxmap&quot; /&gt;注1</code></li></ul><pre><code>&lt;map name=&quot;planetmap&quot; id=&quot;planetmap&quot;&gt;       &lt;area shape=&quot;circle&quot; coords=&quot;180,139,14&quot; href =&quot;url1.jpg&quot; alt=&quot;map1&quot; /&gt;  注2        &lt;area shape=&quot;circle&quot; coords=&quot;129,161,10&quot; href =&quot;url2.jpg&quot; alt=&quot;map2&quot; /&gt;        &lt;area shape=&quot;rect&quot; coords=&quot;0,0,110,260&quot; href =&quot;url3.jpg&quot; alt=&quot;map3&quot; /&gt;&lt;/map&gt;</code></pre><pre><code>- 注解1    - 加载图像地图，`usemap`属性引用了`map`元素中的`name`或`id`属性(取决与浏览器)，所以应该在`map`元素中同时添加`name`或`id`属性。- 注解2    - &quot;shape&quot;属性——形状，可以是圆，三角形，矩形，多边形；    - &quot;coords&quot;属性——坐标，        - 以图像左上角为原点, 圆  coords=&quot;x,y,r&quot;                              矩形  coords=&quot;x1,y1,x2,y2&quot; 两组对角的坐标                             多边形  coords=&quot;x1,y1,x2,y2,x3,y3,&quot;&#39;&#39;&#39;,&quot;              - 多边形会自动封闭，因此在列表的结尾不需要重复第一个坐标来闭合整个区域。        - 如果某个 area 标签中的坐标和其他区域发生了重叠，会优先采用最先出现的 area 标签。        - 浏览器会忽略超过图像边界范围之外的坐标。</code></pre><h2 id="媒体"><a href="#媒体" class="headerlink" title="媒体"></a>媒体</h2><h3 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h3><ul><li><p>embed标签</p><p><code>&lt;object&gt;</code> 元素定义了在 HTML 文档中嵌入的对象，如Java 小程序, PDF 阅读器, Flash 播放器),图像,网页等.</p><ul><li><code>&lt;embed type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;640&quot; height=&quot;480&quot;&gt;</code></li></ul></li><li><p>object标签</p><p><code>&lt;object&gt;</code>标签用于包含对象，比如图像、音频、视频、Java applets、ActiveX、PDF 以及 Flash。<br>不要对图像使用 <code>&lt;object&gt;</code> 标签，请使用 <imf>标签代替。</imf></p><ul><li><p><code>&lt;object  type=&quot;mp3&quot; src=&quot;url&quot; width=&quot;100&quot; heigth=&quot;100&quot;&gt;text&lt;/object&gt;</code></p><p>无法播放时会加载text文本</p></li></ul></li><li><p>audio标签</p><ul><li><p>基本语法   <code>&lt;audio src=&quot;&quot;  controls=&quot;controls&quot;&gt;text&lt;/audio&gt;</code></p></li><li><p>加载多个源</p><p>从第一个源开始，直到找到第一个能播放的，且只能播放一个</p><p>-<code>&lt;audio  controls&gt;&lt;source  src=&quot;url1.mp3&quot;/&gt;&lt;source  src=&quot;url1.ogg&quot;/&gt;&lt;embed  src=&quot;url.mp3/&gt; text&lt;/audio&gt;</code></p></li></ul></li></ul><ul><li><p>属性</p><ul><li>autoplay  音频在就绪后马上播放。</li><li>controls     向用户显示音频控件(比如播放/暂停按钮)</li><li>loop  每当音频结束时重新开始播放。</li><li>muted   音频输出为静音</li></ul></li></ul><ul><li>js插件</li><li>audio+embed+object</li></ul><h3 id="视频"><a href="#视频" class="headerlink" title="视频"></a>视频</h3><ul><li><p>embed标签</p></li><li><p>object标签</p></li><li><p>video标签</p><ul><li>类似与audio</li></ul></li></ul>]]></content>
+        <content type="html"><![CDATA[<h2 id="属性"><a href="#属性" class="headerlink" title="属性"></a>属性</h2><p>HTML 元素可以设置属性<br>属性可以在元素中添加附加信息<br>属性一般描述于开始标签<br>属性总是以名称/值对的形式出现，比如：<code>name=&quot;value&quot;</code>。</p><h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><ul><li><p>规定元素的类名</p><p>class 属性大多数时候用于指向样式表中的类（class）。<br>不过，也可以利用它通过 JavaScript 来改变带有指定 class 的 HTML 元素。<br>类名不能以数字开头！</p></li><li><p>class 属性不能在以下 HTML 元素中使用：base, head, html, meta, param, script, style 以及 title。</p><p>元素赋予多个 class，例如：<code>&lt;span class=&quot;left_menu important&quot;&gt;</code>。<br>在css中以<code>.classname</code>来引用全部，也可以具体引用，如 <code>p.classname  h1.classname</code>。<br>classname不能以数字开头，只能以字母或下划线开头。区分大小写·。</p></li></ul><h3 id="id"><a href="#id" class="headerlink" title="id"></a>id</h3><ul><li><p>规定元素唯一的id(类似与身份证号)</p><p>命名：<br>必须以字母 A-Z 或 a-z 开头<br>其后的字符：<code>字母(A-Za-z)、数字(0-9)、连字符(&quot;-&quot;)、下划线(&quot;_&quot;)、冒号(&quot;:&quot;) 以及点号(&quot;.&quot;)</code><br>区分大小写。</p></li><li><p>通过 <code>#.idname</code> 在CSS中引用</p><p>id 属性可用作链接锚（link anchor），通过 JavaScript（HTML DOM）或通过 CSS 为带有指定 id 的元素改变或添加样式</p></li></ul><pre><code>- 语法：`&lt;a name=&quot;label&quot;&gt;锚(显示在页面上的文本)&lt;/a&gt;`  name 属性规定锚（anchor）的名称。  锚也可以是图片等。  当使用锚时，我们可以创建直接跳至该锚(比如页面中某个小节)的链接，这样使用者就无需不停地滚动页面来寻找他们需要的信息了。  可以使用 id 属性来替代 name 属性，命名锚同样有效。- 实例：创建一个锚`&lt; a name=&quot;anwser&quot;&gt;这是答案&lt;a&gt;`    - 同一个文档中创建指向该锚的链接：`&lt;a href=&quot;#this&quot;&gt;隐藏在本文的答案&lt;/a&gt;`    - 其它文档中创建指向该锚的链接：`&lt;a href=&quot;https://www.seaantwh.top/#this&gt; 前往其它文档寻找答案&lt;a&gt;`</code></pre><h3 id="title"><a href="#title" class="headerlink" title="title"></a>title</h3><ul><li><p>规定元素的额外信息（可在工具提示中显示）</p><p>这些额外信息通常会在鼠标移到元素上时显示一段工具提示文本（tooltip text）。</p></li></ul><h3 id="style"><a href="#style" class="headerlink" title="style"></a>style</h3><pre><code>- 规定元素行内样式   style 属性将覆盖任何全局的样式设定，例如在 &lt;style&gt; 标签或在外部样式表中规定的样式。  `&lt;element style=&quot;style_definitions&quot;&gt;`，多个CSS属性和值用分号隔开。</code></pre><h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><h2 id="链接-lt-a-gt-lt-a-gt"><a href="#链接-lt-a-gt-lt-a-gt" class="headerlink" title="链接 &lt;a&gt;&lt;/a&gt;"></a>链接 <code>&lt;a&gt;&lt;/a&gt;</code></h2><h3 id="创建链接"><a href="#创建链接" class="headerlink" title="创建链接"></a>创建链接</h3><ul><li><p>href属性</p><ul><li><p>语法：<code>&lt;a href=&quot;url&quot;&gt;Link text&lt;/a&gt;</code></p><p>url 可以为相对路径或绝对路径</p></li><li><p>Link text 可以为文本，图片，其它HTML元素等</p></li></ul></li><li><p>name属性</p><h3 id="target属性"><a href="#target属性" class="headerlink" title="target属性"></a>target属性</h3></li></ul><p>规定在何处打开链接文档。<br>如果在一个<code>&lt;a&gt;</code>标签内包含一个 target 属性，浏览器将会载入和显示用这个标签的 href 属性命名的、名称与这个目标吻合的框架或者窗口中的文档。如果这个指定名称或 id 的框架或者窗口不存在，浏览器将打开一个新的窗口，给这个窗口一个指定的标记，然后将新的文档载入那个窗口。从此以后，超链接文档就可以指向这个新的窗口。</p><ul><li><p>打开新窗口</p><ul><li><p><code>&lt;a href=&quot;url&quot;  target=&quot;目标名&quot;&gt;内容&lt;a&gt;</code></p><p>若没有以此目标为名的窗口将打开新窗口，并将这个窗口标记为这个名字。</p></li></ul></li><li><p>在框架中打开窗口</p><p>在一个 <code>&lt;frameset&gt;</code> 显示中将超链接内容定向到一个或者多个框架中。<br>将这个内容列表放入一个带有两个框架的文档的其中一个框架中<br>并用相邻的框架来显示选定的文档</p><ul><li><p>在一个 <code>&lt;frameset&gt;</code>显示中将超链接内容定向到一个或者多个框架中。</p></li><li><pre><code>&lt;h3&gt;Table of Contents&lt;/h3&gt;&lt;ul&gt;      &lt;li&gt;&lt;a href=&quot;pref.html&quot; target=&quot;view_frame&quot;&gt;Preface&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap1.html&quot; target=&quot;view_frame&quot;&gt;Chapter 1&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap2.html&quot; target=&quot;view_frame&quot;&gt;Chapter 2&lt;/a&gt;&lt;/li&gt;      &lt;li&gt;&lt;a href=&quot;chap3.html&quot; target=&quot;view_frame&quot;&gt;Chapter 3&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</code></pre></li><li><p>将这个内容列表放入一个带有两个框架的文档的其中一个框架中，并用相邻的框架来显示选定的文档</p></li></ul></li></ul><pre><code>    &lt;frameset cols=&quot;20%  80%&quot;&gt;      &lt;frame src=&quot;toc.html&quot;&gt;      &lt;frame src=&quot;pref.html&quot; name=&quot;view_frame&quot;&gt;    &lt;/frameset&gt;</code></pre><ul><li><p>保留的目标名</p><p>这些 target 的所有 4 个值都以下划线开始。任何其他用一个下划线作为开头的窗口或者目标都会被浏览器忽略，因此，不要将下划线作为文档中定义的任何框架 name 或 id 的第一个字符。</p><ul><li><p><code>_blank</code></p><ul><li>浏览器总在一个新打开、未命名的窗口中载入目标文档。</li></ul></li><li><p><code>_self</code></p><ul><li>对没有指定目标的为默认</li><li>在原来框架或窗口打开文档</li></ul></li><li><p><code>_parent</code></p><ul><li>这个目标使得文档载入父窗口或者包含来超链接引用的框架的框架集。</li><li>如果这个引用是在窗口或者在顶级框架中，那么它与目标 _self 等效。</li></ul></li><li><p><code>_top</code></p><ul><li>这个目标使得文档载入包含这个超链接的窗口，用 _top 目标将会清除所有被包含的框架并将文档载入整个浏览器窗口。</li></ul></li><li><p>当网页没有框架时，<code>target=&quot;_self&quot;</code>和<code>target=&quot;_parent&quot;</code>以及<code>target=&quot;_top&quot;</code>三种方式的显示方式几乎相同。</p></li></ul></li></ul><h3 id="创建电子邮件"><a href="#创建电子邮件" class="headerlink" title="创建电子邮件"></a>创建电子邮件</h3><p>如果用户的计算机上没有安装电子邮件客户端，则无法发送电子邮件。</p><ul><li><p>基本语法</p><ul><li><code>&lt;a href=&quot;mailto:电子邮件地址”&gt;Link text&lt;/a&gt;</code></li></ul></li><li><p>使用参数</p><ul><li>to    收信人，多个用 ；隔开</li><li>cc   抄送，多个用 ；隔开</li><li>bcc 暗抄送，多个用 ；隔开</li><li>subject   主题</li><li>body  内容<br>```</li></ul></li></ul>]]></content>
       
       
       <categories>
@@ -355,31 +380,6 @@
     
     
     <entry>
-      <title>html总结4</title>
-      <link href="/2020/07/21/html-zong-jie-4/"/>
-      <url>/2020/07/21/html-zong-jie-4/</url>
-      
-        <content type="html"><![CDATA[<h2 id="表格和列表"><a href="#表格和列表" class="headerlink" title="表格和列表"></a>表格和列表</h2><h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h3><ul><li><p>无序列表</p><ul><li><p><code>&lt;ul  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ul&gt;</code></p><p>type为内容前的小标签<br>常见的typename有  disc(实心圆)  circle(空心圆)    square(实心矩形)</p></li></ul></li><li><p>有序列表</p><ul><li><p><code>&lt;ol  type=&quot;typename&quot;&gt;&lt;li&gt;text1&lt;/li&gt;&lt;li&gt;text2&lt;/li&gt;&lt;li&gt;text3&lt;/li&gt;&lt;/ol&gt;</code></p><p>ype为内容前的小标签<br>常见的typename有  1(数字)  a(小写英文字母）A(大写英文字母)    i(小写罗马字母)  I(大写罗马字母)</p></li></ul></li><li><p>嵌套列表</p><ul><li>无-无   无-有  有-有   有-无</li></ul></li><li><p>定义列表</p><ul><li><code>&lt;dl&gt;&lt;dt&gt;项目1&lt;/dt&gt;&lt;dd&gt;详细1&lt;/dd&gt;&lt;dt&gt;项目2&lt;/dt&gt;&lt;dd&gt;详细2&lt;/dd&gt;&lt;/dl&gt;</code></li></ul></li></ul><h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><ul><li><p><code>&lt;table&gt;&lt;/table&gt;</code>定义表格标签</p></li><li><p><code>&lt;th&gt;&lt;.th&gt;</code>定义表头</p><p>表头是默认加粗的</p></li><li><p><code>&lt;tr&gt;&lt;/tr&gt;</code>定义表格行</p></li><li><p><code>&lt;td&gt;&lt;/td&gt;</code>定义表格单元</p><p>上下行的表格单元会自动对齐并取最大的表格单元</p></li></ul><h2 id="框架"><a href="#框架" class="headerlink" title="框架"></a>框架</h2><p>通过使用框架，可以在同一个浏览器窗口中显示不止一个页面。每份HTML文档称为一个框架，并且每个框架都独立于其他的框架。</p><p>使用框架的坏处：<br>开发人员必须同时跟踪更多的HTML文档<br>很难打印整张页面</p><h3 id="lt-frameset-gt-标签"><a href="#lt-frameset-gt-标签" class="headerlink" title="&lt;frameset&gt;标签"></a><code>&lt;frameset&gt;</code>标签</h3><ul><li>框架结构标签（ <code>&lt;frameset&gt;</code>）定义如何将窗口分割为框架</li><li>每个 frameset 定义了一系列行或列</li><li>rows/cols 的值规定了每行/每列占据屏幕的面积</li></ul><h3 id="lt-frame-gt-标签"><a href="#lt-frame-gt-标签" class="headerlink" title="&lt;frame&gt;标签"></a><code>&lt;frame&gt;</code>标签</h3><ul><li>Frame 标签定义了放置在每个框架中的 HTML 文档。</li><li>假如一个框架有可见边框，用户可以拖动边框来改变它的大小。为了避免这种情况发生，可以在  <code>&lt;frame&gt;</code>标签中加入： <code>noresize=&quot;noresize&quot;</code>。</li></ul><h3 id="lt-noframes-gt-标签"><a href="#lt-noframes-gt-标签" class="headerlink" title="&lt;noframes&gt; 标签"></a><code>&lt;noframes&gt;</code> 标签</h3><ul><li><p>为不支持框架的浏览器添加  <code>&lt;noframes&gt;</code> 标签。</p></li><li><p>不能将  <code>&lt;body&gt;&lt;/body&gt;</code>标签与  <code>&lt;frameset&gt;&lt;/frameset&gt;</code> 标签同时使用！不过，假如你添加包含一段文本的  <code>&lt;noframes&gt;</code>标签，就必须将这段文字嵌套于  <code>&lt;body&gt;&lt;/body&gt;</code> 标签内。</p><pre><code>​       &lt;noframes&gt;​             &lt;body&gt;您的浏览器无法处理框架！&lt;/body&gt;​       &lt;/noframes&gt;</code></pre><h3 id="类别"><a href="#类别" class="headerlink" title="类别"></a>类别</h3></li><li><p>水平框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_a.htm&quot;&gt;     &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>垂直框架</p><pre><code>&lt;frameset rows=&quot;25%,75%&quot;&gt;     &lt;frame src=&quot;frame_a.htm&quot;&gt;    &lt;frame src=&quot;frame_b.htm&quot;&gt;&lt;/frameset&gt;</code></pre></li><li><p>混合框架</p><pre><code>&lt;frameset rows=&quot;50%,50%&quot;&gt;       &lt;frame src=&quot;frame_a.html&quot;&gt;&lt;frameset cols=&quot;25%,75%&quot;&gt;      &lt;frame src=&quot;frame_b.html&quot;&gt;      &lt;frame src=&quot;frame_c.html&quot;&gt;&lt;/frameset&gt;&lt;/frameset&gt;</code></pre></li><li><p>内联框架</p><pre><code>&lt;iframe src=&quot;/i/eg_landscape.jpg&quot;&gt;&lt;/iframe&gt;&lt;p&gt;一些老的浏览器不支持 iframe。&lt;/p&gt;&lt;p&gt;如果得不到支持，iframe 是不可见的。&lt;/p&gt;</code></pre><pre><code>  - HTML内联框架是为了实现在网页中显示网页，突出了内联二字，就是在一个网页中，我们能够控制在这个网页中用多大的框去显示另外一个网页，并且能通过CSS对其进行控制。  - 而内联框架则可以放在`&lt;body&gt;`里面</code></pre></li></ul>]]></content>
-      
-      
-      <categories>
-          
-          <category> web </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> html </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>html总结1</title>
       <link href="/2020/07/21/zi-ding-yi-css/"/>
       <url>/2020/07/21/zi-ding-yi-css/</url>
@@ -430,11 +430,11 @@
     
     
     <entry>
-      <title>歌—ONE&#39;s hope</title>
-      <link href="/2020/07/20/ge-one-s-hope/"/>
-      <url>/2020/07/20/ge-one-s-hope/</url>
+      <title>歌—ぼくら（城镇青年ED)</title>
+      <link href="/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/"/>
+      <url>/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/</url>
       
-        <content type="html"><![CDATA[<p>歌手：やなぎなぎ<br><strong><em>薄らと朱く染まる空 トンボが舞う，</em></strong><br>染上几许朱红的天空 蜻蜓漫舞纷飞，<br><strong><em>子供みたいにはしゃいでる 君を見てた，</em></strong><br>注视着像个孩子般 开心嬉笑的你，<br><strong><em>指差したその先を睨んで 君は言う，</em></strong><br>你直直盯着手指所指的方向，<br><strong><em>「逃げるなよ・・・」って，</em></strong><br>「不准跑啦…」这么说着，<br><strong><em>悔しがったその顔が可笑しくて笑ってた，</em></strong><br>那悔恨的表情逗趣地令我轻笑出声，<br><strong><em>あの頃，</em></strong><br>在那个时候，<br><strong><em>二年後の記念日 プレゼントもらった，</em></strong><br>两年后的纪念日 收到了礼物，<br><strong><em>少しだけ赤くなる 君がくれたもの，</em></strong><br>你赠与我的礼物 令我感到有些不好意思，<br><strong><em>小さな小箱に入った 輪っかのそれは，</em></strong><br>摆放在小巧盒子当中 圆环形状的那样物品，<br><strong><em>銀色に輝いていた，</em></strong><br>绽放出银色的光辉，<br><strong><em>君の事を あなたと呼ぶ日が来て，</em></strong><br>称呼你为 「亲爱的」的那一天来临了，<br><strong><em>白いドレスを纏った私に 「綺麗だよ」と言った，</em></strong><br>你对身着白色婚纱的我 「妳很漂亮喔」这么说着，<br><strong><em>恥ずかしさなど 忘れてしまったのかな？</em></strong><br>是不是连觉得害羞之类的 都忘记了呢？<br><strong><em>そっと、「愛してる」そう言ってキスをした，</em></strong><br>轻轻地唤着「我爱你」，亲吻了彼此，<br><strong><em>幸せだった，</em></strong><br>当时是那样地幸福，<br><strong><em>悩み事はありませんか？</em></strong><br>你是不是有什么烦心的事呢？<br><strong><em>ああ、やっぱり今日も，</em></strong><br>啊啊，果然今天也是如此，<br><strong><em>素直じゃないあなたは 答えてくれない，</em></strong><br>别扭的你 什么话也不回答，<br><strong><em>だけど、ねえ、</em></strong><br>今，但是，吶，现在，<br><strong><em>あなたは，</em></strong><br>你，<br><strong><em>笑ってますか？</em></strong><br>是否正笑着呢？<br><strong><em>夕日に映る あの日のあなたの笑顔，</em></strong><br>倒映在夕阳之中 你那一日的笑容，<br><strong><em>あの日誓った約束は 破れてしまった，</em></strong><br>那一日立下誓言的约定 被打破了，<br><strong><em>繋がっていた赤い糸の 先は霞んで見えない，</em></strong><br>过去连系着你我的红丝线 如今另一端却蒙眬地看不清楚…，<br><strong><em>だけど残されたあなたの一つの希望，</em></strong><br>但是还有一个你的希望留了下来，<br><strong><em>季節は流れ 思い出は駆け巡る，</em></strong><br>季节飞逝 回忆历历在目，<br><strong><em>あの日、君といた茜空 あなたといた時間，</em></strong><br>那一天，与你共享的暮色 与亲爱的你共渡的时间，<br><strong><em>いつか日かまた あなたの横で笑える日まで，</em></strong><br>直到能够再次 在你身边绽放笑容的那一天，<br><strong><em>浮気しないでよ？このリングに誓ってよ，</em></strong><br>在那之前可不能花心喔？ 向这个戒指发誓吧，<br><strong><em>私は大丈夫，</em></strong><br>我没问题的，<br><strong><em>だってあなたを今でも愛してるから，</em></strong><br>因为至今我仍深爱着你，<br><strong><em>どこからかやってきたトンボさん，</em></strong><br>不知从何处飞来的蜻蜓，<br><strong><em>ここからなら見えるでしょう？</em></strong><br>从这里应该就能够看见了吧？<br><strong><em>まだまだ小さな，</em></strong><br>还有些幼小的，<br><strong><em>ONE’S HOPE，</em></strong><br>一个希望。</p>]]></content>
+        <content type="html"><![CDATA[<p>歌手：玖肆仟<br><strong><em>駆け足でウチに帰る</em></strong><br>奔跑在归家的路上<br><strong><em>子供たちの声がする</em></strong><br>孩子们欢声笑语<br><strong><em>つま先で 石を蹴りながら</em></strong><br>脚尖一边踢着石子<br><strong><em>めぐりめぐる 帰り道</em></strong><br>来而又去的归家路<br><strong><em>誰かの財布拾って 交番まで届けた</em></strong><br>拾着了谁的钱包 交给警察叔叔<br><strong><em>いつか 時が 過ぎて 仆ら</em></strong><br>若有一日岁月蹉跎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの 自分でいられるかな？</em></strong><br>还能做现在的 这样的自己吗？<br><strong><em>ハタチになって更に</em></strong><br>二十岁生日<br><strong><em>二年二ヶ月が過ぎた</em></strong><br>已经过了两年两个月<br><strong><em>やみくもに わけもわからず 我が尽で</em></strong><br>迷茫地走着自己弄不明白的道路<br><strong><em>ここまで来たけど</em></strong><br>终于算是走到这一步<br><strong><em>どこにも 辿り着けてない</em></strong><br>却没有到达过什么终点<br><strong><em>誰にも 出会えていない</em></strong><br>却没有邂逅过什么人<br><strong><em>いつか 時が 過ぎて</em></strong><br>若有一日岁月蹉跎<br><strong><em>仆らただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？<br><strong><em>心 折れて 夢に やぶれ</em></strong><br>经历心伤 经历梦碎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの こんなままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？</p>]]></content>
       
       
       <categories>
@@ -480,11 +480,11 @@
     
     
     <entry>
-      <title>歌—ぼくら（城镇青年ED)</title>
-      <link href="/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/"/>
-      <url>/2020/07/20/ge-bokura-cheng-zhen-qing-nian-ed/</url>
+      <title>歌—ONE&#39;s hope</title>
+      <link href="/2020/07/20/ge-one-s-hope/"/>
+      <url>/2020/07/20/ge-one-s-hope/</url>
       
-        <content type="html"><![CDATA[<p>歌手：玖肆仟<br><strong><em>駆け足でウチに帰る</em></strong><br>奔跑在归家的路上<br><strong><em>子供たちの声がする</em></strong><br>孩子们欢声笑语<br><strong><em>つま先で 石を蹴りながら</em></strong><br>脚尖一边踢着石子<br><strong><em>めぐりめぐる 帰り道</em></strong><br>来而又去的归家路<br><strong><em>誰かの財布拾って 交番まで届けた</em></strong><br>拾着了谁的钱包 交给警察叔叔<br><strong><em>いつか 時が 過ぎて 仆ら</em></strong><br>若有一日岁月蹉跎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの 自分でいられるかな？</em></strong><br>还能做现在的 这样的自己吗？<br><strong><em>ハタチになって更に</em></strong><br>二十岁生日<br><strong><em>二年二ヶ月が過ぎた</em></strong><br>已经过了两年两个月<br><strong><em>やみくもに わけもわからず 我が尽で</em></strong><br>迷茫地走着自己弄不明白的道路<br><strong><em>ここまで来たけど</em></strong><br>终于算是走到这一步<br><strong><em>どこにも 辿り着けてない</em></strong><br>却没有到达过什么终点<br><strong><em>誰にも 出会えていない</em></strong><br>却没有邂逅过什么人<br><strong><em>いつか 時が 過ぎて</em></strong><br>若有一日岁月蹉跎<br><strong><em>仆らただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの このままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？<br><strong><em>心 折れて 夢に やぶれ</em></strong><br>经历心伤 经历梦碎<br><strong><em>ただの大人になったとしても</em></strong><br>我们变成了普普通通的大人<br><strong><em>今のままの こんなままの</em></strong><br>还能做现在的<br><strong><em>自分でいられるかな？</em></strong><br>这样的自己吗？</p>]]></content>
+        <content type="html"><![CDATA[<p>歌手：やなぎなぎ<br><strong><em>薄らと朱く染まる空 トンボが舞う，</em></strong><br>染上几许朱红的天空 蜻蜓漫舞纷飞，<br><strong><em>子供みたいにはしゃいでる 君を見てた，</em></strong><br>注视着像个孩子般 开心嬉笑的你，<br><strong><em>指差したその先を睨んで 君は言う，</em></strong><br>你直直盯着手指所指的方向，<br><strong><em>「逃げるなよ・・・」って，</em></strong><br>「不准跑啦…」这么说着，<br><strong><em>悔しがったその顔が可笑しくて笑ってた，</em></strong><br>那悔恨的表情逗趣地令我轻笑出声，<br><strong><em>あの頃，</em></strong><br>在那个时候，<br><strong><em>二年後の記念日 プレゼントもらった，</em></strong><br>两年后的纪念日 收到了礼物，<br><strong><em>少しだけ赤くなる 君がくれたもの，</em></strong><br>你赠与我的礼物 令我感到有些不好意思，<br><strong><em>小さな小箱に入った 輪っかのそれは，</em></strong><br>摆放在小巧盒子当中 圆环形状的那样物品，<br><strong><em>銀色に輝いていた，</em></strong><br>绽放出银色的光辉，<br><strong><em>君の事を あなたと呼ぶ日が来て，</em></strong><br>称呼你为 「亲爱的」的那一天来临了，<br><strong><em>白いドレスを纏った私に 「綺麗だよ」と言った，</em></strong><br>你对身着白色婚纱的我 「妳很漂亮喔」这么说着，<br><strong><em>恥ずかしさなど 忘れてしまったのかな？</em></strong><br>是不是连觉得害羞之类的 都忘记了呢？<br><strong><em>そっと、「愛してる」そう言ってキスをした，</em></strong><br>轻轻地唤着「我爱你」，亲吻了彼此，<br><strong><em>幸せだった，</em></strong><br>当时是那样地幸福，<br><strong><em>悩み事はありませんか？</em></strong><br>你是不是有什么烦心的事呢？<br><strong><em>ああ、やっぱり今日も，</em></strong><br>啊啊，果然今天也是如此，<br><strong><em>素直じゃないあなたは 答えてくれない，</em></strong><br>别扭的你 什么话也不回答，<br><strong><em>だけど、ねえ、</em></strong><br>今，但是，吶，现在，<br><strong><em>あなたは，</em></strong><br>你，<br><strong><em>笑ってますか？</em></strong><br>是否正笑着呢？<br><strong><em>夕日に映る あの日のあなたの笑顔，</em></strong><br>倒映在夕阳之中 你那一日的笑容，<br><strong><em>あの日誓った約束は 破れてしまった，</em></strong><br>那一日立下誓言的约定 被打破了，<br><strong><em>繋がっていた赤い糸の 先は霞んで見えない，</em></strong><br>过去连系着你我的红丝线 如今另一端却蒙眬地看不清楚…，<br><strong><em>だけど残されたあなたの一つの希望，</em></strong><br>但是还有一个你的希望留了下来，<br><strong><em>季節は流れ 思い出は駆け巡る，</em></strong><br>季节飞逝 回忆历历在目，<br><strong><em>あの日、君といた茜空 あなたといた時間，</em></strong><br>那一天，与你共享的暮色 与亲爱的你共渡的时间，<br><strong><em>いつか日かまた あなたの横で笑える日まで，</em></strong><br>直到能够再次 在你身边绽放笑容的那一天，<br><strong><em>浮気しないでよ？このリングに誓ってよ，</em></strong><br>在那之前可不能花心喔？ 向这个戒指发誓吧，<br><strong><em>私は大丈夫，</em></strong><br>我没问题的，<br><strong><em>だってあなたを今でも愛してるから，</em></strong><br>因为至今我仍深爱着你，<br><strong><em>どこからかやってきたトンボさん，</em></strong><br>不知从何处飞来的蜻蜓，<br><strong><em>ここからなら見えるでしょう？</em></strong><br>从这里应该就能够看见了吧？<br><strong><em>まだまだ小さな，</em></strong><br>还有些幼小的，<br><strong><em>ONE’S HOPE，</em></strong><br>一个希望。</p>]]></content>
       
       
       <categories>
@@ -598,9 +598,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -652,9 +652,9 @@
       
         <tags>
             
-            <tag> html </tag>
-            
             <tag> css </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
